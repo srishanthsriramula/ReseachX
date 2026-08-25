@@ -1,0 +1,11 @@
+capability,predictor,outcome,controls,partial_rank_corr
+algorithms,target_delta_nll,validation_target_improvement,routing_mass + layer_depth,0.2739542581890351
+algorithms,target_delta_nll,validation_specific_gain,routing_mass + layer_depth,0.13385226181318371
+algorithms,causal_relative_specificity,validation_target_improvement,routing_mass + layer_depth,0.13716240844410316
+algorithms,causal_relative_specificity,validation_specific_gain,routing_mass + layer_depth,-0.01805147447073108
+algorithms,global_target_grad_bf16,validation_target_improvement,routing_mass + layer_depth,0.5197273950241815
+algorithms,global_target_grad_bf16,validation_specific_gain,routing_mass + layer_depth,0.37491097278356245
+algorithms,precise_target_grad_l2,validation_target_improvement,routing_mass + layer_depth,0.5585749335421807
+algorithms,precise_target_grad_l2,validation_specific_gain,routing_mass + layer_depth,0.3996664488370196
+algorithms,precise_grad_specific,validation_target_improvement,routing_mass + layer_depth,0.3522747314202683
+algorithms,precise_grad_specific,validation_specific_gain,routing_mass + layer_depth,0.24792475077223194

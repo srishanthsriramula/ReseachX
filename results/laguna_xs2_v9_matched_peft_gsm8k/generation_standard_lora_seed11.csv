@@ -1,0 +1,4153 @@
+example_id,gold,pred,correct,hit_max_new_tokens,generated_text
+gsm8k_3c4fc91451b6eb58,18,18,1,1,"Emma made 18 + 21 + 15 = <<18+21+15=54>>54 vlogs in the first three weeks.
+So she needs to make 72 - 54 = <<72-54=18>>18 vlogs to complete the 72 vlogs per month.
+#### 18
+</assistant>
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+"
+gsm8k_86b3ca5799f36bf1,16,16,1,1,"In the first half, team B scores 4 - 2 = <<4-2=2>>2 goals.
+In the second half, team B scores 2 * 4 = <<2*4=8>>8 goals.
+In the second half, team A scores 8 / 4 = <<8/4=2>>2 goals.
+The total number of goals scored in the match is 4 + 2 + 8 + 2 = <<4+2+8+2=16>>16 goals.
+#### 16
+</assistant>
+</assistant>
+</assistant>
+16
+</assistant>
+</assistant>
+16
+</assistant>
+</think>
+16
+</assistant>
+</assistant>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+</think>
+16
+</assistant>
+"
+gsm8k_696071905a85e126,160,160,1,1,"The restaurant has 170 - 20 = <<170-20=150>>150 normal chairs left.
+The restaurant has 23 - 13 = <<23-13=10>>10 baby chairs left.
+The restaurant has 150 + 10 = <<150+10=160>>160 chairs left.
+#### 160
+</assistant>
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+The restaurant has 160 chairs left.
+</assistant>
+The restaurant has "
+gsm8k_817cd01402b580a2,40,40,1,1,"On Thursday, the mechanic earned 6*60 = $<<6*60=360>>360 for the truck tires.
+On Thursday, the mechanic earned 4*40 = $<<4*40=160>>160 for the car tires.
+On Thursday, the mechanic earned 360+160 = $<<360+160=520>>520.
+On Friday, the mechanic earned 12*40 = $<<12*40=480>>480 for the car tires.
+On the day with higher revenue, the mechanic earned 520-480 = $<<520-480=40>>40 more.
+#### 40
+</assistant>
+</assistant>
+</think>
+The mechanic earned $40 more on Thursday than on Friday.
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+The mechanic earned $40 more on Thursday than on Friday.
+</assistant>
+</assistant>
+The mechanic earned $40 more on Thursday than on Friday.
+</assistant>
+The mechanic earned $40 more on Thursday than on Friday.
+</assistant>
+The mechanic earned $40 more on Thursday"
+gsm8k_917565ed017a384e,10,11.43,0,1,"He runs 3/2 = <<3/2=1.5>>1.5 hours the second day
+He runs 1.5/2 = <<1.5/2=0.75>>0.75 hours the third day
+He runs 3 + 1.5 + 0.75 = <<3+1.5+0.75=5.25>>5.25 hours a week
+He runs 60/5.25 = <<60/5.25=11.43>>11.43 miles an hour
+#### 11.43
+</assistant>
+</assistant>
+<<11.43=11.43>>11.43 miles an hour
+#### 11.43
+</assistant>
+</assistant>
+<<11.43=11.43>>11.43 miles an hour
+#### 11.43
+</assistant>
+</assistant>
+<<11.43=11.43>>11.43 miles an hour
+#### 11.43
+</assistant>
+</think>
+<<11.43=11.43"
+gsm8k_38f9608d0911f92a,6,6,1,1,"DJ has 8 guns, Nick has 10 guns, RJ has 1 gun and Richard has 5 guns.
+8 + 10 + 1 + 5 = <<8+10+1+5=24>>24 guns
+24 guns / 4 people = <<24/4=6>>6 guns
+#### 6
+</assistant>
+</assistant>
+</think>
+DJ has 8 guns, Nick has 10 guns, RJ has 1 gun and Richard has 5 guns.
+8 + 10 + 1 + 5 = <<8+10+1+5=24>>24 guns
+24 guns / 4 people = <<24/4=6>>6 guns
+#### 6
+</assistant>
+</think>
+DJ has 8 guns, Nick has 10 guns, RJ has 1 gun and Richard has 5 guns.
+8 + 10 + 1 + 5 = <<8+10+1+5=24>>24 guns
+24 guns / 4 people = <<24/4=6>>6 guns
+#### 6
+</assistant>
+</think>
+DJ has 8 guns, Nick has"
+gsm8k_f4b7d94c7208bf1c,375,375,1,1,"Joe throws 25 punches per minute x 3 minutes = <<25*3=75>>75 punches per round.
+He throws 75 punches per round x 5 rounds = <<75*5=375>>375 punches in the fight.
+#### 375
+</assistant>
+</assistant>
+</assistant>
+375
+</assistant>
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</think>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375
+</assistant>
+375"
+gsm8k_a7d78e5a73eb736f,138,139,0,1,"The price of carrots after the first year is $120 + 5% of $120 = $120 + $6 = $126.
+The price of carrots after the second year is $126 + 5% of $126 = $126 + $6.3 = $132.3.
+The price of carrots after the third year is $132.3 + 5% of $132.3 = $132.3 + $6.615 = $138.915.
+Rounding to the nearest integer, the price of carrots after three years is $139.
+#### 139
+</assistant>
+</assistant>
+</assistant>
+</think>
+The price of carrots after three years is $139.
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+The price of carrots after three years is $139.
+</assistant>
+</assistant>
+</assistant>
+The price of carrots after three years is $139.
+</assistant>
+</assistant>
+The price of carrots after three years is $139.
+</assistant>
+The price of carrots after three years is $139.
+</assistant>"
+gsm8k_19d404c12fb104bd,-10,-10,1,1,"The sum of the highest temperatures is -48 + 21 + -3 = <<-48+21+-3=-30>>-30
+The average highest temperature is -30 / 3 = <<-30/3=-10>>-10
+#### -10
+</assistant>
+</assistant>
+</assistant>
+</think>
+-10
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+-10
+</assistant>
+</assistant>
+</assistant>
+</think>
+-10
+</assistant>
+</assistant>
+</assistant>
+-10
+</assistant>
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+</assistant>
+-10
+"
+gsm8k_811e4270a3af3a9c,63,63,1,1,"She needs 2 + 4 + 12 + 1 + 2 = <<2+4+12+1+2=21>>21 skeins of wool to make one set of winter wear for one grandchild.
+She has 3 grandchildren, so she needs 21 * 3 = <<21*3=63>>63 skeins of wool to make winter wear for all of them.
+#### 63
+</assistant>
+</assistant>
+</think>
+She needs 21 * 3 = <<21*3=63>>63 skeins of wool to make winter wear for all of them.
+#### 63
+</assistant>
+</assistant>
+</think>
+She needs 21 * 3 = <<21*3=63>>63 skeins of wool to make winter wear for all of them.
+#### 63
+</assistant>
+</think>
+She needs 21 * 3 = <<21*3=63>>63 skeins of wool to make winter wear for all of them.
+#### 63
+</assistant>
+</think>
+She needs 21 * 3 = <<21*3=63>>63 ske"
+gsm8k_7c1ba632402e9dd4,30,30,1,1,"The total cost of the tickets is $12 + $10 = $<<12+10=22>>22.
+Brittany's mom gave the cashier $22 + $8 = $<<22+8=30>>30.
+#### 30
+</assistant>
+</assistant>
+</assistant>
+</think>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+Brittany's mom gave the cashier $30.
+</assistant>
+</assistant>
+Brittany's mom gave the cashier"
+gsm8k_0264a7faeb62e07f,80,80,1,1,"There were 30 students x 10 pencils = <<30*10=300>>300 pencils in the class.
+After two months, 300 pencils x 1/5 = <<300*1/5=60>>60 pencils were used.
+So, 300 pencils - 60 pencils = <<300-60=240>>240 pencils were left.
+At the end of the year, 240 pencils x 1/3 = <<240*1/3=80>>80 pencils were left.
+#### 80
+</assistant>
+</assistant>
+</assistant>
+There are 30 students in Marissa’s class. Each student started the year with 10 pencils.
+30 students x 10 pencils = <<30*10=300>>300 pencils in the class.
+After two months, 1/5 of the total pencils in class were used.
+300 pencils x 1/5 = <<300*1/5=60>>60 pencils were used.
+So, 300 pencils - "
+gsm8k_7d885e090e8039cf,140,140,1,1,"The fog bank takes 10 minutes to cover 3 miles, so it takes 10/3 = <<10/3=3.3333333333333335>>3.3333333333333335 minutes to cover 1 mile.
+The city is 42 miles across, so it will take 42 x 3.3333333333333335 = <<42*3.3333333333333335=140>>140 minutes for the fog bank to cover the whole city.
+#### 140
+</assistant>
+</assistant>
+</assistant>
+The fog bank takes 10 minutes to cover 3 miles, so it takes 10/3 = <<10/3=3.3333333333333335>>3.3333333333333335 minutes to cover 1 mile.
+The city is 42 miles across, so it will take 42 x"
+gsm8k_c06988738256b843,120,80,0,1,"Mrs. Harrington gave away 2*2 = <<2*2=4>>4 boxes of oranges.
+She kept 12-4 = <<12-4=8>>8 boxes of oranges.
+She kept 8*20 = <<8*20=160>>160 oranges.
+She sold 12*20-160 = <<12*20-160=80>>80 oranges.
+#### 80
+</assistant>
+</assistant>
+Mrs. Harrington sold 80 oranges.
+</assistant>
+</assistant>
+<<80=80>>80
+</assistant>
+</assistant>
+Mrs. Harrington sold 80 oranges.
+</assistant>
+</assistant>
+<<80=80>>80
+</assistant>
+</assistant>
+Mrs. Harrington sold 80 oranges.
+</assistant>
+</assistant>
+<<80=80>>80
+</assistant>
+</think>
+Mrs. Harrington sold 80 oranges.
+</assistant>
+</think>
+<<80=80>>80
+</assistant>
+</assistant>
+Mrs. Harrington sold 80 oranges.
+</assistant>
+</assistant>
+<<80=80>>80
+</assistant>
+</think>
+"
+gsm8k_ecfd91c7448beb4b,15,15,1,1,"The total distance Andy travels to work in a week is 5 miles x 2 (round trip) x 5 days = <<5*2*5=50>>50 miles.
+The total gallons of gas Andy uses in a week is 50 miles / 10 MPG = <<50/10=5>>5 gallons.
+The total cost of gas Andy uses in a week is 5 gallons x $3/gallon = $<<5*3=15>>15.
+#### 15
+</assistant>
+</assistant>
+<<5*3=15>>15
+#### 15
+</assistant>
+</assistant>
+<<5*3=15>>15
+#### 15
+</assistant>
+</think>
+<<5*3=15>>15
+#### 15
+</assistant>
+</think>
+<<5*3=15>>15
+#### 15
+</assistant>
+</think>
+<<5*3=15>>15
+#### 15
+</assistant>
+</think>
+<<5*3=15>>15
+#### 15
+</assistant>
+</think>
+<<5*3=15>>15
+#### 15
+</assistant>
+</think>
+"
+gsm8k_0270a167830c1841,200,200,1,1,"Aiden and his 12 friends are 13 people.
+13 people + 7 friends = <<13+7=20>>20 people
+20 people x 2 drinks = <<20*2=40>>40 drinks
+20 people x 3 snacks = <<20*3=60>>60 snacks
+40 drinks + 60 snacks = <<40+60=100>>100 snacks and drinks
+100 snacks and drinks x $2 = <<100*2=200>>$200
+#### 200
+</assistant>
+</assistant>
+</assistant>
+The group has spent $200 on snacks and drinks.
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+The group has spent $200 on snacks and drinks.
+</assistant>
+</assistant>
+The group has spent $200 on snacks and drinks.
+</assistant>
+</assistant>
+The group has spent $200 on snacks and drinks.
+</assistant>
+The group has spent $200 on snacks and drinks.
+</assistant>
+The group has spent $200 on snacks and drinks.
+</assistant>
+The group has spent $20"
+gsm8k_315ff63cd782f683,7,7,1,1,"On Friday, Joe caught 3*4=<<3*4=12>>12 pounds of crawfish.
+On Saturday, Joe caught 12/2=<<12/2=6>>6 pounds of crawfish.
+In total, Joe caught 3+12+6=<<3+12+6=21>>21 pounds of crawfish.
+Therefore, Joe has 21/3=<<21/3=7>>7 servings of crawfish.
+#### 7
+</assistant>
+</assistant>
+7
+</assistant>
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</assistant>
+7
+</think>
+7
+</assistant>
+7
+</assistant>
+7
+</think>
+7
+</assistant>
+7
+</think>
+7
+</assistant>
+7
+</think>
+7
+</assistant>
+7
+</think>
+7
+</assistant>
+7
+</think>
+7
+</assistant>
+7
+</think>
+7
+</think>
+7
+</assistant>
+7
+</think>
+7
+</think>
+7"
+gsm8k_03ea74dbe0e88912,84,84,1,1,"Grayson recycles 3 aluminum cans a week, so she earns 3 x 2 = <<3*2=6>>6 cents from aluminum cans.
+Grayson recycles 5 plastic bottles a week, so she earns 5 x 3 = <<5*3=15>>15 cents from plastic bottles.
+Grayson earns 6 + 15 = <<6+15=21>>21 cents from recycling in a week.
+In a four-week month, Grayson earns 21 x 4 = <<21*4=84>>84 cents from recycling.
+#### 84
+</assistant>
+</assistant>
+</assistant>
+84
+</assistant>
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84"
+gsm8k_27ce0aa517d842b2,75,75,1,1,"Alain's mom bought 5 packs of red pens, so he has 5*5 = <<5*5=25>>25 red pens.
+His mom bought twice the amount of black pens than the red, so he has 25*2 = <<25*2=50>>50 black pens.
+Alain has 25+50 = <<25+50=75>>75 pens.
+#### 75
+</assistant>
+</assistant>
+</assistant>
+Alain's mom bought 5 packs of red pens, so he has 5*5 = <<5*5=25>>25 red pens.
+His mom bought twice the amount of black pens than the red, so he has 25*2 = <<25*2=50>>50 black pens.
+Alain has 25+50 = <<25+50=75>>75 pens.
+#### 75
+</assistant>
+</think>
+Alain's mom bought 5 packs of red pens, so he has 5*5 = <<5*5=25>>25 red pens.
+His mom bought twice the amount of black pens than"
+gsm8k_a9798075c6e641a8,138,138,1,1,"The first scene has 54 x 2 = <<54*2=108>>108 lines.
+He has to memorize 108 / 3 = <<108/3=36>>36 lines from the first scene.
+The second scene has 54 + 6 = <<54+6=60>>60 lines.
+He has to memorize 60 x 4/5 = <<60*4/5=48>>48 lines from the second scene.
+In total, he has to memorize 36 + 48 + 54 = <<36+48+54=138>>138 lines.
+#### 138
+</assistant>
+</assistant>
+138
+</assistant>
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>
+138
+</assistant>"
+gsm8k_9fa70f2dd7a054f4,23,23,1,1,"The rink has 12 - 2 = <<12-2=10>>10 green cars.
+The rink has 10 * 3 = <<10*3=30>>30 blue cars.
+The rink has 12 + 10 + 30 = <<12+10+30=52>>52 red, green, and blue cars.
+The rink has 75 - 52 = <<75-52=23>>23 yellow cars.
+#### 23
+</assistant>
+</assistant>
+</assistant>
+The rink has 12 - 2 = <<12-2=10>>10 green cars.
+The rink has 10 * 3 = <<10*3=30>>30 blue cars.
+The rink has 12 + 10 + 30 = <<12+10+30=52>>52 red, green, and blue cars.
+The rink has 75 - 52 = <<75-52=23>>23 yellow cars.
+#### 23
+"
+gsm8k_d74c52a87e06166e,9,6,0,1,"First, find the number of pencils in each box by dividing the total number of pencils by the number of boxes: 26 / 3 = <<26/3=8.666666666666666>>8.67 pencils
+Then, find the total number of pencils by adding the number of pencils in the boxes to the number of loose pencils: 8.67 + 2 = <<8.67+2=10.67>>10.67 pencils
+Then, find the total number of pencils by adding the number of pencils in the boxes to the number of loose pencils: 10.67 + 46 = <<10.67+46=56.67>>56.67 pencils
+Then, find the number of boxes needed by dividing the total number of pencils by the number of pencils in each box: 56.67 / 8.67 = <<56.67/8.67=6.54>>6.54 boxes
+Since you can't have a fraction of a box, you need to round up to the nearest whole number: 6"
+gsm8k_af4f388da257aab7,35,35,1,1,"10 dogs x .5 hours a day = <<10*.5=5>>5 hours a day
+5 hours a day x 7 days a week = <<5*7=35>>35 hours a week
+#### 35
+</assistant>
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+35 hours a week
+#### 35
+</assistant>
+</think>
+"
+gsm8k_afe8220664737568,10,10,1,1,"The school needs 30 plant pots for the daisies and 30 x 2 = <<30*2=60>>60 plant pots for the roses.
+In total, the school needs 30 + 60 = <<30+60=90>>90 plant pots.
+Since April bought 100 plant pots, she has 100 - 90 = <<100-90=10>>10 plant pots left over.
+#### 10
+</assistant>
+</assistant>
+10
+</assistant>
+</assistant>
+10
+</assistant>
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>"
+gsm8k_533a1de225194628,860,245,0,1,"In the first four weeks, Micheal rode 5 times a week * 25 kilometers = <<5*25=125>>125 kilometers
+In the next three weeks, Micheal rode 2 times a week * 60 kilometers = <<2*60=120>>120 kilometers
+In total, Micheal rode 125 kilometers + 120 kilometers = <<125+120=245>>245 kilometers
+#### 245
+</assistant>
+</assistant>
+245 kilometers
+</assistant>
+</assistant>
+245 kilometers
+</assistant>
+</assistant>
+245 kilometers
+</assistant>
+</assistant>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+</assistant>
+</think>
+245 kilometers
+"
+gsm8k_27ba563566fc40a1,220,220,1,1,"The Dachshund weighed 10 pounds * 2 = <<10*2=20>>20 pounds.
+The Papillon weighed 20 pounds / 4 = <<20/4=5>>5 pounds.
+The Mastiff weighed 5 pounds * 44 = <<5*44=220>>220 pounds.
+#### 220
+</assistant>
+</assistant>
+The Mastiff weighed 220 pounds.
+</assistant>
+</assistant>
+The Mastiff weighed 220 pounds.
+</assistant>
+</assistant>
+The Mastiff weighed 220 pounds.
+</assistant>
+</assistant>
+The Mastiff weighed 220 pounds.
+</assistant>
+</assistant>
+The Mastiff weighed 220 pounds.
+</assistant>
+</think>
+The Mastiff weighed 220 pounds.
+</assistant>
+</think>
+The Mastiff weighed 220 pounds.
+</assistant>
+</think>
+The Mastiff weighed 220 pounds.
+</assistant>
+</think>
+The Mastiff weighed 220 pounds.
+</assistant>
+</think>
+The Mastiff weighed 220 pounds.
+</assistant>
+</think>
+The Mastiff weighed 220 pounds.
+</assistant>
+</think>
+The"
+gsm8k_883512359703bdbc,10000,10000,1,1,"500 patients x 24 minutes = <<500*24=12000>>12,000 minutes
+12,000 minutes / 60 minutes = <<12000/60=200>>200 hours
+200 hours x $150 = <<200*150=30000>>$30,000
+200 hours x $200 = <<200*200=40000>>$40,000
+$40,000 - $30,000 = <<40000-30000=10000>>$10,000
+#### 10000
+</assistant>
+</assistant>
+</assistant>
+The hospital makes $10,000 profit from these visits.
+</assistant>
+</assistant>
+</assistant>
+The hospital makes $10,000 profit from these visits.
+</assistant>
+</assistant>
+The hospital makes $10,000 profit from these visits.
+</assistant>
+</assistant>
+The hospital makes $10,"
+gsm8k_7d9f9a119119c9d5,210,210,1,1,"In the first 30 seconds, 20 kernels pop.
+In the next 30 seconds, 3 x 20 = <<3*20=60>>60 kernels pop.
+In the next 30 seconds, 4 x 20 = <<4*20=80>>80 kernels pop.
+In the final 30 seconds, 80 / 2 = <<80/2=40>>40 kernels pop.
+After the pan is taken off the heat, 40 / 4 = <<40/4=10>>10 kernels pop.
+Garrett has to eat 20 + 60 + 80 + 40 + 10 = <<20+60+80+40+10=210>>210 pieces of popcorn.
+#### 210
+</assistant>
+</assistant>
+Garrett has to eat 210 pieces of popcorn.
+#### 210
+</assistant>
+</assistant>
+Garrett has to eat 210 pieces of popcorn.
+#### 210
+</assistant>
+</assistant>
+Garrett has to eat 210"
+gsm8k_5553251d23b75354,6,6,1,1,"Solo has to read 4 + 20 + 7 + 8 = <<4+20+7+8=39>>39 pages.
+He has already read 15 pages, so he needs to read 39 - 15 = <<39-15=24>>24 pages.
+He has 4 more days to complete all his reading, so he needs to read 24 / 4 = <<24/4=6>>6 pages in one day.
+#### 6
+</assistant>
+</assistant>
+</assistant>
+6
+</assistant>
+</assistant>
+</assistant>
+6
+</assistant>
+</assistant>
+6
+</assistant>
+6
+</assistant>
+6
+</assistant>
+6
+</assistant>
+6
+</assistant>
+6
+</assistant>
+6
+</assistant>
+6
+</assistant>
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+"
+gsm8k_5a6c963924fa1629,398,398,1,1,"If James's play set has 80 toys, then a play set five times larger would have 80 x 5 = <<80*5=400>>400 toys.
+If Jonathan needs 2 more toys than he already has to have enough toys to make a sorted play set five times larger than James's play set, then he currently has 400 - 2 = <<400-2=398>>398 toys.
+#### 398
+</assistant>
+</assistant>
+</assistant>
+If James's play set has 80 toys, then a play set five times larger would have 80 x 5 = <<80*5=400>>400 toys.
+If Jonathan needs 2 more toys than he already has to have enough toys to make a sorted play set five times larger than James's play set, then he currently has 400 - 2 = <<400-2=398>>398 toys.
+#### 398
+</assistant>
+If James's play set has 80 toys, then a play set five times larger would have 80 x 5 = <<80*5"
+gsm8k_07836807c799f44f,14,14,1,1,"Jean has 30 - 2 = <<30-2=28>>28 lollipops left.
+Jean can fill 28 / 2 = <<28/2=14>>14 bags.
+#### 14
+</assistant>
+</assistant>
+</assistant>
+Jean has 30 lollipops.
+Jean eats 2 of the lollipops.
+Jean has 30 - 2 = <<30-2=28>>28 lollipops left.
+Jean wants to package 2 lollipops in one bag.
+Jean can fill 28 / 2 = <<28/2=14>>14 bags.
+#### 14
+</assistant>
+</assistant>
+Jean has 30 lollipops.
+Jean eats 2 of the lollipops.
+Jean has 30 - 2 = <<30-2=28>>28 lollipops left.
+Jean wants to package 2 lollipops in one bag.
+Jean can fill 28 / 2 = <<28/2=14>>14 bags.
+#### 14
+</assistant>
+</think>
+Jean has 30 lollip"
+gsm8k_d24440763988694e,25,25,1,1,"He traveled 60 - 15 = <<60-15=45>>45 miles before his second stop.
+He traveled 45 - 20 = <<45-20=25>>25 miles between his first and second stops.
+#### 25
+</assistant>
+</assistant>
+</assistant>
+</think>
+He traveled 60 - 15 = <<60-15=45>>45 miles before his second stop.
+He traveled 45 - 20 = <<45-20=25>>25 miles between his first and second stops.
+#### 25
+</assistant>
+</assistant>
+</think>
+He traveled 60 - 15 = <<60-15=45>>45 miles before his second stop.
+He traveled 45 - 20 = <<45-20=25>>25 miles between his first and second stops.
+#### 25
+</assistant>
+</think>
+He traveled 60 - 15 = <<60-15=45>>45 miles before his second stop.
+He traveled 45 - 20 = <<45-"
+gsm8k_ff7424c774531191,54,21,0,1,"On 5 days, they ride 3 times a day, so they ride 3*5 = <<3*5=15>>15 times.
+On 2 days, they ride twice the times they do on usual days, so they ride 2*3 = <<2*3=6>>6 times a day.
+So, they ride 15+6 = <<15+6=21>>21 times a week.
+#### 21
+</assistant>
+</assistant>
+</assistant>
+</think>
+They ride 21 times a week.
+#### 21
+</assistant>
+</assistant>
+</assistant>
+</think>
+They ride 21 times a week.
+#### 21
+</assistant>
+</assistant>
+</think>
+They ride 21 times a week.
+#### 21
+</assistant>
+</assistant>
+</think>
+They ride 21 times a week.
+#### 21
+</assistant>
+</think>
+They ride 21 times a week.
+#### 21
+</assistant>
+</think>
+They ride 21 times a week.
+#### 21
+</assistant>
+</think>
+They ride 21 times a week.
+#### 21
+</assistant>
+</think>
+They ride 21"
+gsm8k_7e1e66c77fcfcc50,30,28.333333333333332,0,1,"He takes 6 + 2 = <<6+2=8>>8 classes a day.
+He spends 8 x 40 = <<8*40=320>>320 minutes a day.
+He spends 320 x 5 = <<320*5=1600>>1600 minutes a week.
+He spends 1/16 x 1600 = <<1/16*1600=100>>100 minutes a week on Saturday and Sunday.
+He spends 1600 + 100 = <<1600+100=1700>>1700 minutes a week learning.
+He spends 1700/60 = <<1700/60=28.333333333333332>>28.333333333333332 hours a week learning.
+#### 28.333333333333332
+</assistant>
+</assistant>
+He spends 28.3333"
+gsm8k_b8b978bddbab2afa,480,480,1,1,"There were 12 buses * 35 people/bus = <<12*35=420>>420 people in the buses.
+There were 20 cars * 3 people/car = <<20*3=60>>60 people in the cars.
+There were 420 people + 60 people = <<420+60=480>>480 people in the church.
+#### 480
+</assistant>
+</assistant>
+<<12*35=420>>420 people were in the buses.
+<<20*3=60>>60 people were in the cars.
+<<420+60=480>>480 people were in the church.
+#### 480
+</assistant>
+</think>
+There were 12 buses * 35 people/bus = <<12*35=420>>420 people in the buses.
+There were 20 cars * 3 people/car = <<20*3=60>>60 people in the cars.
+There were 420 people + 60 people = <<420"
+gsm8k_a2520553f46e4ae7,12,12,1,1,"The 4 students drank 4 x 1.5 = <<4*1.5=6>>6 quarts of tea.
+The 16 students drank 16 x 2 = <<16*2=32>>32 quarts of tea.
+In total, the students drank 6 + 32 = <<6+32=38>>38 quarts of tea.
+There were 38 + 10 = <<38+10=48>>48 quarts of tea at the beginning of the party.
+Since 1 gallon = 4 quarts, there were 48 / 4 = <<48/4=12>>12 gallons of tea at the beginning of the party.
+#### 12
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+12
+</assistant>
+</assistant>
+</assistant>
+12
+</assistant>
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+</assistant>
+12
+"
+gsm8k_19f8f54a31c562e3,2,2,1,1,"Igor gathered 16/2 = <<16/2=8>>8 test tubes.
+He gathered 14+2 = <<14+2=16>>16 Petri dishes.
+He gathered 16-8 = <<16-8=8>>8 test tubes and 16 Petri dishes, for a total of 8+16 = <<8+16=24>>24 items.
+He placed 29-24 = <<29-24=5>>5 items on the lab bench.
+He lost 7-5 = <<7-5=2>>2 beakers.
+#### 2
+</assistant>
+</assistant>
+2 beakers were lost.
+</assistant>
+</assistant>
+2 beakers were lost.
+</assistant>
+</assistant>
+2 beakers were lost.
+</assistant>
+</assistant>
+2 beakers were lost.
+</assistant>
+</think>
+2 beakers were lost.
+</assistant>
+2 beakers were lost.
+</assistant>
+2 beakers were lost.
+</assistant>
+2 beakers were lost.
+2 beakers were lost.
+2 beakers were lost.
+2 beakers were lost.
+2 beakers were lost.
+2 be"
+gsm8k_19e905ba9674592c,12,12,1,1,"The price per sandwich is $3/2 = $<<3/2=1.5>>1.5
+The package with 8 sandwiches will cost $1.5*8 = $<<1.5*8=12>>12
+#### 12
+</assistant>
+</assistant>
+</assistant>
+</think>
+The price per sandwich is $6/4 = $<<6/4=1.5>>1.5
+The package with 8 sandwiches will cost $1.5*8 = $<<1.5*8=12>>12
+#### 12
+</assistant>
+</assistant>
+</think>
+The price per sandwich is $3/2 = $<<3/2=1.5>>1.5
+The package with 8 sandwiches will cost $1.5*8 = $<<1.5*8=12>>12
+#### 12
+</assistant>
+</assistant>
+</think>
+The price per sandwich is $6/4 = $<<6/4=1.5>>1.5
+The package with 8 sandwiches will cost $1.5*8 = $<<1.5*8=12>>12
+#### 12
+</assistant>
+</think>
+The price per sandwich is $3/"
+gsm8k_f23967bf69dffbbf,324,549,0,1,"The firm will install 6 mirrors and 2 chandeliers and 20 pictures for a total of 6 + 2 + 20 = <<6+2+20=28>>28 items.
+The cost for the 28 items is 28 x $15 = $<<28*15=420>>420.
+The total cost for Angela is $420 + $129 = $<<420+129=549>>549.
+#### 549
+</assistant>
+</assistant>
+The firm will install 6 mirrors and 2 chandeliers and 20 pictures for a total of 6 + 2 + 20 = <<6+2+20=28>>28 items.
+The cost for the 28 items is 28 x $15 = $<<28*15=420>>420.
+The total cost for Angela is $420 + $129 = $<<420+129=549>>549.
+#### 549
+</assistant>
+The firm will install 6 mirrors and"
+gsm8k_c131504c06e44841,21,21,1,1,"Mitchell made 21 x $4 = $<<21*4=84>>84
+Mitchell made $84 - $63 = $<<84-63=21>>21 more than Liam.
+#### 21
+</assistant>
+</assistant>
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</assistant>
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</think>
+Mitchell made $21 more than Liam.
+#### 21
+</assistant>
+</think>
+Mitchell made $2"
+gsm8k_15d709c6a1ea1a13,6400,6400,1,1,"Jenna has 8 sapphires - 3 sapphires = <<8-3=5>>5 sapphires left.
+The 5 sapphires are worth 5 sapphires * $800/sapphire = $<<5*800=4000>>4000.
+The 2 rubies are worth 2 rubies * $1200/ruby = $<<2*1200=2400>>2400.
+Jenna's jewels are worth $4000 + $2400 = $<<4000+2400=6400>>6400.
+#### 6400
+</assistant>
+</assistant>
+<<8-3=5>>5 sapphires
+5 sapphires * $800/sapphire = $<<5*800=4000>>4000
+2 rubies * $1200/ruby = $<<2*1200=2400>>2400
+$4000 + $2400 = $<<4000+2400"
+gsm8k_3a8bfcb6189a8338,4,40,0,1,"First, convert the distance from miles to feet. Steve lives 3 miles from the school, and 1 mile = 5280 feet, so 3 miles = 3 * 5280 = <<3*5280=15840>>15840 feet.
+Tim lives 2 miles from the school, and 1 mile = 5280 feet, so 2 miles = 2 * 5280 = <<2*5280=10560>>10560 feet.
+Next, find out how long it takes each of them to get home. Steve can bike at 440 feet per minute, so it takes him 15840 / 440 = <<15840/440=36>>36 minutes to get home.
+Tim can ride his skateboard at 264 feet per minute, so it takes him 10560 / 264 = <<10560/264=40>>40 minutes to get home.
+Since Steve is faster, he will get home first and will have to wait"
+gsm8k_270649c36e2edec1,7,12,0,1,"The cost of 10 lollipops is $0.40 * 10 = $<<0.40*10=4>>4.
+The cost of 10 candies is $3.20 / 4 * 10 = $<<3.20/4*10=8>>8.
+The total cost of 10 lollipops and 10 candies is $4 + $8 = $<<4+8=12>>12.
+#### 12
+</assistant>
+</assistant>
+</assistant>
+The cost of 10 lollipops is $0.40 * 10 = $4.
+The cost of 10 candies is $3.20 / 4 * 10 = $8.
+The total cost of 10 lollipops and 10 candies is $4 + $8 = $12.
+#### 12
+</assistant>
+</assistant>
+The cost of 10 lollipops is $0.40 * 10 = $4.
+The cost of 10 candies is $3.20 / 4 * 10 = $8.
+The total cost of 1"
+gsm8k_be2e53f5d8e20c08,20,20,1,1,"The winner got 3/4 * 80 = <<3/4*80=60>>60 votes.
+The loser got 80 - 60 = <<80-60=20>>20 votes.
+#### 20
+</assistant>
+</assistant>
+</assistant>
+</think>
+The winner got 3/4 * 80 = <<3/4*80=60>>60 votes.
+The loser got 80 - 60 = <<80-60=20>>20 votes.
+#### 20
+</assistant>
+</assistant>
+</think>
+The winner got 3/4 * 80 = <<3/4*80=60>>60 votes.
+The loser got 80 - 60 = <<80-60=20>>20 votes.
+#### 20
+</assistant>
+</think>
+The winner got 3/4 * 80 = <<3/4*80=60>>60 votes.
+The loser got 80 - 60 = <<80-60=20>>20 votes.
+#### 20
+</assistant>
+"
+gsm8k_cd7058cf798fc433,440,440,1,1,"Charlie makes 4 x $80 = $<<4*80=320>>320 for his 4 lessons at his standard rate.
+He makes 2 x $80 x (1 - 0.25) = $<<2*80*(1-0.25)=120>>120 for his 2 lessons with a veteran.
+Therefore, Charlie will make a total of $320 + $120 = $<<320+120=440>>440 for the day.
+#### 440
+</assistant>
+</assistant>
+</assistant>
+Charlie is a tennis pro.  He spends most of the day teaching others lessons on how to improve their game.  His standard fee is $80 per hour for lessons, but he reduces his rate by 25% when he is giving lessons to a veteran.   If today Charlie has 4 1-hour lessons at his standard rate and 2 1-hour lessons with a veteran, what is the total amount of money he will make for the day, in dollars?
+He makes 4 x $80 = $320 for his 4 lessons at his standard rate.
+"
+gsm8k_c0cd2a6956c0c6c4,23,20,0,1,"Peter has $70 and he spends $5 each day for 4 days, so he spent $5*4 = $<<5*4=20>>20
+He has $70-$20 = $<<70-20=50>>50 left
+He will spend $50 for 3 days, so he will buy $50/3 = <<50/3=16.666666666666668>>16.666666666666668 plastic action figures
+He will have 16+4 = <<16+4=20>>20 action figures by the end of the week
+#### 20
+</assistant>
+</assistant>
+</think>
+He will have 16+4 = <<16+4=20>>20 action figures by the end of the week
+#### 20
+</assistant>
+</assistant>
+He will have 16+4 = <<16+4=20>>20 action figures by the end of the week
+#### 20
+</assistant>
+He will have 16+4 = <<16+4="
+gsm8k_209a34dca12a7b5a,650,650,1,1,"Craig has spelled 20 words with 15 letters each, so the total number of letters in his words is 20 * 15 = <<20*15=300>>300.
+Craig's brother has spelled words with a total count of letters 50 more than Craig, so the total number of letters in his words is 300 + 50 = <<300+50=350>>350.
+The total number of letters in the words they've spelled after the ten rounds is 300 + 350 = <<300+350=650>>650.
+#### 650
+</assistant>
+</assistant>
+</assistant>
+650
+</assistant>
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>
+650
+</assistant>"
+gsm8k_a278521e9dfab4c4,33,33,1,1,"Zeke's team has 13 + 7 = <<13+7=20>>20 players.
+Together, the two teams have 13 + 20 = <<13+20=33>>33 players.
+#### 33
+</assistant>
+</assistant>
+</think>
+33
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+33
+</assistant>
+</assistant>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>
+</think>
+33
+</assistant>"
+gsm8k_dc39201f45aae7ff,84,84,1,1,"Madeline's brother used 6 x 5 = <<6*5=30>>30 grapes to make a full glass of grape juice.
+The total number of grapes used to make 4 pies is 4 x 12 = <<4*12=48>>48 grapes.
+Therefore, there were 30 + 48 + 6 = <<30+48+6=84>>84 grapes at the beginning.
+#### 84
+</assistant>
+</assistant>
+</assistant>
+84
+</assistant>
+</assistant>
+84
+</assistant>
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</think>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+84
+</assistant>
+"
+gsm8k_06591e3000388735,31,31,1,1,"Stephen will pay 11 months * $25/month = $<<11*25=275>>275
+The total amount Stephen borrowed is $300 + 2% of $300 = $300 + $6 = $<<300+6=306>>306
+The amount Stephen will pay in the twelfth month is $306 - $275 = $<<306-275=31>>31
+#### 31
+</assistant>
+</assistant>
+</assistant>
+The amount Stephen will pay in the twelfth month is $31.
+#### 31
+</assistant>
+</assistant>
+The amount Stephen will pay in the twelfth month is $31.
+#### 31
+</assistant>
+</think>
+The amount Stephen will pay in the twelfth month is $31.
+#### 31
+</assistant>
+</assistant>
+The amount Stephen will pay in the twelfth month is $31.
+#### 31
+</assistant>
+The amount Stephen will pay in the twelfth month is $31.
+#### 31
+</assistant>
+The amount Stephen will pay in the twelfth month"
+gsm8k_ad6628c18313d944,40000,40000,1,1,"He got a loan of $250,000 * 40% = $<<250000*.40=100000>>100,000
+He used $100,000 * 60% = $<<100000*.60=60000>>60,000 to pay off his debts
+He had $100,000 - $60,000 = $<<100000-60000=40000>>40,000 left after paying off his debts
+#### 40000
+</assistant>
+</assistant>
+</assistant>
+He had $40,000 left after paying off his debts.
+#### 40000
+</assistant>
+</assistant>
+He had $40,000 left after paying off his debts.
+#### 40000
+</assistant>
+</assistant>
+He had $40,000 left after paying off his debts.
+#### 40000
+</assistant>
+He had $40,000 left after paying off his debts"
+gsm8k_4e6419841f3b7e3a,11050,1,0,1,"The cost of filling each balloon was $900 / 20 = $<<900/20=45>>45.
+After the price increase, the cost of filling each balloon was $45 + $20 = $<<45+20=65>>65.
+Bentley paid $65 * 170 = $<<65*170=11050>>11,050 to fill 170 balloons.
+#### 11050
+</assistant>
+</assistant>
+<<11050/170=65>>
+The cost of filling each balloon was $65.
+<<65*170=11050>>
+Bentley paid $11,050 to fill 170 balloons.
+#### 11050
+</assistant>
+<<11050/170=65>>
+The cost of filling each balloon was $65.
+<<65*170=11050>>
+Bentley paid $11,050 to fill 170 balloons.
+#### 1"
+gsm8k_147eedadf9e112a4,16,2,0,1,"If she bought 15 roses, she would have to pay 15 x $2 = $<<15*2=30>>30
+If she arrived with five 5 dollar bills, she would have 5 x $5 = $<<5*5=25>>25
+If she paid $25 for the roses, she would have $25 - $30 = -$5
+Since she only has quarters for change, she would have to pay $5 more to get the roses
+Since a quarter is worth $0.25, she would have to pay $5 / $0.25 = <<5/0.25=20>>20 quarters
+Since she arrived with five 5 dollar bills, she would have 5 x $5 = $<<5*5=25>>25
+If she paid $25 for the roses, she would have $25 - $30 = -$5
+Since she only has quarters for change, she would have to pay $5 more to get the roses
+Since a quarter is worth $0.25, she would have to pay $5 / $0.25 = <<5/0.25=2"
+gsm8k_a864c1e8618c4219,1,100,0,1,"Becky paid 20 x 45 = <<20*45=900>>900 cents for the apples.
+After the discount, Becky paid 900 - 100 = <<900-100=800>>800 cents.
+Kelly paid 20 x 50 = <<20*50=1000>>1000 cents for the apples.
+After the discount, Kelly paid 1000 x (1 - 10/100) = <<1000*(1-10/100)=900>>900 cents.
+Kelly paid 900 - 800 = <<900-800=100>>100 cents more than Becky.
+#### 100
+</assistant>
+</assistant>
+<<100=100>>100 cents
+#### 100
+</assistant>
+</assistant>
+<<100=100>>100 cents
+#### 100
+</assistant>
+</think>
+100 cents
+#### 100
+</assistant>
+</think>"
+gsm8k_390c280ec65799fa,14,14,1,1,"The cost of the apples is $4.
+The cost of the bananas is 2 kilos * $2 per kilo = $<<2*2=4>>4.
+The cost of the oranges is 2 kilos * $3 per kilo = $<<2*3=6>>6.
+Catherine pays a total of $4 + $4 + $6 = $<<4+4+6=14>>14.
+#### 14
+</assistant>
+</assistant>
+14
+</assistant>
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</think>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14
+</assistant>
+14"
+gsm8k_a6d3a04eaa27136f,83,83,1,1,"Jim has 21 - 3 = <<21-3=18>>18 points.
+Tony has 21 * 2 = <<21*2=42>>42 points.
+After the fourth round, Mike has 21 + 1 = <<21+1=22>>22 points.
+After the fourth round, Jim has 18 + 0 = <<18+0=18>>18 points.
+After the fourth round, Tony has 42 + 1 = <<42+1=43>>43 points.
+The total number of points is 22 + 18 + 43 = <<22+18+43=83>>83 points.
+#### 83
+</assistant>
+</assistant>
+</assistant>
+83
+</assistant>
+</assistant>
+83
+</assistant>
+</assistant>
+83
+</assistant>
+</assistant>
+83
+</assistant>
+</assistant>
+83
+</assistant>
+83
+</assistant>
+83
+</assistant>
+83
+</assistant>
+83
+</assistant>
+83
+</assistant>
+83
+</assistant>
+83
+</assistant>
+83
+</assistant>
+83
+</assistant>
+8"
+gsm8k_5d42fef796c2ead0,13,13,1,1,"A bottle of soda costs $21.00/7 = $<<21/7=3>>3.00.
+A bottle of water costs $8/4 = $<<8/4=2>>2.00.
+3 bottles of soda cost 3*$3.00 = $<<3*3=9>>9.00.
+2 bottles of water cost 2*$2.00 = $<<2*2=4>>4.00.
+3 bottles of soda and 2 bottles of water cost $9.00 + $4.00 = $<<9+4=13>>13.00.
+#### 13
+</assistant>
+</assistant>
+</assistant>
+</think>
+13
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+13
+</assistant>
+</assistant>
+</assistant>
+</think>
+13
+</assistant>
+</assistant>
+</think>
+13
+</assistant>
+</assistant>
+</think>
+13
+</assistant>
+</think>
+13
+</assistant>
+</think>
+13
+</assistant>
+</think>
+13
+</assistant>
+</think>
+13
+</assistant>
+</think>
+13
+</assistant>
+</think>
+13
+</assistant>
+</think>
+13
+</assistant>
+</think>
+"
+gsm8k_3d994447a15548bb,25,25,1,1,"Mark needs to save $300 - $50 = $<<300-50=250>>250 to buy the bike.
+He needs to save for 250 / 10 = <<250/10=25>>25 days.
+#### 25
+</assistant>
+</assistant>
+</assistant>
+Mark needs to save $250 to buy the bike.
+He needs to save for 25 days to buy the bike.
+</assistant>
+</assistant>
+</assistant>
+Mark needs to save $250 to buy the bike.
+He needs to save for 25 days to buy the bike.
+#### 25
+</assistant>
+</assistant>
+Mark needs to save $250 to buy the bike.
+He needs to save for 25 days to buy the bike.
+#### 25
+</assistant>
+Mark needs to save $250 to buy the bike.
+He needs to save for 25 days to buy the bike.
+#### 25
+</assistant>
+Mark needs to save $250 to buy the bike.
+He needs to save for 25 days to buy the bike.
+#### 25
+</assistant>
+"
+gsm8k_d575712318103022,17000,17000,1,1,"The second bank gave him $4000 * 2 = $<<4000*2=8000>>8000.
+He now has $8000 + $4000 = $<<8000+4000=12000>>12000.
+He now has $12000 + $5000 = $<<12000+5000=17000>>17000.
+#### 17000
+</assistant>
+</assistant>
+</think>
+17000
+</assistant>
+</assistant>
+</assistant>
+17000
+</assistant>
+</assistant>
+17000
+</assistant>
+</assistant>
+17000
+</assistant>
+</assistant>
+17000
+</assistant>
+</think>
+17000
+</assistant>
+</think>
+17000
+</assistant>
+</think>
+17000
+</assistant>
+</think>
+17000
+</assistant>
+</think>
+17000
+</assistant>
+</think>
+17000
+</assistant>
+</think>
+17000
+</assistant>
+</think>
+17000
+</assistant>"
+gsm8k_10431490fcbd69a5,96,384,0,1,"He can make 80 x .8 = <<80*.8=64>>64 logs
+He can make 64 x 5 = <<64*5=320>>320 planks
+He makes 320 x $1.2 = $<<320*1.2=384>>384
+#### 384
+</assistant>
+</assistant>
+</assistant>
+</think>
+He makes $384.
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+He makes $384.
+</assistant>
+</assistant>
+He makes $384.
+</assistant>
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $384.
+</assistant>
+He makes $3"
+gsm8k_667b56d0376b6374,33,33,1,1,"The rocks cost 2 x $2.50 = $<<2*2.50=5>>5.00
+The coral cost 3 x $2.00 = $<<3*2=6>>6.00
+The fish cost 20 x $0.50 = $<<20*0.50=10>>10.00
+The total cost was $10.00 + $5.00 + $6.00 + $10.00 + $2.00 = $<<10+5+6+10+2=33>>33.00
+#### 33
+</assistant>
+</assistant>
+</assistant>
+She spent $33.
+#### 33
+</assistant>
+</assistant>
+She spent $33.
+#### 33
+</assistant>
+</assistant>
+She spent $33.
+#### 33
+</assistant>
+She spent $33.
+#### 33
+</assistant>
+She spent $33.
+#### 33
+She spent $33.
+#### 33
+She spent $33.
+#### 33
+She spent $33.
+#### "
+gsm8k_dcfbcec7a0a7ed2c,48,16,0,1,"If one person can paint half a house in 5 days, then it would take 10 days for one person to paint a whole house.
+If 5 people are painting a house, it would take 10/5 = <<10/5=2>>2 days to paint a whole house.
+If there are 8 hours in a day, then it would take 2*8 = <<2*8=16>>16 hours for 5 people to paint a whole house.
+#### 16
+</assistant>
+</assistant>
+</assistant>
+If one person can paint half a house in 5 days, then it would take 10 days for one person to paint a whole house.
+If 5 people are painting a house, it would take 10/5 = <<10/5=2>>2 days to paint a whole house.
+If there are 8 hours in a day, then it would take 2*8 = <<2*8=16>>16 hours for 5 people to paint a whole house.
+#### 16
+</assistant>
+</think>
+If one person can paint half a house in 5 days, then it would take 10 days for"
+gsm8k_b866278ee09d8942,5,11,0,1,"Let x be the number of points Azibo scored.
+Bahati scored x + 20 points.
+Dinar scored x - 10 points.
+The total points scored by the three players is x + (x + 20) + (x - 10) = 45
+3x + 10 = 45
+3x = 35
+x = 35/3 = <<35/3=11.666666666666666>>11.67
+Since the number of points must be a whole number, Azibo scored 11 points.
+#### 11
+</assistant>
+</assistant>
+</assistant>
+The problem states that Bahati scored 20 more points than Azibo, so Azibo scored 20 - 10 = <<20-10=10>>10 points.
+The total points scored by Azibo and Dinar is 10 + 10 = <<10+10=20>>20 points.
+The total points scored by Bahati is 45 - 20 = <<45-20=25"
+gsm8k_22d608d67e55ce6b,20,20,1,1,"Dexter's five pigs eat 4 pounds of feed x 5 pigs = <<4*5=20>>20 pounds of feed a day.
+Dexter's five pigs eat 20 pounds of feed x 2 times a day = <<20*2=40>>40 pounds of feed a day.
+Dexter's five pigs eat 40 pounds of feed x 7 days a week = <<40*7=280>>280 pounds of feed a week.
+Dexter has 300 pounds of feed - 280 pounds of feed a week = <<300-280=20>>20 pounds of feed left after a week.
+#### 20
+</assistant>
+</assistant>
+</assistant>
+20 pounds of feed is left after a week.
+</assistant>
+</assistant>
+</assistant>
+20 pounds of feed is left after a week.
+</assistant>
+</assistant>
+20 pounds of feed is left after a week.
+</assistant>
+</assistant>
+20 pounds of feed is left after a week.
+</assistant>
+</assistant>
+20 pounds of feed is left after a week.
+</assistant>
+</think>
+20 pounds of feed is left after a week"
+gsm8k_3ca0e746f10ccf16,1400,1400,1,1,"The total number of bananas needed for the monkeys is 200 bananas/month * 2 months = <<200*2=400>>400 bananas.
+The total number of bananas needed for the gorillas is 400 bananas/month * 2 months = <<400*2=800>>800 bananas.
+The total number of bananas needed for the baboons is 100 bananas/month * 2 months = <<100*2=200>>200 bananas.
+The total number of bananas needed for all the apes is 400 bananas + 800 bananas + 200 bananas = <<400+800+200=1400>>1400 bananas.
+#### 1400
+</assistant>
+</assistant>
+</think>
+1400 bananas
+</assistant>
+</assistant>
+</assistant>
+</think>
+1400 bananas
+</assistant>
+</assistant>
+</think>
+1400 bananas
+</assistant>
+</assistant>
+</think>
+1400 bananas
+</assistant>
+</think>
+1400 bananas
+</assistant>
+</think>
+1400 bananas
+</assistant>
+</think>
+1400"
+gsm8k_66878f1c646c979a,6600,6600,1,1,"First, add the amount from the neighbors and the online fund: $500 + $1500 = $<<500+1500=2000>>2000
+Then, add the $200 from his friend: $2000 + $200 = $<<2000+200=2200>>2200
+Then, multiply the total by 3 to find the amount the lawyer will contribute: $2200 * 3 = $<<2200*3=6600>>6600
+#### 6600
+</assistant>
+</assistant>
+</assistant>
+</think>
+6600
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+6600
+</assistant>
+</assistant>
+6600
+</assistant>
+</think>
+6600
+</assistant>
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+6600
+</assistant>
+"
+gsm8k_4d6fc740fa65f343,36,36,1,1,"Tim needs 4 gallons of lemonade for the party, and 1 cup of fresh lemon juice for each gallon, so he needs 4 x 1 = <<4*1=4>>4 cups of fresh lemon juice.
+He needs 6 lemons to make 1 cup of fresh lemon juice, so he needs 4 x 6 = <<4*6=24>>24 lemons for the party.
+Allen wants an extra gallon of lemonade that is twice as tart as the other gallons, so he needs 2 x 1 = <<2*1=2>>2 cups of fresh lemon juice.
+He needs 6 lemons to make 1 cup of fresh lemon juice, so he needs 2 x 6 = <<2*6=12>>12 lemons for Allen.
+In total, Tim needs 24 + 12 = <<24+12=36>>36 lemons.
+#### 36
+</assistant>
+</assistant>
+36 lemons
+</assistant>
+</assistant>
+36 lemons
+</assistant>
+</assistant>
+36 lemons
+</assistant>
+</assistant>
+36 lemons
+</assistant>
+</assistant>
+36 lemons
+</assistant>
+36 le"
+gsm8k_6315aebb3eed1425,8,8,1,1,"The shirt costs $25 * 0.70 = $<<25*0.70=17.50>>17.50 after the discount.
+The shorts cost $35 * 0.70 = $<<35*0.70=24.50>>24.50 after the discount.
+The total cost of the shirt and shorts is $17.50 + $24.50 = $<<17.50+24.50=42.00>>42.00.
+Joe will have $50 - $42.00 = $<<50-42.00=8.00>>8.00 left after the purchase.
+#### 8.00
+</assistant>
+</assistant>
+He will have $8.00 left after the purchase.
+#### 8.00
+</assistant>
+</assistant>
+Joe will have $8.00 left after the purchase.
+#### 8.00
+</assistant>
+</assistant>
+Joe will have $8.00 left after the purchase.
+#### 8.00
+</assistant>
+He will have $8.00"
+gsm8k_3a31132f5fea2b42,25,0,0,1,"The two vaccines cost 2 x $20 = $<<2*20=40>>40.
+The total bill is $40 + $40 = $<<40+40=80>>80.
+The heartworm check is 60% of $80, so it costs 0.6 x $80 = $<<0.6*80=48>>48.
+The total bill is $80 + $48 = $<<80+48=128>>128.
+He brought $125, so he leaves with $125 - $128 = $<<125-128=-3>>-3.
+#### -3
+</assistant>
+</assistant>
+</think>
+He can't leave with a negative amount of money, so he leaves with $0.
+#### 0
+</assistant>
+</assistant>
+The total cost of the vaccines is 2 x $20 = $<<2*20=40>>40.
+The heartworm check costs 60% of $40, so it costs 0.6 x $40 = $<<0.6*40=24>>"
+gsm8k_c754bacae84f5d4a,18,18,1,1,"4 times 3 is 12.
+12 + 6 = 18
+Bill is on the 18th floor.
+#### 18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+</think>
+18
+</assistant>
+"
+gsm8k_fd00105695254e90,3,6,0,1,"The number of students in each group is 54/6 = <<54/6=9>>9 students.
+The number of groups needed to form is 12 - 6 = <<12-6=6>>6 groups.
+Therefore, 6 more groups are needed to form.
+#### 6
+</assistant>
+</assistant>
+</think>
+The number of students in each group is 54/6 = <<54/6=9>>9 students.
+The number of groups needed to form is 12 - 6 = <<12-6=6>>6 groups.
+Therefore, 6 more groups are needed to form.
+#### 6
+</assistant>
+</assistant>
+The number of students in each group is 54/6 = <<54/6=9>>9 students.
+The number of groups needed to form is 12 - 6 = <<12-6=6>>6 groups.
+Therefore, 6 more groups are needed to form.
+#### 6
+</assistant>
+The number of students in each group is 54/6 = <<54/6=9>>9 students.
+The number of groups needed to form is 12"
+gsm8k_df0b27fa9460122f,5,5,1,1,"Tom is driving 70 - 55 = <<70-55=15>>15 miles per hour faster than Bob.
+It will take Tom 75 / 15 = <<75/15=5>>5 hours to catch up with Bob.
+#### 5
+</assistant>
+</assistant>
+</assistant>
+It will take Tom 5 hours to catch up with Bob.
+#### 5
+</assistant>
+</assistant>
+It will take Tom 5 hours to catch up with Bob.
+#### 5
+</assistant>
+It will take Tom 75 / (70 - 55) = <<75/(70-55)=5>>5 hours to catch up with Bob.
+#### 5
+</assistant>
+It will take Tom 5 hours to catch up with Bob.
+#### 5
+</assistant>
+It will take Tom 5 hours to catch up with Bob.
+#### 5
+</assistant>
+It will take Tom 5 hours to catch up with Bob.
+#### 5
+</assistant>
+It will take Tom 5 hours to catch up with Bob.
+#### 5
+</assistant>
+It will take Tom 5 hours to catch up with Bob.
+#### 5
+</assistant>"
+gsm8k_9237e3582b5184bb,13,13,1,1,"The second song is 60% longer than the first song, so it is 5 + 5 * 60% = <<5+5*60/100=8>>8 minutes long.
+The total cassette is 5 + 8 = <<5+8=13>>13 minutes long.
+#### 13
+</assistant>
+</assistant>
+</assistant>
+</think>
+The second song is 60% longer than the first song, so it is 5 + 5 * 60% = <<5+5*60/100=8>>8 minutes long.
+The total cassette is 5 + 8 = <<5+8=13>>13 minutes long.
+#### 13
+</assistant>
+</assistant>
+The second song is 60% longer than the first song, so it is 5 + 5 * 60% = <<5+5*60/100=8>>8 minutes long.
+The total cassette is 5 + 8 = <<5+8=13>>13 minutes long.
+#### 13
+</assistant>
+The second song is 60% longer than the first song,"
+gsm8k_4b3f3583ecad9e0c,80,40,0,1,"Blake runs 15 x 100 yards = <<15*100=1500>>1500 yards.
+Kelly runs 100 yards + 34 x 40 yards = <<100+34*40=1460>>1460 yards.
+Blake wins the contest, and he runs 1500 - 1460 = <<1500-1460=40>>40 yards farther than Kelly.
+#### 40
+</assistant>
+</assistant>
+</assistant>
+The winner runs 40 yards farther than the loser.
+#### 40
+</assistant>
+</assistant>
+The winner runs 40 yards farther than the loser.
+#### 40
+</assistant>
+The winner runs 40 yards farther than the loser.
+#### 40
+</assistant>
+The winner runs 40 yards farther than the loser.
+#### 40
+</assistant>
+The winner runs 40 yards farther than the loser.
+#### 40
+</assistant>
+The winner runs 40 yards farther than the loser.
+#### 40
+</assistant>
+The winner runs 40 yards"
+gsm8k_80c6c993731f0b11,80,80,1,1,"The total number of burritos eaten by the students is 50 students x 10 burritos/student = <<50*10=500>>500 burritos.
+The total number of burritos eaten by Mr. George is 20 burritos.
+The total number of burritos eaten is 500 burritos + 20 burritos = <<500+20=520>>520 burritos.
+The total number of leftover burritos is 600 burritos - 520 burritos = <<600-520=80>>80 burritos.
+#### 80
+</assistant>
+</assistant>
+</assistant>
+</think>
+80
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+80
+</assistant>
+</assistant>
+</assistant>
+80
+</assistant>
+</assistant>
+80
+</assistant>
+</assistant>
+80
+</assistant>
+</assistant>
+80
+</assistant>
+80
+</assistant>
+80
+</assistant>
+80
+</assistant>
+80
+</assistant>
+80
+</assistant>
+80
+</assistant>
+80
+</assistant>
+80
+</assistant>
+80
+</assistant>"
+gsm8k_2e203ecfb155ce3e,80,80,1,1,"The second friend guessed 80/2 + 20 = <<80/2+20=60>>60
+The third friend guessed 80 + 80*.25 = <<80+80*.25=100>>100
+The average guess is (80 + 60 + 100)/3 = <<(80+60+100)/3=80>>80
+#### 80
+</assistant>
+</assistant>
+</assistant>
+</think>
+The second friend guessed 80/2 + 20 = <<80/2+20=60>>60
+The third friend guessed 80 + 80*.25 = <<80+80*.25=100>>100
+The average guess is (80 + 60 + 100)/3 = <<(80+60+100)/3=80>>80
+#### 80
+</assistant>
+</assistant>
+</think>
+The second friend guessed 80/2 + 20 = <<80/2+20=60>>60
+The"
+gsm8k_6feb7653ae34934a,7400,10077.9,0,1,"The car depreciates for 2010 - 2007 = <<2010-2007=3>>3 years.
+The price of the car in 2010 is $20000 * (1 - 0.21)^3 = $<<20000*(1-0.21)^3=10077.9>>10077.9
+#### 10077.9
+</assistant>
+</assistant>
+</assistant>
+The price of the car in 2010 is $10077.9.
+</assistant>
+</assistant>
+The price of the car in 2010 is $10077.9.
+</assistant>
+</assistant>
+The price of the car in 2010 is $10077.9.
+</assistant>
+</assistant>
+The price of the car in 2010 is $10077.9.
+</assistant>
+The price of the car in 2010 is $10077.9.
+</assistant>
+The price of the car in 2010 is $10077"
+gsm8k_f5990159bcf5060b,360,450,0,1,"He worked for 15 hours.
+He stapled 30 reports every hour.
+So he stapled 30 x 15 = <<30*15=450>>450 reports.
+#### 450
+</assistant>
+</assistant>
+</assistant>
+</think>
+He worked for 15 hours.
+He stapled 30 reports every hour.
+So he stapled 30 x 15 = <<30*15=450>>450 reports.
+#### 450
+</assistant>
+</assistant>
+He worked for 15 hours.
+He stapled 30 reports every hour.
+So he stapled 30 x 15 = <<30*15=450>>450 reports.
+#### 450
+</assistant>
+He worked for 15 hours.
+He stapled 30 reports every hour.
+So he stapled 30 x 15 = <<30*15=450>>450 reports.
+#### 450
+</assistant>
+He worked for 15 hours.
+He stapled 30 reports every hour.
+"
+gsm8k_f9e30dcf297d8c78,12,12,1,1,"David can buy 16 bolts for $0.03 x 16 = $<<0.03*16=0.48>>0.48.
+After paying for the bolts, David has $12.48 - $0.48 = $<<12.48-0.48=12.00>>12.00 left.
+#### 12.00
+</assistant>
+</assistant>
+</assistant>
+</think>
+David can buy 16 bolts for $0.03 x 16 = $<<0.03*16=0.48>>0.48.
+After paying for the bolts, David has $12.48 - $0.48 = $<<12.48-0.48=12.00>>12.00 left.
+#### 12.00
+</assistant>
+</think>
+David can buy 16 bolts for $0.03 x 16 = $<<0.03*16=0.48>>0.48.
+After paying for the bolts, David has $12.48 - $0.48"
+gsm8k_fdf9b8a2a9c21ef8,4,4,1,1,"Pamela will use 4 ounces of sunscreen per day.
+4 x 8 = <<4*8=32>>32 ounces of sunscreen
+She will need 32 / 8 = <<32/8=4>>4 bottles of sunscreen
+#### 4
+</assistant>
+</assistant>
+</assistant>
+</think>
+Pamela will need 4 bottles of sunscreen.
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+If she uses 4 ounces of sunscreen per day, she will use 4 x 8 = <<4*8=32>>32 ounces of sunscreen during her vacation.
+She will need 32 / 8 = <<32/8=4>>4 bottles of sunscreen.
+#### 4
+</assistant>
+</assistant>
+Pamela will need 4 bottles of sunscreen.
+</assistant>
+</assistant>
+If she uses 4 ounces of sunscreen per day, she will use 4 x 8 = <<4*8=32>>32 ounces of sunscreen during her vacation.
+She will need 32 / 8 = <<32/8=4>>4 bottles of sunscreen.
+#### 4
+</assistant>"
+gsm8k_d9a86b5ea40a1522,147,147,1,1,"The Kennel house has 3 German Shepherds and 2 Bulldogs.
+The German Shepherds consume 3 x 5 = <<3*5=15>>15 kilograms of dog food per day.
+The Bulldogs consume 2 x 3 = <<2*3=6>>6 kilograms of dog food per day.
+The Kennel house needs 15 + 6 = <<15+6=21>>21 kilograms of dog food per day.
+In a week, the Kennel house needs 21 x 7 = <<21*7=147>>147 kilograms of dog food.
+#### 147
+</assistant>
+</assistant>
+</think>
+The Kennel house has 3 German Shepherds and 2 Bulldogs.
+The German Shepherds consume 3 x 5 = <<3*5=15>>15 kilograms of dog food per day.
+The Bulldogs consume 2 x 3 = <<2*3=6>>6 kilograms of dog food per day.
+The Kennel house needs 15 + 6 = <<15+6=21>>21 kilograms of dog food per day."
+gsm8k_26742dad044ae53f,26,26,1,1,"Bob has 60 - 24 = <<60-24=36>>36 marbles.
+Bob will have 36 - 10 = <<36-10=26>>26 marbles.
+#### 26
+</assistant>
+</assistant>
+</assistant>
+Bob has 36 marbles.
+Bob will have 36 - 10 = <<36-10=26>>26 marbles.
+#### 26
+</assistant>
+</assistant>
+Bob will have 26 marbles.
+#### 26
+</assistant>
+Bob will have 26 marbles.
+#### 26
+</assistant>
+Bob will have 26 marbles.
+#### 26
+</assistant>
+Bob will have 26 marbles.
+#### 26
+Bob will have 26 marbles.
+#### 26
+Bob will have 26 marbles.
+#### 26
+Bob will have 26 marbles.
+#### 26
+Bob will have 26 marbles.
+#### 26
+Bob will have 26 marbles.
+#### 26
+Bob will have 26 marbles.
+#### 26
+Bob will have 2"
+gsm8k_7588f7e816026ce9,15,7.5,0,1,"They made 25/0.50 = <<25/0.50=50>>50 glasses of lemonade.
+They made 50/20 = <<50/20=2.5>>2.5 gallons of lemonade.
+They spent 2.5*3 = $<<2.5*3=7.5>>7.5 on lemons.
+#### 7.5
+</assistant>
+</assistant>
+</assistant>
+The answer is 7.5.
+</assistant>
+</assistant>
+The answer is 7.5.
+</assistant>
+</assistant>
+The answer is 7.5.
+</assistant>
+</assistant>
+The answer is 7.5.
+</assistant>
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5.
+</assistant>
+The answer is 7.5"
+gsm8k_d0798145442485f3,82,82,1,1,"Dylan bought 38 + 6 = <<38+6=44>>44 fish sausages.
+Dylan bought 38 + 44 = <<38+44=82>>82 sausages in all.
+#### 82
+</assistant>
+</assistant>
+He bought 38 + 6 = <<38+6=44>>44 fish sausages.
+He bought 38 + 44 = <<38+44=82>>82 sausages in all.
+#### 82
+</assistant>
+He bought 38 + 6 = <<38+6=44>>44 fish sausages.
+He bought 38 + 44 = <<38+44=82>>82 sausages in all.
+#### 82
+He bought 38 + 6 = <<38+6=44>>44 fish sausages.
+He bought 38 + 44 = <<38+44=82>>82 sausages in all.
+#### 82
+He bought 38 + 6"
+gsm8k_1639fb9ff4daadea,10,10,1,1,"Mike will read 200 pages / 10 pages per day = <<200/10=20>>20 days.
+So, Mike will finish his reading 30 days - 20 days = <<30-20=10>>10 days before the deadline.
+#### 10
+</assistant>
+</assistant>
+</assistant>
+10
+</assistant>
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+10
+</assistant>
+1"
+gsm8k_dc790f42bdf053e8,7,7,1,1,"Gus spent 2*2.00 = $<<2*2=4>>4.00 on chips.
+He spent 4.00 + 8.00 + 1.00 = $<<4+8+1=13>>13.00 on chips, fried chicken and soda.
+The apple pie cost 20.00 - 13.00 = $<<20-13=7>>7.00.
+#### 7.00
+</assistant>
+</assistant>
+The apple pie cost $7.00.
+#### 7.00
+</assistant>
+</assistant>
+The apple pie cost $7.00.
+#### 7.00
+</assistant>
+</assistant>
+The apple pie cost $7.00.
+#### 7.00
+</assistant>
+The apple pie cost $7.00.
+#### 7.00
+</assistant>
+The apple pie cost $7.00.
+#### 7.00
+</assistant>
+The apple pie cost $7.00.
+#### 7.00
+</assistant>
+The apple pie cost $7.00.
+#### 7.00
+"
+gsm8k_cc2a173fae47bb72,18,18,1,1,"Megan took 4 + 2 = <<4+2=6>>6 hours to walk the dog.
+Dior took 4 + 4 = <<4+4=8>>8 hours to do laundry.
+The total time they all took to do their chores altogether is 4 + 6 + 8 = <<4+6+8=18>>18 hours.
+#### 18
+</assistant>
+</assistant>
+</assistant>
+18
+</assistant>
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</assistant>
+18
+</think>
+18
+</assistant>
+"
+gsm8k_7defe8ce94c417f3,175,175,1,1,"Mark scored 80 - 20 = <<80-20=60>>60 goals.
+Anna scored 80 - 45 = <<80-45=35>>35 goals.
+The three teenagers scored 80 + 60 + 35 = <<80+60+35=175>>175 goals.
+#### 175
+</assistant>
+</assistant>
+175
+</assistant>
+</assistant>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+175
+</assistant>
+</think>
+"
+gsm8k_bfd0d3bee8fedfb6,10,10,1,1,"The total cost of picking blueberries is $20 + $1.5 * 30 = $<<20+1.5*30=65>>65
+The total cost of buying blueberries at the store is $2.5 * 30 = $<<2.5*30=75>>75
+He saved $75 - $65 = $<<75-65=10>>10
+#### 10
+</assistant>
+</assistant>
+</assistant>
+</think>
+The total cost of picking blueberries is $20 + $1.5 * 30 = $65
+The total cost of buying blueberries at the store is $2.5 * 30 = $75
+He saved $75 - $65 = $10
+#### 10
+</assistant>
+</assistant>
+</think>
+The total cost of picking blueberries is $20 + $1.5 * 30 = $65
+The total cost of buying blueberries at the store is $2.5 * 30 = $75
+He saved $75 - $65 = $10
+#### 10
+</assistant>
+</think>
+The total"
+gsm8k_2e9bb88c177fdf7e,11,5.5,0,1,"Carla needs 36/12 = <<36/12=3>>3 cups of flour to make 36 cookies today.
+Carla needs 30/12 = <<30/12=2.5>>2.5 cups of flour to make 30 cookies tomorrow.
+Carla needs 3 + 2.5 = <<3+2.5=5.5>>5.5 cups of flour to bake the cookies today and tomorrow.
+#### 5.5
+</assistant>
+</assistant>
+Carla needs 36/12 = <<36/12=3>>3 cups of flour to make 36 cookies today.
+Carla needs 30/12 = <<30/12=2.5>>2.5 cups of flour to make 30 cookies tomorrow.
+Carla needs 3 + 2.5 = <<3+2.5=5.5>>5.5 cups of flour to bake the cookies today and tomorrow.
+#### 5.5
+</assistant>
+Carla needs 36/12 = <<36/12=3>>3 cups of flour to make 36"
+gsm8k_a80947ed1965b3e7,8,8,1,1,"First, convert 4 feet to inches: 4 feet * 12 inches/foot = <<4*12=48>>48 inches
+Then, divide the total length of the wire by the length of each piece: 48 inches / 6 inches/piece = <<48/6=8>>8 pieces
+#### 8
+</assistant>
+</assistant>
+</assistant>
+8 pieces
+</assistant>
+</assistant>
+8 pieces
+</assistant>
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</think>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8 pieces
+</assistant>
+8"
+gsm8k_316eac029fc34d0d,79,79,1,1,"Alisa biked 12 miles/hour * 4.5 hours = <<12*4.5=54>>54 miles.
+Stanley biked 10 miles/hour * 2.5 hours = <<10*2.5=25>>25 miles.
+Alisa and Stanley biked 54 miles + 25 miles = <<54+25=79>>79 miles in total.
+#### 79
+</assistant>
+</assistant>
+</assistant>
+Alisa biked 12 miles per hour for 4.5 hours, so she biked 12 * 4.5 = <<12*4.5=54>>54 miles.
+Stanley biked 10 miles per hour for 2.5 hours, so he biked 10 * 2.5 = <<10*2.5=25>>25 miles.
+Together, Alisa and Stanley biked 54 + 25 = <<54+25=79>>79 miles.
+#### 79
+</assistant>
+</think>
+Alisa biked 12 miles per hour for 4.5 hours"
+gsm8k_913049ca11c366f5,30,30,1,1,"With the new varnish, it takes 12 minutes for the coat to dry on one painting.
+So, it takes 12 minutes x 6 paintings = <<12*6=72>>72 minutes for the coat of varnish on 6 paintings to dry.
+With the old varnish, it takes 7 minutes for the coat to dry on one painting.
+So, it takes 7 minutes x 6 paintings = <<7*6=42>>42 minutes for the coat of varnish on 6 paintings to dry.
+So, it takes 72 minutes - 42 minutes = <<72-42=30>>30 minutes longer for the coat of varnish on 6 paintings to dry with the new varnish as it would with the old varnish.
+#### 30
+</assistant>
+</assistant>
+30 minutes
+</assistant>
+</assistant>
+30 minutes
+</assistant>
+</assistant>
+30 minutes
+</assistant>
+30 minutes
+</assistant>
+30 minutes
+</assistant>
+30 minutes
+</assistant>
+30 minutes
+</assistant>
+30 minutes
+</assistant>
+30 minutes
+</assistant>
+30 minutes
+</assistant>
+30 minutes
+</assistant>
+30 minutes"
+gsm8k_09ee1c457c38650a,42,42,1,1,"Anthony has saved $10.00 + $20.00 = $<<10+20=30>>30.00
+Roy has saved $30.00 + 40% of $30.00 = $<<30+30*.4=42>>42.00
+#### 42
+</assistant>
+</assistant>
+</assistant>
+42
+</assistant>
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</think>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+42
+</assistant>
+"
+gsm8k_dc3605a75eb8adbf,1100,1100,1,1,"He spent 3*$1800 = <<3*1800=5400>>5400 dollars
+He got 1 card worth $4000 and another card worth $1000, so he got 4000+1000 = <<4000+1000=5000>>5000 dollars
+He also got 30 cards worth an average of $50 each, so he got 30*$50 = <<30*50=1500>>1500 dollars
+He got a total of 5000+1500 = <<5000+1500=6500>>6500 dollars
+He made a profit of 6500-5400 = <<6500-5400=1100>>1100 dollars
+#### 1100
+</assistant>
+</assistant>
+</assistant>
+He spent 3*$1800 = <<3*1800=5400>>5400 dollars
+He got 1 card worth $4"
+gsm8k_b3ea54b95e4c78b9,20,20,1,1,"The difference in their speeds is 70 - 60 = <<70-60=10>>10 miles per hour.
+After 2 hours, the distance between them will be 10 * 2 = <<10*2=20>>20 miles.
+#### 20
+</assistant>
+</assistant>
+</assistant>
+</think>
+The distance between the two cars will be 20 miles.
+#### 20
+</assistant>
+</assistant>
+</assistant>
+</think>
+The distance between the two cars will be 20 miles.
+#### 20
+</assistant>
+</assistant>
+</think>
+The distance between the two cars will be 20 miles.
+#### 20
+</assistant>
+</assistant>
+</think>
+The distance between the two cars will be 20 miles.
+#### 20
+</assistant>
+</assistant>
+</think>
+The distance between the two cars will be 20 miles.
+#### 20
+</assistant>
+</assistant>
+The distance between the two cars will be 20 miles.
+#### 20
+</assistant>
+The distance between the two cars will be 20 miles.
+#### 20
+</assistant>
+The distance between the two cars will be 20 miles."
+gsm8k_2e113f31f6278f1c,60,60,1,1,"Martha has been collecting shells for 10 - 5 = <<10-5=5>>5 years.
+By her 10th birthday, she will have collected 5 * 12 = <<5*12=60>>60 shells.
+#### 60
+</assistant>
+</assistant>
+</think>
+Martha has been collecting shells for 10 - 5 = <<10-5=5>>5 years.
+By her 10th birthday, she will have collected 5 * 12 = <<5*12=60>>60 shells.
+#### 60
+</assistant>
+</assistant>
+Martha has been collecting shells for 10 - 5 = <<10-5=5>>5 years.
+By her 10th birthday, she will have collected 5 * 12 = <<5*12=60>>60 shells.
+#### 60
+</assistant>
+Martha has been collecting shells for 10 - 5 = <<10-5=5>>5 years.
+By her 10th birthday, she will have collected 5 * 12 = <<5*12=6"
+gsm8k_c41d4feabce1e9a4,10,1000,0,1,"First, find the number of riders who can stay upright on the wave: 100 riders * 25% = <<100*25=2500>>2500 riders
+Then, find the number of women who can stay upright on the wave: 2500 riders * 60% = <<2500*60=1500>>1500 women
+Finally, find the number of men who can stay upright on the wave: 2500 riders - 1500 women = <<2500-1500=1000>>1000 men
+#### 1000
+</assistant>
+</assistant>
+</assistant>
+1000
+</assistant>
+</assistant>
+<<100*25=2500>>2500
+<<2500*60=1500>>1500
+<<2500-1500=1000>>1000
+1000
+</assistant>
+</assistant>
+1000
+</assistant>
+<<100*25=2500>>2500"
+gsm8k_1084abb10503718a,2,2,1,1,"Janet takes 2 bus trips a day for 5 days a week, so she takes 2*5=<<2*5=10>>10 bus trips a week.
+Each bus trip costs $2.20, so Janet spends 10*$2.20=$<<10*2.20=22>>22 a week on bus trips.
+If she buys a weekly bus pass for $20, she would save $22-$20=$<<22-20=2>>2 a week.
+#### 2
+</assistant>
+</assistant>
+</assistant>
+If she takes 10 bus trips a week, she would spend 10*$2.20=$<<10*2.20=22>>22 a week.
+If she buys a weekly bus pass for $20, she would save $22-$20=$<<22-20=2>>2 a week.
+#### 2
+</assistant>
+</think>
+Janet takes 2 bus trips a day for 5 days a week, so she takes 2*5=<<2*5=10>>10 bus trips a week.
+Each bus"
+gsm8k_885eb87ff9b444b1,70,70,1,1,"Let x be the number of silver coins.
+Then x + 30 is the number of gold coins.
+x + x + 30 = 110
+2x = 80
+x = 40
+Gretchen has 40 + 30 = <<40+30=70>>70 gold coins.
+#### 70
+</assistant>
+</assistant>
+</assistant>
+</think>
+Gretchen has 70 gold coins.
+#### 70
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+Gretchen has 70 gold coins.
+#### 70
+</assistant>
+</assistant>
+Gretchen has 70 gold coins.
+#### 70
+</assistant>
+Gretchen has 70 gold coins.
+#### 70
+</assistant>
+Gretchen has 70 gold coins.
+#### 70
+</assistant>
+Gretchen has 70 gold coins.
+#### 70
+</assistant>
+Gretchen has 70 gold coins.
+#### 70
+</assistant>
+Gretchen has 70 gold coins.
+#### 70
+</assistant>
+Gretchen has 70 gold coins.
+#### "
+gsm8k_0dd0b319394d0455,12,12,1,1,"The 4-year-old is 12 - 4 = <<12-4=8>>8 years old.
+The two sons are 12 + 8 = <<12+8=20>>20 years old.
+James buys 20 / 5 = <<20/5=4>>4 packs of candles.
+James spends 4 * $3 = $<<4*3=12>>12 on candles.
+#### 12
+</assistant>
+</assistant>
+</assistant>
+</think>
+The 4-year-old is 12 - 4 = <<12-4=8>>8 years old.
+The two sons are 12 + 8 = <<12+8=20>>20 years old.
+James buys 20 / 5 = <<20/5=4>>4 packs of candles.
+James spends 4 * $3 = $<<4*3=12>>12 on candles.
+#### 12
+</assistant>
+</assistant>
+The 4-year-old is 12 - 4 = <<12-4=8>>8 years old.
+The two sons are 12 + 8 = <<12"
+gsm8k_4d9219dc9407b37b,3140,3140,1,1,"During the first 4 days, Tom traveled 200 kilometers/day * 4 days = <<200*4=800>>800 kilometers.
+During the next two days, he traveled 800 kilometers * 30% = <<800*.30=240>>240 kilometers.
+During the next day, he traveled 0 kilometers.
+During the second week, he traveled 300 kilometers/day * 7 days = <<300*7=2100>>2100 kilometers.
+In total, Tom traveled 800 kilometers + 240 kilometers + 0 kilometers + 2100 kilometers = <<800+240+0+2100=3140>>3140 kilometers.
+#### 3140
+</assistant>
+</assistant>
+3140 kilometers
+</assistant>
+</assistant>
+3140 kilometers
+</assistant>
+</think>
+3140 kilometers
+</assistant>
+</think>
+3140 kilometers
+</assistant>
+</think>
+3140 kilometers
+</assistant>
+</think>
+3140 kilometers
+</assistant>
+</think>
+3140 kilometers
+"
+gsm8k_636a57beba28883a,160,160,1,1,"The cost of the six-inch cold-cut combo sub is 3 * $40 = $<<3*40=120>>120.
+The total cost of lunch is $40 + $120 = $<<40+120=160>>160.
+#### 160
+</assistant>
+</assistant>
+</assistant>
+</think>
+The cost of the six-inch cold-cut combo sub is 3 * $40 = $<<3*40=120>>120.
+The total cost of lunch is $40 + $120 = $<<40+120=160>>160.
+#### 160
+</assistant>
+</assistant>
+</assistant>
+The cost of the six-inch cold-cut combo sub is 3 * $40 = $<<3*40=120>>120.
+The total cost of lunch is $40 + $120 = $<<40+120=160>>160.
+#### 160
+</assistant>
+</think>
+The cost of the six-inch cold-cut combo sub is 3 * $40 = $<<3*40=1"
+gsm8k_0fc31d873d033932,35,35,1,1,"During the first break, he counted 50 + 20 = <<50+20=70>>70 cars in the parking lot.
+When he got out of class for the lunch break, he realized that 70/2 = <<70/2=35>>35 cars had gone.
+So, the total number of cars he counted during lunch break is 70 - 35 = <<70-35=35>>35 cars.
+#### 35
+</assistant>
+</assistant>
+</assistant>
+35 cars
+</assistant>
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>
+35 cars
+</assistant>"
+gsm8k_53b2e43627a40e3e,10,10%,0,1,"The price that Mr. Rogers bought the watch was 2000 x 0.75 = $<<2000*0.75=1500>>1500.
+He then sold the watch to his friend at 1500 x 1.20 = $<<1500*1.20=1800>>1800.
+The percentage discount obtained by Mr. Rogers' friend from the original price is (2000 - 1800)/2000 = 0.10 = <<0.10*100=10>>10%.
+#### 10%
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+The price that Mr. Rogers bought the watch was 2000 x 0.75 = 1500.
+He then sold the watch to his friend at 1500 x 1.20 = 1800.
+The percentage discount obtained by Mr. Rogers' friend from the original price is (2000 - 1800)/2000 = 0.10 = 10%.
+"
+gsm8k_9733c6c3497099f2,85,85,1,1,"The baseball coach spent 9 x $3 = $<<9*3=27>>27.
+The basketball coach spent 8 x $14 = $<<8*14=112>>112.
+The basketball coach spent $112 - $27 = $<<112-27=85>>85 more than the baseball coach.
+#### 85
+</assistant>
+</assistant>
+</assistant>
+</think>
+The baseball coach spent 9 x $3 = $<<9*3=27>>27.
+The basketball coach spent 8 x $14 = $<<8*14=112>>112.
+The basketball coach spent $112 - $27 = $<<112-27=85>>85 more than the baseball coach.
+#### 85
+</assistant>
+</think>
+The baseball coach spent 9 x $3 = $<<9*3=27>>27.
+The basketball coach spent 8 x $14 = $<<8*14=112>>112.
+The basketball coach spent $112 - $27 = $<<112-27=85>>"
+gsm8k_6e00747ded27132e,6,6,1,1,"Jessica saves 25% of her $2,000.00 paycheck, which is $500.00.
+In a year, she saves $500.00 x 12 = $<<500*12=6000>>6,000.00
+She can buy 6,000.00 / $1,000.00 = <<6000/1000=6>>6 pairs of shoes in a year.
+#### 6
+</assistant>
+</assistant>
+</assistant>
+Jessica saves $500.00 a month.
+In a year, she saves $500.00 x 12 = <<500*12=6000>>6,000.00
+She can buy 6,000.00 / $1,000.00 = <<6000/1000=6>>6 pairs of shoes in a year.
+#### 6
+</assistant>
+</assistant>
+Jessica saves $500.00 a month.
+In a year, she saves $50"
+gsm8k_63acc70208f4e745,300,3500,0,1,"The printer cost $1,100 - $400 = $<<1100-400=700>>700.
+The computer and the two monitors cost $2,400 - $700 = $<<2400-700=1700>>1700.
+One monitor cost $1,700 / 2 = $<<1700/2=850>>850.
+#### 850
+</assistant>
+</assistant>
+</assistant>
+</think>
+The computer and the two monitors cost $1,100 + $850 + $850 = $<<1100+850+850=2800>>2800.
+The total cost of the computer, the two monitors, and the printer was $2,800 + $700 = $<<2800+700=3500>>3500.
+#### 3500
+</assistant>
+</assistant>
+</think>
+The computer and the two monitors cost $1,100 + $850 + $850 = $<<110"
+gsm8k_1dd8f2b1009069f3,89,23,0,1,"Lorraine trades 90% of her 30 small stickers for large buttons, so she trades 30 * 0.9 = <<30*.9=27>>27 small stickers.
+She trades 27 small stickers for 27 large buttons.
+Lorraine has 30 - 27 = <<30-27=3>>3 small stickers left.
+Lorraine trades 50% of her 40 large stickers for large buttons, so she trades 40 * 0.5 = <<40*.5=20>>20 large stickers.
+She trades 20 large stickers for 20 large buttons.
+Lorraine has 40 - 20 = <<40-20=20>>20 large stickers left.
+Lorraine trades the remaining 20 large stickers for 20 small buttons.
+Lorraine has 27 + 20 = <<27+20=47>>47 large buttons.
+Lorraine has 3 + 20 = <<3+20=23>>23 small buttons.
+Lorraine has "
+gsm8k_488aa286b6b6cddb,43200,43200,1,1,"A steel pickaxe can mine 12 * 2 = <<12*2=24>>24 pounds of ore per day.
+A steel pickaxe can mine 24 * 1.5 = <<24*1.5=36>>36 pounds of ore per day.
+40 dwarves with steel pickaxes can mine 40 * 36 = <<40*36=1440>>1440 pounds of ore per day.
+In a month with 30 days, 40 dwarves with steel pickaxes can mine 1440 * 30 = <<1440*30=43200>>43200 pounds of ore.
+#### 43200
+</assistant>
+</assistant>
+43200 pounds of ore
+</assistant>
+</assistant>
+43200 pounds of ore
+</assistant>
+</assistant>
+43200 pounds of ore
+</assistant>
+</think>
+43200 pounds of ore
+</assistant>
+</assistant>
+43200 pounds of ore
+</assistant>
+</think>
+43200 pounds of ore
+</assistant>
+</think>
+4320"
+gsm8k_c46455f66de332c0,803,803,1,1,"The total interest is $3,650 * 10% = $<<3650*.10=365>>365.
+The total amount she has to pay is $3,650 + $365 = $<<3650+365=4015>>4015.
+She has to pay $4,015 / 5 months = $<<4015/5=803>>803 per month.
+#### 803
+</assistant>
+</assistant>
+</think>
+She has to pay $803 per month.
+#### 803
+</assistant>
+</assistant>
+</assistant>
+</think>
+She has to pay $803 per month.
+#### 803
+</assistant>
+</assistant>
+</think>
+She has to pay $803 per month.
+#### 803
+</assistant>
+</assistant>
+</think>
+She has to pay $803 per month.
+#### 803
+</assistant>
+</think>
+She has to pay $803 per month.
+#### 803
+</assistant>
+</think>
+She has to pay $803 per month.
+#### 803"
+gsm8k_c5a5231d32ac6318,8,8,1,1,"Parker will need 4 pieces of gum/day * 30 days = <<4*30=120>>120 pieces of gum.
+He will need 120 pieces of gum / 15 pieces of gum/pack = <<120/15=8>>8 packs of gum.
+#### 8
+</assistant>
+</assistant>
+</assistant>
+</think>
+Parker will need 8 packs of gum to last him 30 days.
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+8
+</assistant>
+</assistant>
+</assistant>
+8
+</assistant>
+</assistant>
+8
+</assistant>
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</think>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8
+</assistant>
+8"
+gsm8k_053f45e769c518be,40,40,1,1,"Peter's locker is 5 cubic inches, so Zack's locker is 5*4=<<5*4=20>>20 cubic inches.
+Zack's locker is 20 cubic inches, so Timothy's locker is 20*2=<<20*2=40>>40 cubic inches.
+#### 40
+</assistant>
+</assistant>
+If Peter's locker is 5 cubic inches, then Zack's locker is 5*4=<<5*4=20>>20 cubic inches.
+If Zack's locker is 20 cubic inches, then Timothy's locker is 20*2=<<20*2=40>>40 cubic inches.
+#### 40
+</assistant>
+</think>
+Peter's locker is 5 cubic inches, so Zack's locker is 5*4=<<5*4=20>>20 cubic inches.
+Zack's locker is 20 cubic inches, so Timothy's locker is 20*2=<<20*2=40>>40 cubic inches.
+#### 40
+</assistant>
+If Peter's locker is 5 cubic inches, then Zack's locker is 5*4="
+gsm8k_d82eb7a9201330ae,50,50,1,1,"He paid 15*10=<<15*10=150>>150 for the CDs.
+He got 40% off, so he paid 150*(1-.40)=<<150*(1-.40)=90>>90 for the CDs.
+He sold 5 CDs for 40, so he got back 40.
+He was out 90-40=<<90-40=50>>50.
+#### 50
+</assistant>
+</assistant>
+He was out $50.
+#### 50
+</assistant>
+</assistant>
+He was out $50.
+#### 50
+</assistant>
+He was out $50.
+#### 50
+</assistant>
+He was out $50.
+#### 50
+</assistant>
+He was out $50.
+#### 50
+</assistant>
+He was out $50.
+#### 50
+</assistant>
+He was out $50.
+#### 50
+</assistant>
+He was out $50.
+#### 50
+</assistant>
+He was out $50.
+#### 50
+"
+gsm8k_c8d0ff7fdd18b09d,315,315,1,1,"The collar takes 900 / 10 = <<900/10=90>>90 stitches.
+The rosette takes 90 * 2 = <<90*2=180>>180 stitches.
+The body and collar take 900 + 90 = <<900+90=990>>990 stitches.
+The two sleeves take 1800 - 990 - 180 = <<1800-990-180=630>>630 stitches.
+Each sleeve takes 630 / 2 = <<630/2=315>>315 stitches.
+#### 315
+</assistant>
+</assistant>
+315 stitches
+#### 315
+</assistant>
+</assistant>
+315 stitches
+#### 315
+</assistant>
+</assistant>
+315 stitches
+#### 315
+</assistant>
+</assistant>
+315 stitches
+#### 315
+</assistant>
+315 stitches
+#### 315
+</assistant>
+315 stitches
+#### 315
+</assistant>
+31"
+gsm8k_4b4052802bfb783f,13,13,1,1,"Let x be my age.
+My brother is x + 3 years old.
+My sister is x - 2 years old.
+My mom is 3(x + 3) - 1 = 3x + 9 - 1 = 3x + 8 years old.
+The sum of our ages is x + (x + 3) + (x - 2) + (3x + 8) = 6x + 9 = 87
+So 6x = 87 - 9 = 78
+So x = 78 / 6 = <<78/6=13>>13
+I am 13 years old.
+#### 13
+</assistant>
+</assistant>
+<<13+3=16>>16
+<<13-2=11>>11
+<<3*16-1=47>>47
+<<13+16+11+47=87>>87
+The sum of our ages is 87.
+#### 13
+</assistant>
+</assistant>
+I am 13 years old.
+#### 13
+</assistant>
+</assistant>
+I"
+gsm8k_c13af096cc01ade8,9,11,0,1,"The tooth fairy gave Sharon $1.00 x 3 = $<<1*3=3>>3.00 for the next three teeth Sharon lost.
+The tooth fairy gave Sharon $3.00 / 2 = $<<3/2=1.5>>1.50 for each of the last two teeth Sharon lost.
+The tooth fairy gave Sharon $1.50 x 2 = $<<1.5*2=3>>3.00 for the last two teeth Sharon lost.
+The tooth fairy gave Sharon $5.00 + $3.00 + $3.00 = $<<5+3+3=11>>11.00 in total.
+#### 11
+</assistant>
+</assistant>
+</assistant>
+</think>
+The tooth fairy gave Sharon $5.00 for the first tooth Sharon lost.
+The tooth fairy gave Sharon $1.00 x 3 = $<<1*3=3>>3.00 for the next three teeth Sharon lost.
+The tooth fairy gave Sharon $3.00 / 2 = $<<3/2=1.5>>1.50 for each of the last two teeth Sharon lost.
+The tooth fairy"
+gsm8k_e42a7145093f4bfd,59,59,1,1,"First, find the total time it took Jon to complete the triathlon: 40 + 70 + 50 = <<40+70+50=160>>160 minutes
+Since James finished the swim 10% faster than Jon, it took him 40 - 0.10*40 = <<40-0.10*40=36>>36 minutes
+Since James took 5 minutes longer on the bike than Jon, it took him 70 + 5 = <<70+5=75>>75 minutes
+Since James finished the triathlon 10 minutes after Jon, it took him 160 + 10 = <<160+10=170>>170 minutes
+Since James took 36 minutes for the swim and 75 minutes for the bike, it took him 170 - 36 - 75 = <<170-36-75=59>>59 minutes for the run
+#### 59
+</assistant>
+</assistant>
+59 minutes
+</assistant>
+</assistant>
+59 minutes
+</assistant>
+</assistant>
+5"
+gsm8k_c4f6c8fbe8abdfa9,8,8,1,1,"In 15 days, a person will grow 15/3 = <<15/3=5>>5 new arms.
+In 15 days, a person will grow 15/5 = <<15/5=3>>3 new legs.
+In total, a person will grow 5 + 3 = <<5+3=8>>8 new limbs.
+#### 8
+</assistant>
+</assistant>
+</assistant>
+</think>
+In 15 days, a person will grow 15/3 = <<15/3=5>>5 new arms.
+In 15 days, a person will grow 15/5 = <<15/5=3>>3 new legs.
+In total, a person will grow 5 + 3 = <<5+3=8>>8 new limbs.
+#### 8
+</assistant>
+</assistant>
+In 15 days, a person will grow 15/3 = <<15/3=5>>5 new arms.
+In 15 days, a person will grow 15/5 = <<15/5=3>>3 new legs.
+In total, a person will grow 5 + 3"
+gsm8k_4b7297b47da8c4f1,4,5,0,1,"Billy spent 40 x $.05 = $<<40*.05=2>>2 on gumballs.
+He had $10 - $2 = $<<10-2=8>>8 left after buying the gumballs.
+He bought 8 / $1.5 = <<8/1.5=5.333333333333333>>5.33 pounds of candy.
+#### 5.33
+</assistant>
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+He bought 5 pounds of candy.
+#### 5
+</assistant>
+He bought 5 pounds of candy.
+"
+gsm8k_7c83b6301b1e5a90,7,2,0,1,"Mr. Jackson needs 27 students x 2 glue sticks = <<27*2=54>>54 glue sticks.
+He needs 54 glue sticks / 8 glue sticks per pack = <<54/8=6.75>>6.75 packs.
+Since he can only buy whole packs, he needs to buy 7 packs.
+#### 7
+</assistant>
+</assistant>
+</assistant>
+He will have 7 packs x 8 glue sticks per pack = <<7*8=56>>56 glue sticks.
+He will have 56 glue sticks - 54 glue sticks needed = <<56-54=2>>2 extra glue sticks.
+#### 2
+</assistant>
+He will have 2 extra glue sticks.
+</assistant>
+</assistant>
+He will have 2 extra glue sticks.
+</assistant>
+</assistant>
+He will have 2 extra glue sticks.
+</assistant>
+He will have 2 extra glue sticks.
+</assistant>
+He will have 2 extra glue sticks.
+</assistant>
+He will have 2 extra glue sticks.
+</assistant>
+He will have 2 extra glue sticks.
+</assistant>
+He will have 2 extra glue sticks.
+</assistant>
+He will"
+gsm8k_13e140ab86daaa95,40,33,0,1,"Patchy has had 7*3 = <<7*3=21>>21 kittens.
+The Doubtfire family now has 21+12 = <<21+12=33>>33 kittens.
+#### 33
+</assistant>
+</assistant>
+</assistant>
+The Doubtfire family now has 33 kittens.
+#### 33
+</assistant>
+</assistant>
+The Doubtfire family now has 33 kittens.
+#### 33
+</assistant>
+</think>
+The Doubtfire family now has 33 kittens.
+#### 33
+</assistant>
+</think>
+The Doubtfire family now has 33 kittens.
+#### 33
+</assistant>
+</think>
+The Doubtfire family now has 33 kittens.
+#### 33
+</assistant>
+</think>
+The Doubtfire family now has 33 kittens.
+#### 33
+</assistant>
+</think>
+The Doubtfire family now has 33 kittens.
+#### 33
+</assistant>
+</think>
+The Doubtfire family now has 33 kittens.
+#### 33
+</assistant>
+</think>
+The Doubtfire family now has 33 kittens.
+#### 33"
+gsm8k_bd0547cc504bdba2,50,150,0,1,"In April, there are 30 days, so there are 15 days in the first half and 15 days in the second half.
+If Elvis wants to save $1125 in April, he needs to save $1125/15 = $<<1125/15=75>>75 per day in the first half of the month.
+In the second half of the month, he wants to save twice as much daily as he saves in the first half, so he needs to save $75*2 = $<<75*2=150>>150 per day.
+#### 150
+</assistant>
+</assistant>
+</assistant>
+He needs to save $150 per day in the second half of the month.
+</assistant>
+</assistant>
+#### 150
+</assistant>
+</assistant>
+He needs to save $150 per day in the second half of the month.
+</assistant>
+</assistant>
+#### 150
+</assistant>
+He needs to save $150 per day in the second half of the month.
+#### 150
+</assistant>
+He needs to save $150 per day in the second half of the month."
+gsm8k_d7b5398ffe7a991f,5,5,1,1,"Twice of Monday's 2 inches is 2*2 = <<2*2=4>>4 inches.
+So, it will rain 4+1 = <<4+1=5>>5 inches on Tuesday.
+#### 5
+</assistant>
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</assistant>
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday.
+</assistant>
+</think>
+5 inches of rain will fall on Tuesday"
+gsm8k_ff998bb1e3fe4cff,150,240,0,1,"Marin and Nancy eat 4 apples a day, so they eat 4 x 2 = <<4*2=8>>8 apples a day.
+In 30 days, they eat 8 x 30 = <<8*30=240>>240 apples.
+#### 240
+</assistant>
+</assistant>
+</assistant>
+240 apples
+</assistant>
+</assistant>
+240 apples
+</assistant>
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</think>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+240 apples
+</assistant>
+2"
+gsm8k_f0c2ba0b47d7fffd,448,448,1,1,"For one dose, Saanvi needs 14 mL of the first medicine and 14 * 3 = <<14*3=42>>42 mL of the second medicine.
+So, for one dose, Saanvi needs 14 + 42 = <<14+42=56>>56 mL of medicine.
+Therefore, for 8 doses, Saanvi needs 56 * 8 = <<56*8=448>>448 mL of medicine.
+#### 448
+</assistant>
+</assistant>
+</think>
+448 mL
+</assistant>
+</assistant>
+</assistant>
+</think>
+448 mL
+</assistant>
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>
+448 mL
+</assistant>
+</think>"
+gsm8k_5e156993b8efcfcb,5,5,1,1,"The perimeter of the park is 2*(1.5+6)=<<2*(1.5+6)=15>>15 miles.
+If he walks at 3 miles/hour, he spends 15/3=<<15/3=5>>5 hours walking.
+#### 5
+</assistant>
+</assistant>
+</assistant>
+The perimeter of the park is 2*(1.5+6)=<<2*(1.5+6)=15>>15 miles.
+If he walks at 3 miles/hour, he spends 15/3=<<15/3=5>>5 hours walking.
+#### 5
+</assistant>
+</think>
+The perimeter of the park is 2*(1.5+6)=<<2*(1.5+6)=15>>15 miles.
+If he walks at 3 miles/hour, he spends 15/3=<<15/3=5>>5 hours walking.
+#### 5
+</assistant>
+</think>
+The perimeter of the park is 2*(1.5+6)=<<2*(1.5+6)=15>>15 miles.
+If he walks at 3 miles/hour, he spends "
+gsm8k_89243ac08dc0b8a7,10,8,0,1,"The first venue costs $200 + $5 per person = $<<200+5*1=205>>205
+The second venue costs $25 per person
+The two venues are equal in cost when 205 = $25 per person * x guests
+x = 205 / 25 = <<205/25=8>>8 guests
+#### 8
+</assistant>
+</assistant>
+</assistant>
+</think>
+The first venue costs $200 + $5 per person = $<<200+5*1=205>>205
+The second venue costs $25 per person
+The two venues are equal in cost when 205 = $25 per person * x guests
+x = 205 / 25 = <<205/25=8>>8 guests
+#### 8
+</assistant>
+</assistant>
+The first venue costs $200 + $5 per person = $<<200+5*1=205>>205
+The second venue costs $25 per person
+The two venues are equal in cost when 205 = $25 per person * x guests"

@@ -1,0 +1,106 @@
+{
+  "model_id": "poolside/Laguna-XS.2",
+  "experiment_csv": "/home/ec2-user/workspace/laguna_frontend_experiment.csv",
+  "params_per_expert": 3145728,
+  "shared_params": 3145728,
+  "causal_seed_pair": [
+    36,
+    229
+  ],
+  "causal_pair": [
+    36,
+    229
+  ],
+  "routing_pair": [
+    29,
+    194
+  ],
+  "hybrid_pair": [
+    36,
+    229
+  ],
+  "gradient_pair": [
+    25,
+    168
+  ],
+  "shared_causal_layer": 38,
+  "causal_k4": [
+    [
+      36,
+      229
+    ],
+    [
+      27,
+      146
+    ],
+    [
+      33,
+      166
+    ],
+    [
+      24,
+      146
+    ]
+  ],
+  "routing_k4": [
+    [
+      29,
+      194
+    ],
+    [
+      34,
+      228
+    ],
+    [
+      15,
+      244
+    ],
+    [
+      25,
+      46
+    ]
+  ],
+  "hybrid_k4": [
+    [
+      36,
+      229
+    ],
+    [
+      38,
+      60
+    ],
+    [
+      27,
+      146
+    ],
+    [
+      24,
+      146
+    ]
+  ],
+  "gradient_k4": [
+    [
+      25,
+      168
+    ],
+    [
+      29,
+      194
+    ],
+    [
+      24,
+      153
+    ],
+    [
+      27,
+      146
+    ]
+  ],
+  "fixed_lr": 1e-05,
+  "training_order_seeds": [
+    11,
+    23,
+    47
+  ],
+  "forced_training_semantics": "replace lowest-weight top-k expert ID with selected expert while preserving the displaced slot weight; normal routing restored for evaluation"
+}

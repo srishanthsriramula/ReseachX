@@ -1,0 +1,28 @@
+{
+  "research-depth-controller": {
+    "PreInvocation": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/depth_injection.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "research-stop-gate": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/research_stop_gate.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

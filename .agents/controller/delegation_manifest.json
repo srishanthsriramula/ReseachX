@@ -1,0 +1,44 @@
+{
+  "purpose": "Adaptive research delegation plan",
+  "agent_roles": {
+    "theory": "Derive mechanisms, mathematics, assumptions, predictions, and failure conditions.",
+    "literature": "Search primary literature, prior art, contradictory findings, failed approaches, benchmarks, and implementation evidence.",
+    "skeptic": "Attack the leading hypothesis, find counterexamples, hidden assumptions, alternative explanations, and contradictions.",
+    "experiment": "Design and run experiments that discriminate between hypotheses and reduce uncertainty.",
+    "reproducer": "Independently reproduce important external claims.",
+    "adjudicator": "Resolve disagreements using evidence and methodological rigor."
+  },
+  "levels": {
+    "0": [],
+    "1": [
+      "one appropriate specialist"
+    ],
+    "2": [
+      "theory",
+      "literature"
+    ],
+    "3": [
+      "theory",
+      "literature",
+      "skeptic",
+      "experiment"
+    ],
+    "4": [
+      "theory",
+      "literature",
+      "skeptic",
+      "experiment",
+      "reproducer",
+      "adjudicator"
+    ]
+  },
+  "rules": {
+    "parallelize_independent_work": true,
+    "avoid_duplicate_questions": true,
+    "require_falsification_for_major_hypotheses": true,
+    "require_independent_validation_for_major_claims": true,
+    "use_adjudicator_on_substantive_disagreement": true,
+    "repeat_cycles_when_material_uncertainty_remains": true,
+    "do_not_finish_on_first_plausible_solution": true
+  }
+}

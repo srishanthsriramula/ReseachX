@@ -1,0 +1,15 @@
+{
+  "snapshot_sha256": "96b439d19505c1c895ed5535cef4653eade325e93091c1629bc4a458babef6e5",
+  "prior_id_manifest_sha256": "db7e114aa4e1787d69cacd35ec45cfdf7c1ae92a362b1db3201c63c1ef2c48fc",
+  "prior_sources": {
+    "v9_source": "deterministic_v9_reconstruction",
+    "v10_source": "deterministic_v10_reconstruction"
+  },
+  "counts": {
+    "train:target": 256,
+    "final:target": 384,
+    "final:control": 160
+  },
+  "fresh_final_prior_overlap": 0,
+  "training_rows_reused_from_v10": true
+}

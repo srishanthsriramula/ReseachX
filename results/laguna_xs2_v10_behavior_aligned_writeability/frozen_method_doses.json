@@ -1,0 +1,23 @@
+{
+  "method_updates": {
+    "gradient_experts": 0,
+    "gradient_specific_experts": 8,
+    "contrastive_experts": 8,
+    "standard_lora": 16,
+    "random_layer_lora": 8,
+    "contrastive_lora": 4
+  },
+  "selection_rule": "generation_accuracy desc, abs(control_improvement) asc, target_improvement desc, updates asc",
+  "calibration_seed": 131,
+  "candidate_updates": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "step_zero_is_allowed": true
+}

@@ -1,0 +1,109 @@
+{
+  "created_utc": "2026-08-24T20:55:23.681709+00:00",
+  "protocol_version": "v11.0-fresh-confirmation-random-placement",
+  "protocol_hash": "75482335de3ffac7",
+  "snapshot_sha256": "96b439d19505c1c895ed5535cef4653eade325e93091c1629bc4a458babef6e5",
+  "model_id": "poolside/Laguna-XS.2",
+  "transformers": "5.14.1",
+  "peft": "0.19.1",
+  "torch": "2.12.0+rocm7.14.0",
+  "gpu": "AMD Instinct MI300X VF",
+  "core_methods": [
+    "guided_lora_fixed8",
+    "guided_lora_v10_policy",
+    "standard_lora_v10_policy"
+  ],
+  "core_seeds": [
+    107,
+    211,
+    503,
+    887,
+    1597
+  ],
+  "random_placements": {
+    "random_signature_00": [
+      1,
+      8,
+      10,
+      13,
+      20,
+      28,
+      30,
+      35
+    ],
+    "random_signature_01": [
+      1,
+      2,
+      8,
+      11,
+      12,
+      16,
+      21,
+      26
+    ],
+    "random_signature_02": [
+      4,
+      8,
+      16,
+      19,
+      26,
+      27,
+      33,
+      34
+    ],
+    "random_signature_03": [
+      1,
+      9,
+      12,
+      20,
+      25,
+      26,
+      36,
+      37
+    ],
+    "random_signature_04": [
+      4,
+      12,
+      15,
+      22,
+      25,
+      30,
+      35,
+      36
+    ],
+    "random_signature_05": [
+      2,
+      3,
+      6,
+      8,
+      20,
+      25,
+      34,
+      36
+    ]
+  },
+  "placement_seeds": [
+    107,
+    211,
+    503
+  ],
+  "primary_a_confirmed": "SKIPPED (Historical v10 negative)",
+  "primary_b_confirmed": false,
+  "files": {
+    "benchmark_snapshot.csv": "96b439d19505c1c895ed5535cef4653eade325e93091c1629bc4a458babef6e5",
+    "benchmark_snapshot_manifest.json": "3e0cd5ce45324aeea892f7235e192851fbe5a0b40623bc7d4a9ab314f68f4859",
+    "prior_v9_v10_ids.json": "db7e114aa4e1787d69cacd35ec45cfdf7c1ae92a362b1db3201c63c1ef2c48fc",
+    "protocol_config.json": "036151cb36cb7dfa121a753abc880dee071b4ac86353c5bdd1aef8bd215f04f5",
+    "random_placement_table.csv": "8cf76ff7458e02660fb85e6b340da8ea5d943305d480ff97ca93503449569fe9",
+    "frozen_lora_plans.json": "291c328d3d5922bd3fc495aa867f8326f6014fddb9bb300366592da8e6ee711e",
+    "FROZEN_BEFORE_CONFIRMATION.json": "19d121b4099fc7975a8efbb656a3c1225e149c383a1b7f66794e9e73e19b5d43",
+    "fresh_final_base_detail.npz": "4acd1f3ee9f3c5956bc23447cf7c99a09264920934d3b31fadc7ce4adba91cc0",
+    "fresh_final_base_generation.csv": "1a88396f7947ead0aa68ad88c9e4c71ec6f9c84f7461f823ae52ef0a0a2c111b",
+    "core_final_results.csv": "4a323602d18788d926655f376050c9df28f3a1c583a306cdd0a1bb505dd889f7",
+    "random_placement_results.csv": "4f41593a2fb21e35adfcf34f84031e50470463d796ffe2dcce1e53b58d2c6dac",
+    "core_final_summary.csv": "63625eac794d57ecdb8e08658137eadfaf226de5d888ee2f2e2173d7754ee36b",
+    "random_placement_summary.csv": "0ca5dd5715e5c085fde20c012698a89fd9111b4f950559a5a059f5aafbb4fa53",
+    "guided_vs_random_placement.json": "9ec92abb1673a3faf1f45c371ea69b931e67b5ab1d5032223357aa293aaec256",
+    "v11_confirmation_report.md": "eb82a19986160e8851a94df183dfae3a34b21ebb6ee34af9ec6eed25ffd741cb"
+  }
+}

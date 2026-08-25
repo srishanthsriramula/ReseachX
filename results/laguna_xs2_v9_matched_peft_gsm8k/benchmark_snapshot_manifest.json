@@ -1,0 +1,19 @@
+{
+  "target_dataset_id": "openai/gsm8k",
+  "target_dataset_config": "main",
+  "target_dataset_revision": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+  "control_dataset_id": "google-research-datasets/mbpp",
+  "control_dataset_config": "full",
+  "control_dataset_revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+  "snapshot_csv": "/home/ec2-user/workspace/laguna_xs2_v9_matched_peft_gsm8k/benchmark_snapshot.csv",
+  "snapshot_sha256": "8cedb762f6d18ef0dc2f3a828bae64d68da03643238aa2659d93a65a289e361b",
+  "counts": {
+    "selection:target": 32,
+    "selection:control": 32,
+    "train:target": 256,
+    "validation:target": 64,
+    "validation:control": 64,
+    "final:target": 128,
+    "final:control": 128
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "protocol_hash": "30bcde3f33e41cbd",
+  "protocol_config": {
+    "protocol_version": "v8.2.1-full-audit",
+    "model_id": "poolside/Laguna-XS.2",
+    "base_split_seed": 8200,
+    "base_panel_seed": 6200,
+    "run_budget_curves": true,
+    "control_penalty": 0.75,
+    "global_grad_probe_cases": 10,
+    "causal_top_layers": 8,
+    "causal_search_seeds": [
+      17,
+      53,
+      101,
+      211
+    ],
+    "causal_initial_group_size": 32,
+    "causal_beam_width": 4,
+    "causal_coalition_pool": 16,
+    "population_n": 48,
+    "v7_anchors": [
+      [
+        36,
+        229
+      ],
+      [
+        36,
+        95
+      ],
+      [
+        30,
+        229
+      ],
+      [
+        29,
+        194
+      ],
+      [
+        25,
+        168
+      ],
+      [
+        33,
+        1
+      ]
+    ],
+    "selector_top_n": 8,
+    "precise_grad_cases": 12,
+    "atlas_lr": 1e-05,
+    "atlas_epochs": 1,
+    "atlas_max_updates": 7,
+    "atlas_grad_accum": 8,
+    "atlas_order_seed": 101,
+    "confirm_lr": 1e-05,
+    "confirm_epochs": 3,
+    "confirm_max_updates": 50,
+    "confirm_grad_accum": 8,
+    "confirm_order_seeds": [
+      11,
+      23,
+      47
+    ],
+    "budget_ks": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "budget_seed": 11
+  },
+  "experiment_csv": "/home/ec2-user/workspace/laguna_v8_cross_capability_experiment.csv",
+  "experiment_csv_sha256": "e9fddf34d8654e74db3ecda008bf4450db48e18a209368aa46ba35591fc05091"
+}

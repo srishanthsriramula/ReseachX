@@ -1,0 +1,58 @@
+{
+  "mode": "research",
+  "level": 4,
+  "confidence": 0.88,
+  "novelty": "high",
+  "consequence": "high",
+  "uncertainty": "medium",
+  "critical_uncertainties": [
+    "Whether exact null-space Fisher projection recovers positive repair without AdamW unlearning in dense models (Gemma 2 2B IT / Laguna XS.2)"
+  ],
+  "competing_hypotheses": [
+    "H_nullspace: Capability repair requires updating only in the null-space of retained capabilities (Fisher projector), not unprojected gradient guidance.",
+    "H_subspace_rank: Rank and layer span matter more than gradient localization; broad low-rank coverage across shallow/mid layers outperforms localized high-gradient bottleneck edits."
+  ],
+  "evidence_gaps": [
+    "Failure-conditioned null-space repair projector geometry in dense vs sparse architecture"
+  ],
+  "agent_disagreements": [],
+  "failed_approaches": [
+    "Routing frequency localization",
+    "Causal expert fine-tuning (Read-Write Equivalence)",
+    "Forced-access SFT",
+    "Teacher-forced NLL optimization as reasoning proxy",
+    "Single-vector contrastive subtraction",
+    "Scalar gradient-guided PEFT placement without null-space projection"
+  ],
+  "independent_validations": 3,
+  "experiments_completed": 13,
+  "falsification_attempts": 4,
+  "research_cycles": 12,
+  "completion_allowed": false,
+  "next_action": "target the highest-impact unresolved uncertainty",
+  "effort_budget": {
+    "minimum": 10,
+    "target": 30,
+    "maximum": 100,
+    "spent": 14
+  },
+  "last_swarm_execution": {
+    "timestamp_utc": "2026-08-25T14:55:30.758326+00:00",
+    "agents_spawned": [
+      "theory",
+      "skeptic",
+      "adjudicator",
+      "experiment"
+    ]
+  },
+  "research_cycle": 12,
+  "active_protocol": "v12.0-riemannian-fisher-stratified-lora",
+  "last_cycle_completed_utc": "2026-08-25T15:16:26.143668+00:00",
+  "current_findings": {
+    "fresh_base_accuracy": 0.78125,
+    "stratified_unconditioned_mean_gain": "+1.48 pp (79.60%)",
+    "stratified_riemannian_alpha001_mean_gain": "+0.78 pp (78.91%, 35% reduction in control drift)",
+    "stratified_riemannian_alpha010_mean_gain": "+0.52 pp (78.65%)",
+    "bottleneck_unconditioned_mean_gain": "+0.09 pp (78.21%)"
+  }
+}

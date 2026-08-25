@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-08-16T10:44:41.844081+00:00",
+  "protocol_version": "v9.0-matched-peft-gsm8k",
+  "protocol_hash": "792fd9d4a19c5f37",
+  "snapshot_sha256": "8cedb762f6d18ef0dc2f3a828bae64d68da03643238aa2659d93a65a289e361b",
+  "model_id": "poolside/Laguna-XS.2",
+  "transformers": "5.14.1",
+  "peft": "0.19.1",
+  "torch": "2.13.0+cu130",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "expert_target_params": 12582912,
+  "methods": [
+    "causal_experts",
+    "gradient_experts",
+    "gradient_guided_lora",
+    "gradient_specific_experts",
+    "random_experts",
+    "random_layer_lora",
+    "routing_experts",
+    "standard_lora"
+  ],
+  "final_seeds": [
+    11,
+    23,
+    47
+  ],
+  "files": {
+    "benchmark_snapshot.csv": "8cedb762f6d18ef0dc2f3a828bae64d68da03643238aa2659d93a65a289e361b",
+    "benchmark_snapshot_manifest.json": "f79ff9c825102ef99ab8df4600a9f033090f63ed2340c03763b4d2163313393d",
+    "protocol_config.json": "41ff715b3fa65ae12289af44e50a196ccf73f73182a24f0cc8d034d52ca2aa38",
+    "global_routing_screen.csv": "1f2c72f3400580e708e6bb0dbca9fb56dc20f608de9d46845e9a9b315cf6f568",
+    "global_gradient_screen.csv": "cb7ec4112b5a2b163dd2d4661eef60d6deae619a4079799b944b6591742d8ec2",
+    "attention_gradient_layer_screen.csv": "fae70ad7ee7d1fda821be54cfb1a67bcf5be02a9384b85fd89ffd61b7422ccbb",
+    "layer_causal_scores.csv": "8f5d5cae6d5c3a086f7530c77523c049ce6effd6fc6bce2acb82c807f16f87d7",
+    "hierarchical_group_history.csv": "720d5cd9a1d57cb869ab5c00546382e652a869024b7fe7c1fb782e1a92a945b6",
+    "hierarchical_individual_causal.csv": "e1a8a246318115da8acb5d9605206705d1a44f8c65c7c4fd9a89b7df8a52e3ed",
+    "greedy_causal_order.csv": "7385379d36324dc1b20f6a9e65eb1ead28b23d550547074cc93354b93721d7f8",
+    "selection_only_rankings.json": "2b5c036a6734977d73b565436ffa3131233a87e8b60f85f0902e87b49ec261d1",
+    "selection_only_selector_metrics.csv": "cf83152fffbf4eb95e68442b8b7ba6744fd1e0c96e2242011e5fbe6469c196bc",
+    "selection_precise_selector_metrics.csv": "a8e61e7c99348ff33f5307240338ddadfa91cef8c7b6044001e65479d882d1c6",
+    "frozen_expert_selectors.json": "e065a43d653d29d031804c4ff9ae6beb2e12029ba752da448f1301e879ede60c",
+    "lora_budget_plan.json": "3a0bf50b33a1efa46e482c5658ef633e5f8e784823e2c7298edcd5ce21f8457c",
+    "lora_lr_sweep.csv": "320e2958df90f08ceeb2271e332e8065c2e1978496c5fe264c9873f1c7a87d82",
+    "chosen_lora_lr.json": "06b0b63b4d0367513cc98134595c178118d3324e171f6c69f4308bc1aaae65d0",
+    "FROZEN_BEFORE_FINAL_TEST.json": "62e92684e2b4f6899082b69a59ed23361ccb0564b0ec60ab652f3326f8e30ef8",
+    "final_base_detail.npz": "608b3c8d1b92f482fdb6d2072b88b808caf598b83e1f84e668929fa006e62254",
+    "base_gsm8k_generation.csv": "bc26129a4065a93530f2df4cc86dd093e5dd6f6132c89c563122c9562f232434",
+    "final_matched_results.csv": "bc17614a38e2c23a64989c9601f93a9555b23e6804647cef09332ab5e1ff196a",
+    "final_matched_summary.csv": "33e241a4a7531cda4662ca5e2c43353e03215490d531a65aeb68a561eebdb47a",
+    "v9_evidence_report.md": "6a9d6c5ec9d4b8fc44af205e5160aab7103c750bb3805deff26768555548fec1"
+  }
+}

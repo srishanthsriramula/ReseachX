@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-08-15T14:30:53.724976+00:00",
+  "protocol_version": "v8.2.1-full-audit",
+  "protocol_hash": "30bcde3f33e41cbd",
+  "capability": "python",
+  "model_id": "poolside/Laguna-XS.2",
+  "experiment_csv": "/home/ec2-user/workspace/laguna_v8_cross_capability_experiment.csv",
+  "experiment_csv_sha256": "e9fddf34d8654e74db3ecda008bf4450db48e18a209368aa46ba35591fc05091",
+  "global_positions": 9984,
+  "population_n": 48,
+  "panel_total": 81,
+  "causal_candidate_count": 198,
+  "causal_greedy_order": [
+    [
+      38,
+      60
+    ],
+    [
+      17,
+      103
+    ],
+    [
+      25,
+      168
+    ],
+    [
+      17,
+      14
+    ],
+    [
+      36,
+      229
+    ],
+    [
+      17,
+      33
+    ],
+    [
+      24,
+      184
+    ],
+    [
+      24,
+      168
+    ]
+  ],
+  "selectors": {
+    "causal": [
+      38,
+      60
+    ],
+    "routing": [
+      6,
+      0
+    ],
+    "gradient": [
+      25,
+      168
+    ],
+    "gradient_specific": [
+      28,
+      138
+    ]
+  },
+  "validation_examples": 50,
+  "final_test_examples": 50,
+  "confirm_seeds": [
+    11,
+    23,
+    47
+  ],
+  "budget_ks": [
+    1,
+    2,
+    4,
+    8
+  ]
+}

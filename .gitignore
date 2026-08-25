@@ -1,0 +1,30 @@
+# Git ignore rules for ResearchX
+
+# OS and system files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Large binary files & weights (>50MB)
+*.zip
+*.tar
+*.tar.gz
+*.pt
+*.bin
+*.safetensors
+*.pth
+*.onnx
+
+# Python bytecode & cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Local checkpoints & environments
+models/
+.venv/
+venv/
+env/

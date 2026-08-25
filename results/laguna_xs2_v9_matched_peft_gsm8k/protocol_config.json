@@ -1,0 +1,81 @@
+{
+  "protocol_hash": "792fd9d4a19c5f37",
+  "protocol_config": {
+    "protocol_version": "v9.0-matched-peft-gsm8k",
+    "model_id": "poolside/Laguna-XS.2",
+    "snapshot_sha256": "8cedb762f6d18ef0dc2f3a828bae64d68da03643238aa2659d93a65a289e361b",
+    "target_dataset_id": "openai/gsm8k",
+    "target_dataset_config": "main",
+    "target_dataset_revision": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+    "control_dataset_id": "google-research-datasets/mbpp",
+    "control_dataset_config": "full",
+    "control_dataset_revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+    "data_split_seed": 93017,
+    "selection_target_n": 32,
+    "selection_control_n": 32,
+    "train_target_n": 256,
+    "validation_target_n": 64,
+    "validation_control_n": 64,
+    "final_target_n": 128,
+    "final_control_n": 128,
+    "generation_eval_n": 128,
+    "control_penalty": 0.75,
+    "global_grad_probe_cases": 12,
+    "precise_grad_cases": 12,
+    "attention_grad_probe_cases": 12,
+    "selector_top_n": 16,
+    "causal_top_layers": 8,
+    "causal_search_seeds": [
+      17,
+      53,
+      101,
+      211
+    ],
+    "causal_initial_group_size": 32,
+    "causal_beam_width": 4,
+    "causal_coalition_pool": 20,
+    "expert_budget_k": 4,
+    "guided_lora_n_layers": 8,
+    "random_lora_n_layers": 8,
+    "lora_target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "expert_lr": 1e-05,
+    "random_expert_seed": 93201,
+    "random_layer_seed": 93202,
+    "ranking_max_k": 8,
+    "budget_ks": [
+      1,
+      2,
+      4
+    ],
+    "max_lora_budget_rel_error": 0.05,
+    "optimizer_betas": [
+      0.9,
+      0.95
+    ],
+    "optimizer_weight_decay": 0.01,
+    "grad_clip_norm": 1.0,
+    "lora_alpha_multiplier": 1.0,
+    "lora_lr_grid": [
+      5e-05,
+      0.0001,
+      0.0002
+    ],
+    "lr_sweep_seed": 101,
+    "train_epochs": 2,
+    "train_max_updates": 64,
+    "train_grad_accum": 8,
+    "final_order_seeds": [
+      11,
+      23,
+      47
+    ],
+    "eval_batch_size": 8,
+    "generation_batch_size": 4,
+    "generation_max_new_tokens": 256
+  }
+}

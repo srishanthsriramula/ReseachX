@@ -1,0 +1,8 @@
+{
+  "expert_lr": 1e-05,
+  "lora_lr": 1e-05,
+  "probe_updates": 8,
+  "selection_rule": "generation_accuracy desc, abs(control_improvement) asc, target_improvement desc, lr asc",
+  "expert_anchor": "gradient_specific_experts",
+  "lora_anchor": "standard_lora"
+}

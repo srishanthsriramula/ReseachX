@@ -1,0 +1,9 @@
+{
+  "agent": "adjudicator",
+  "run_id": "adjudicator_1787669730757",
+  "timestamp_utc": "2026-08-25T14:55:30.757851+00:00",
+  "question_investigated": "Investigate [Synthesize completed v12 Core Riemannian Fisher vs Stratified vs Bottleneck confirmation results] from the ADJUDICATOR perspective",
+  "context": {},
+  "status": "COMPLETED",
+  "duration_seconds": 0.0
+}

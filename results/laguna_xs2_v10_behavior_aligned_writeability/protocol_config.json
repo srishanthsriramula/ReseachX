@@ -1,0 +1,91 @@
+{
+  "protocol_hash": "6448478bbc7880aa",
+  "protocol_config": {
+    "protocol_version": "v10.0-behavior-aligned-writeability",
+    "model_id": "poolside/Laguna-XS.2",
+    "snapshot_sha256": "37fe52c5e03cb38a2fb3e17dc8e8f6018ff1f5519515381b32423c64bb56d12d",
+    "v9_exclusion_sha256": "eba2f16fd8d1e5cc7af43b6504258372e34521f5418c393b8e51001b9e748eef",
+    "target_dataset_revision": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+    "control_dataset_revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+    "v9_data_split_seed": 93017,
+    "data_split_seed": 104729,
+    "selection_target_n": 48,
+    "selection_control_n": 48,
+    "train_target_n": 256,
+    "lr_cal_target_n": 48,
+    "lr_cal_control_n": 48,
+    "dose_cal_target_n": 64,
+    "dose_cal_control_n": 64,
+    "final_target_n": 192,
+    "final_control_n": 192,
+    "global_grad_probe_cases": 16,
+    "precise_grad_cases": 16,
+    "attention_grad_probe_cases": 16,
+    "selector_top_n": 16,
+    "expert_budget_k": 4,
+    "guided_lora_n_layers": 8,
+    "random_lora_n_layers": 8,
+    "random_layer_seed": 104731,
+    "lora_target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "expert_lr_grid": [
+      2.5e-06,
+      5e-06,
+      1e-05
+    ],
+    "lora_lr_grid": [
+      1e-05,
+      2.5e-05,
+      5e-05,
+      0.0001
+    ],
+    "lr_probe_updates": 8,
+    "lr_calibration_seed": 101,
+    "dose_checkpoints": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "dose_calibration_seed": 131,
+    "final_order_seeds": [
+      17,
+      43,
+      71
+    ],
+    "optimizer_betas": [
+      0.9,
+      0.95
+    ],
+    "optimizer_weight_decay": 0.01,
+    "grad_clip_norm": 1.0,
+    "lora_alpha_multiplier": 1.0,
+    "train_epochs": 2,
+    "train_grad_accum": 8,
+    "eval_batch_size": 8,
+    "generation_batch_size": 4,
+    "generation_max_new_tokens": 256,
+    "primary_methods": [
+      "gradient_experts",
+      "gradient_specific_experts",
+      "contrastive_experts",
+      "standard_lora",
+      "random_layer_lora",
+      "contrastive_lora"
+    ],
+    "behavior_selection_rule": [
+      "maximize generation_accuracy",
+      "minimize abs(control_improvement)",
+      "maximize target_improvement",
+      "minimize updates_or_lr"
+    ]
+  }
+}

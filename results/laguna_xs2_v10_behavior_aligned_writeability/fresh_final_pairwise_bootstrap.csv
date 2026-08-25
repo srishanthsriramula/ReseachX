@@ -1,0 +1,5 @@
+method_a,method_b,mean_accuracy_difference,bootstrap_ci_low,bootstrap_ci_high
+contrastive_experts,gradient_experts,0.01909722222222221,-0.02951388888888906,0.06770833333333337
+contrastive_experts,gradient_specific_experts,0.013888888888888886,-0.03125000000000011,0.06249999999999978
+contrastive_lora,standard_lora,0.015624999999999998,-0.02951388888888884,0.05729166666666663
+contrastive_lora,random_layer_lora,-0.003472222222222225,-0.046875,0.04166666666666663

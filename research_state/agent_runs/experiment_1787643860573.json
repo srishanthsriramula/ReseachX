@@ -1,0 +1,9 @@
+{
+  "agent": "experiment",
+  "run_id": "experiment_1787643860573",
+  "timestamp_utc": "2026-08-25T07:44:20.573729+00:00",
+  "question_investigated": "Investigate [Verify the convergence stability and curvature bounds of v12 Soft Riemannian Fisher Damping under 16-bit float (BF16) precision on AMD Instinct MI300X] from the EXPERIMENT perspective",
+  "context": {},
+  "status": "COMPLETED",
+  "duration_seconds": 0.0
+}

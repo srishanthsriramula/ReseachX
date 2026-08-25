@@ -1,0 +1,251 @@
+split,kind,prompt,reference
+selection,target,"In a flex row, which declaration lets a child shrink below its min-content width?",min-width: 0;
+selection,target,Which CSS declaration turns an element into a flex container?,display: flex;
+selection,target,Which CSS property controls how free space is distributed along the flex main axis?,justify-content
+selection,target,Which CSS property aligns flex items on the cross axis?,align-items
+selection,target,Which CSS property controls whether flex items wrap onto multiple lines?,flex-wrap
+selection,target,"Which CSS shorthand sets grow, shrink, and basis for a flex item?",flex
+selection,target,Which CSS property defines the initial main size of a flex item?,flex-basis
+selection,target,Which CSS property sets the gap between grid or flex children?,gap
+selection,target,Which CSS declaration makes width include padding and border?,box-sizing: border-box;
+selection,target,Which CSS property controls horizontal overflow behavior?,overflow-x
+selection,target,Which CSS property controls vertical overflow behavior?,overflow-y
+selection,target,Which CSS property controls stacking order for positioned elements?,z-index
+selection,target,Which CSS property defines the columns of a grid?,grid-template-columns
+selection,target,Which CSS property defines the rows of a grid?,grid-template-rows
+selection,target,Which CSS function repeats a grid track pattern?,repeat()
+selection,target,Which CSS function creates a flexible grid track fraction?,fr
+selection,target,Which CSS function chooses the smaller of two values?,min()
+selection,target,Which CSS function chooses the larger of two values?,max()
+selection,target,Which CSS function constrains a value between a minimum and maximum?,clamp()
+selection,target,Which media-query feature commonly distinguishes narrow from wide viewports?,width
+selection,target,Which React hook stores local component state?,useState
+selection,target,Which React hook runs side effects after render?,useEffect
+selection,target,Which React hook memoizes a computed value?,useMemo
+selection,target,Which React hook memoizes a callback function?,useCallback
+selection,target,Which React hook stores a mutable value without causing a render when it changes?,useRef
+selection,target,Which React prop gives stable identity to items rendered from an array?,key
+selection,target,Which React hook consumes a context value?,useContext
+selection,target,Which React hook is intended for reducer-style state transitions?,useReducer
+selection,target,Which React API renders children into a different DOM subtree?,createPortal
+selection,target,Which React hook is used for synchronous layout effects after DOM mutation?,useLayoutEffect
+selection,target,Which HTML element is intended for site navigation links?,<nav>
+selection,target,Which HTML element represents the main content of a document?,<main>
+selection,target,Which HTML element associates visible text with a form control?,<label>
+selection,target,Which HTML attribute provides alternative text for an image?,alt
+selection,target,Which HTML attribute connects a label to an input by id?,for
+selection,target,Which HTML attribute indicates that a form field must be filled in?,required
+selection,target,Which ARIA attribute gives an element an accessible name directly?,aria-label
+selection,target,Which ARIA attribute points to another element that labels the current element?,aria-labelledby
+selection,target,Which ARIA attribute communicates whether an expandable control is open?,aria-expanded
+selection,target,Which semantic HTML element is appropriate for a standalone article or post?,<article>
+selection,target,Which browser API observes changes to an element's size?,ResizeObserver
+selection,target,Which browser API reports when an element enters or leaves an intersection with a root?,IntersectionObserver
+selection,target,Which DOM method selects the first element matching a CSS selector?,querySelector
+selection,target,Which DOM method selects all elements matching a CSS selector?,querySelectorAll
+selection,target,Which event method prevents the browser's default action?,preventDefault()
+selection,target,Which event method stops propagation to ancestor listeners?,stopPropagation()
+selection,target,Which browser function schedules work before the next repaint?,requestAnimationFrame
+selection,target,Which Web API stores string key-value pairs persistently for an origin?,localStorage
+selection,target,Which browser API returns viewport-relative geometry for an element?,getBoundingClientRect()
+selection,target,Which CSS pseudo-class matches an element while the pointer is over it?,:hover
+selection,control,Which Python keyword produces a value from a generator?,yield
+selection,control,Which Python built-in type stores unique hashable values?,set
+selection,control,Which Python keyword creates an anonymous function?,lambda
+selection,control,Which Python statement handles exceptions?,try
+selection,control,Which Python function returns an iterator of index-value pairs?,enumerate
+selection,control,Which Python built-in combines iterables element by element?,zip
+selection,control,Which Python keyword declares an asynchronous function?,async
+selection,control,Which Python keyword waits for an awaitable?,await
+selection,control,Which Python data type maps hashable keys to values?,dict
+selection,control,Which Python statement exits a loop immediately?,break
+selection,control,Which graph traversal finds shortest paths in an unweighted graph?,BFS
+selection,control,Which graph traversal naturally uses a stack or recursion?,DFS
+selection,control,Which data structure is first-in first-out?,queue
+selection,control,Which data structure is last-in first-out?,stack
+selection,control,Which sorting algorithm repeatedly partitions around a pivot?,quicksort
+selection,control,Which sorting algorithm repeatedly merges sorted halves?,merge sort
+selection,control,What is the average lookup complexity of a hash table?,O(1)
+selection,control,What is binary search's time complexity?,O(log n)
+selection,control,Which tree property requires every left descendant to compare smaller than its node?,binary search tree
+selection,control,Which algorithm finds a minimum spanning tree by repeatedly adding the cheapest safe edge?,Kruskal's algorithm
+selection,control,Which SQL keyword removes duplicate result rows?,DISTINCT
+selection,control,Which SQL clause filters rows before grouping?,WHERE
+selection,control,Which SQL clause filters groups after aggregation?,HAVING
+selection,control,Which SQL operation combines rows from related tables?,JOIN
+selection,control,Which SQL aggregate counts rows?,COUNT
+selection,control,Which SQL aggregate computes an arithmetic mean?,AVG
+selection,control,Which SQL clause orders query results?,ORDER BY
+selection,control,Which SQL clause groups rows for aggregate computation?,GROUP BY
+selection,control,Which SQL command adds new rows to a table?,INSERT
+selection,control,Which SQL command changes existing rows?,UPDATE
+selection,control,Which transport protocol provides reliable ordered byte streams?,TCP
+selection,control,Which transport protocol is connectionless and datagram-oriented?,UDP
+selection,control,Which protocol resolves domain names to IP addresses?,DNS
+selection,control,Which protocol normally secures HTTP with TLS?,HTTPS
+selection,control,Which command-line utility commonly tests IP reachability using ICMP?,ping
+selection,control,Which Unix system call creates a new process by duplicating the caller?,fork
+selection,control,Which Unix signal is the default polite termination signal?,SIGTERM
+selection,control,Which synchronization primitive allows only one thread into a critical section at a time?,mutex
+selection,control,Which memory region typically stores function call frames?,stack
+selection,control,Which memory region typically stores dynamically allocated objects?,heap
+selection,control,Which Java keyword declares class inheritance?,extends
+selection,control,Which Java interface defines natural ordering?,Comparable
+selection,control,Which C++ smart pointer represents exclusive ownership?,std::unique_ptr
+selection,control,Which C++ keyword prevents modification through a declared object or reference?,const
+selection,control,Which Git command creates a local copy of a remote repository?,git clone
+selection,control,Which Git command records staged changes as a new commit?,git commit
+selection,control,Which asymptotic notation describes an upper bound?,Big O
+selection,control,Which mathematical operation is the inverse of exponentiation for solving an exponent?,logarithm
+selection,control,Which cryptographic hash family includes SHA-256?,SHA-2
+selection,control,Which HTTP method is conventionally used to retrieve a resource?,GET
+train,target,A flex child contains a long unbreakable string and forces horizontal overflow. Which declaration on the child often fixes this?,min-width: 0;
+train,target,You need a row of controls that can wrap to another line on narrow screens. Which flex property enables that?,flex-wrap
+train,target,A flex item should take all remaining main-axis space. Which grow value is commonly used?,flex-grow: 1;
+train,target,Two flex children should have equal starting widths before growing or shrinking. Which basis value is commonly used?,flex-basis: 0;
+train,target,A component should clip overflowing content without scrollbars. Which overflow value should you use?,hidden
+train,target,A container should show scrollbars only when content overflows. Which overflow value should you use?,auto
+train,target,A header should remain at the top while its scroll container moves. Which positioning mode is intended for this?,position: sticky;
+train,target,An overlay should be positioned relative to the viewport. Which positioning mode should it use?,position: fixed;
+train,target,A child should be positioned relative to its nearest positioned ancestor. Which positioning mode should it use?,position: absolute;
+train,target,You want a two-column grid where the first track is 1 fraction and the second is 2 fractions. Which value expresses that?,1fr 2fr
+train,target,"A responsive grid should create as many columns as fit, with each at least 16rem wide. Which repeat keyword is usually used?",auto-fit
+train,target,A grid track should be at least 0 but otherwise consume one fraction of free space. Which function is useful?,minmax()
+train,target,You need a CSS value that scales with viewport width but never falls below or above limits. Which function should you use?,clamp()
+train,target,A card should maintain a 16:9 shape as its width changes. Which CSS property is designed for this?,aspect-ratio
+train,target,Text should truncate to a single line with an ellipsis. Which property supplies the ellipsis behavior?,text-overflow
+train,target,A block of text should break very long tokens instead of overflowing. Which CSS property can permit that?,overflow-wrap
+train,target,A component needs its own stacking context without changing opacity. Which property can explicitly isolate it?,isolation
+train,target,A transform should animate smoothly without triggering layout. Which CSS property should be animated instead of left/top?,transform
+train,target,A fade animation should avoid layout work. Which CSS property is appropriate?,opacity
+train,target,A focusable control needs a visible keyboard-focus style. Which pseudo-class is especially useful for keyboard focus?,:focus-visible
+train,target,A React component needs state derived from a complex action reducer. Which hook is appropriate?,useReducer
+train,target,A React component needs to keep a DOM node reference. Which hook should hold it?,useRef
+train,target,An expensive derived value should only recompute when dependencies change. Which hook fits?,useMemo
+train,target,A callback passed to a memoized child should keep identity across renders when dependencies do not change. Which hook fits?,useCallback
+train,target,A component needs to subscribe to an external store in a concurrent-safe way. Which React hook is designed for this?,useSyncExternalStore
+train,target,A component needs a stable generated id for accessibility attributes. Which React hook provides one?,useId
+train,target,A low-priority UI update should be marked as non-urgent. Which React API can start such a transition?,startTransition
+train,target,A component wants the pending state of transitions started in it. Which hook returns that state?,useTransition
+train,target,A search input should expose a deferred version of a rapidly changing value. Which hook provides that?,useDeferredValue
+train,target,A custom component should read the nearest context provider's value. Which hook should it call?,useContext
+train,target,A button displays only an icon. Which ARIA attribute can provide its accessible name?,aria-label
+train,target,An input's error text is elsewhere in the DOM. Which ARIA attribute can reference descriptive text?,aria-describedby
+train,target,A disclosure button toggles a panel. Which ARIA state should reflect whether the panel is open?,aria-expanded
+train,target,A custom checkbox needs to expose its checked state. Which ARIA attribute represents that state?,aria-checked
+train,target,A live status message should be announced by assistive technology without moving focus. Which ARIA attribute is intended for this?,aria-live
+train,target,A page needs a machine-readable document language. Which HTML attribute belongs on the root html element?,lang
+train,target,A form control needs browser autocomplete hints for an email field. Which attribute controls that?,autocomplete
+train,target,A button should submit its enclosing form. Which type value gives that behavior?,submit
+train,target,A button inside a form should not submit it. Which type value should be used?,button
+train,target,A responsive image needs multiple candidate sources with intrinsic widths. Which image attribute lists them?,srcset
+train,target,Code needs to react when a DOM node is inserted or an attribute changes. Which API observes DOM mutations?,MutationObserver
+train,target,Code needs to run when the browser is idle and has spare time. Which API can schedule idle callbacks?,requestIdleCallback
+train,target,Code needs to cancel an in-flight fetch request. Which controller API is used?,AbortController
+train,target,A fetch response should be parsed as JSON. Which Response method is used?,json()
+train,target,Code needs to read the current URL's query string parameters. Which Web API parses them conveniently?,URLSearchParams
+train,target,A component needs to copy text to the clipboard in a secure context. Which browser API exposes writeText?,navigator.clipboard
+train,target,A page needs to know whether a media query currently matches. Which browser API should it call?,matchMedia()
+train,target,An event listener should run only once. Which addEventListener option enables that?,once
+train,target,A touch or wheel listener promises not to call preventDefault. Which listener option can improve scrolling performance?,passive
+train,target,A large list should render only visible rows for performance. What UI technique is this?,virtualization
+heldout,target,A nested flex item still overflows even though its parent can shrink. Which min-size declaration is often required on the nested item?,min-width: 0;
+heldout,target,A column flex child should be allowed to shrink below its content's intrinsic height. Which declaration is the vertical analogue of min-width: 0?,min-height: 0;
+heldout,target,A toolbar needs equal space between neighboring controls without adding edge margins. Which CSS property is simplest?,gap
+heldout,target,A set of cards should align in a grid and automatically place new items. Which display value establishes grid layout?,display: grid;
+heldout,target,"You need named grid regions such as header, sidebar, and main. Which CSS property declares the area template?",grid-template-areas
+heldout,target,An element should span from grid line 1 to grid line 3. Which shorthand property sets its column placement?,grid-column
+heldout,target,A grid should place items densely into available holes when possible. Which property controls this?,grid-auto-flow
+heldout,target,A layout needs content-sized columns determined by each track's maximum content contribution. Which intrinsic sizing keyword is relevant?,max-content
+heldout,target,A layout needs content-sized columns that can shrink to the smallest unbreakable content width. Which keyword is relevant?,min-content
+heldout,target,A component's styles should respond to its container width rather than viewport width. Which CSS feature enables this?,@container
+heldout,target,A container must establish an inline-size query container. Which property declares the container type?,container-type
+heldout,target,A child should visually move but retain its original layout footprint. Which CSS mechanism is appropriate?,transform
+heldout,target,A scrollable list should stop scroll chaining to the page. Which CSS property controls that behavior?,overscroll-behavior
+heldout,target,A touch interface should disable double-tap zoom behavior on a custom gesture surface. Which CSS property controls allowed touch gestures?,touch-action
+heldout,target,A horizontally scrolling carousel should snap items into alignment. Which CSS property enables snapping on the container?,scroll-snap-type
+heldout,target,A snapped carousel item should declare its snap alignment. Which CSS property does that?,scroll-snap-align
+heldout,target,A user prefers reduced motion. Which media query feature detects that preference?,prefers-reduced-motion
+heldout,target,A user prefers a dark color scheme. Which media query feature detects that preference?,prefers-color-scheme
+heldout,target,A component should inherit a custom theme value declared as --accent. Which function reads that variable?,var()
+heldout,target,A declaration must win normal cascade conflicts by increasing origin importance. Which annotation does this?,!important
+heldout,target,A React child should avoid re-rendering when its props are shallowly unchanged. Which API wraps the component?,React.memo
+heldout,target,A component needs an imperative handle exposed through a ref. Which hook customizes the exposed value?,useImperativeHandle
+heldout,target,A component needs to run code when an external value changes but not during rendering. Which hook is generally used?,useEffect
+heldout,target,A measurement must occur after DOM updates but before the browser paints. Which hook is intended for this?,useLayoutEffect
+heldout,target,A component should render modal content under document.body while remaining in the same React tree. Which API is appropriate?,createPortal
+heldout,target,A form should use React's built-in event for input changes. Which prop typically receives the handler?,onChange
+heldout,target,A controlled text input receives its current text through which prop?,value
+heldout,target,An uncontrolled input needs an initial value without controlling subsequent edits. Which prop supplies it?,defaultValue
+heldout,target,A list is reordered frequently. Which property must remain tied to item identity rather than array position?,key
+heldout,target,A component wants to expose reusable stateful logic without rendering extra DOM. What React abstraction is used?,custom hook
+heldout,target,An image that conveys no information should be ignored by screen readers. What alt value should it use?,"alt="""""
+heldout,target,A group of related controls needs a semantic caption. Which HTML element labels a fieldset?,<legend>
+heldout,target,A table header cell should be represented by which HTML element?,<th>
+heldout,target,A native expandable disclosure widget can be built with which HTML element?,<details>
+heldout,target,The clickable summary for a details element uses which HTML element?,<summary>
+heldout,target,A page section has a heading and represents a thematic grouping. Which semantic element is appropriate?,<section>
+heldout,target,A standalone time or date should use which semantic HTML element?,<time>
+heldout,target,A progress indicator with a known current value can use which native HTML element?,<progress>
+heldout,target,A scalar measurement within a known range can use which native HTML element?,<meter>
+heldout,target,Keyboard focus should be moved programmatically to an element. Which DOM method does this?,focus()
+heldout,target,A script needs to know which element currently has focus. Which document property provides it?,document.activeElement
+heldout,target,A custom event should bubble through the DOM. Which CustomEvent option enables bubbling?,bubbles
+heldout,target,A handler needs the element on which the listener was registered rather than the deepest event origin. Which Event property should it read?,currentTarget
+heldout,target,A handler needs the original deepest event target. Which Event property should it read?,target
+heldout,target,Code needs to serialize form controls into key-value entries. Which Web API is designed for this?,FormData
+heldout,target,A page needs to watch history navigation caused by back and forward actions. Which event fires?,popstate
+heldout,target,A single-page app changes the URL without reloading. Which History method can add an entry?,pushState()
+heldout,target,A browser task should be queued as a microtask. Which API explicitly schedules one?,queueMicrotask()
+heldout,target,A component wants to measure render performance using browser timing marks. Which API exposes mark and measure?,performance
+heldout,target,A resource should load only when its image approaches the viewport using native HTML. Which loading value enables this?,lazy
+heldout,control,Which Python function applies a callable to each item lazily and returns an iterator?,map
+heldout,control,Which Python function keeps items for which a predicate is true?,filter
+heldout,control,Which Python module provides a double-ended queue implementation?,collections
+heldout,control,Which Python keyword binds a name in an enclosing non-global scope?,nonlocal
+heldout,control,Which Python keyword binds a name to the module-level scope inside a function?,global
+heldout,control,Which Python special method constructs a new instance before initialization?,__new__
+heldout,control,Which Python special method initializes an instance after construction?,__init__
+heldout,control,Which Python built-in returns the length of a collection?,len
+heldout,control,Which Python context-management statement guarantees cleanup around a block?,with
+heldout,control,Which Python exception is raised for a missing dictionary key accessed by indexing?,KeyError
+heldout,control,Which algorithm finds shortest paths from one source when all edge weights are nonnegative?,Dijkstra's algorithm
+heldout,control,Which algorithm computes all-pairs shortest paths using dynamic programming?,Floyd-Warshall
+heldout,control,"Which algorithm finds shortest paths even with negative edges, provided no reachable negative cycle exists?",Bellman-Ford
+heldout,control,Which data structure efficiently supports union and find operations for disjoint sets?,union-find
+heldout,control,Which heap operation removes and returns the minimum element from a min-heap?,extract-min
+heldout,control,What is merge sort's worst-case time complexity?,O(n log n)
+heldout,control,What is insertion sort's worst-case time complexity?,O(n^2)
+heldout,control,Which traversal of a binary search tree visits keys in sorted order?,in-order traversal
+heldout,control,Which graph representation stores a list of neighbors for each vertex?,adjacency list
+heldout,control,Which algorithmic technique solves overlapping subproblems and reuses their results?,dynamic programming
+heldout,control,Which SQL command removes rows while preserving the table?,DELETE
+heldout,control,Which SQL command removes a table definition and its data?,DROP TABLE
+heldout,control,Which SQL keyword creates an index?,CREATE INDEX
+heldout,control,Which SQL constraint uniquely identifies each table row?,PRIMARY KEY
+heldout,control,Which SQL constraint references a key in another table?,FOREIGN KEY
+heldout,control,Which transaction property means operations appear indivisible?,atomicity
+heldout,control,Which transaction isolation anomaly allows reading uncommitted changes?,dirty read
+heldout,control,Which SQL operator combines compatible result sets and removes duplicates by default?,UNION
+heldout,control,Which SQL operator tests whether a subquery returns any rows?,EXISTS
+heldout,control,Which SQL expression substitutes a fallback for NULL values in standard SQL?,COALESCE
+heldout,control,Which OS scheduling unit shares a process address space with sibling execution units?,thread
+heldout,control,Which CPU cache is typically closest to an individual core?,L1 cache
+heldout,control,Which virtual-memory structure maps virtual pages to physical frames?,page table
+heldout,control,Which condition occurs when two or more threads wait forever for resources held by each other?,deadlock
+heldout,control,Which synchronization primitive maintains a count of available permits?,semaphore
+heldout,control,Which networking layer protocol routes packets between IP networks?,IP
+heldout,control,Which protocol maps IPv4 addresses to local link-layer addresses?,ARP
+heldout,control,Which HTTP status code means Not Found?,404
+heldout,control,Which HTTP status code means Unauthorized?,401
+heldout,control,Which HTTP status code means Forbidden?,403
+heldout,control,Which Java collection maps keys to values?,Map
+heldout,control,Which Java collection interface represents an ordered sequence?,List
+heldout,control,Which C++ container provides contiguous dynamic-array storage?,std::vector
+heldout,control,Which C++ standard container stores unique ordered keys by default?,std::set
+heldout,control,Which Rust ownership operation creates a deep copy when Clone is implemented?,clone()
+heldout,control,Which Git command shows differences in the working tree?,git diff
+heldout,control,Which Git command moves or creates a branch pointer and switches HEAD to it in traditional usage?,git checkout
+heldout,control,Which hash-table strategy stores colliding entries in buckets or linked structures?,separate chaining
+heldout,control,Which public-key cryptosystem is based on integer factorization in its classic form?,RSA
+heldout,control,Which HTTP header commonly carries the media type of a request or response body?,Content-Type

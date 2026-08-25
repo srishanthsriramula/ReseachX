@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-08-16T18:26:15.602937+00:00",
+  "protocol_version": "v10.0-behavior-aligned-writeability",
+  "protocol_hash": "6448478bbc7880aa",
+  "snapshot_sha256": "37fe52c5e03cb38a2fb3e17dc8e8f6018ff1f5519515381b32423c64bb56d12d",
+  "v9_exclusion_sha256": "eba2f16fd8d1e5cc7af43b6504258372e34521f5418c393b8e51001b9e748eef",
+  "v9_v10_overlap_count": 0,
+  "model_id": "poolside/Laguna-XS.2",
+  "transformers": "5.14.1",
+  "peft": "0.19.1",
+  "torch": "2.13.0+cu130",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "expert_target_params": 12582912,
+  "chosen_expert_lr": 1e-05,
+  "chosen_lora_lr": 1e-05,
+  "method_selected_updates": {
+    "gradient_experts": 0,
+    "gradient_specific_experts": 8,
+    "contrastive_experts": 8,
+    "standard_lora": 16,
+    "random_layer_lora": 8,
+    "contrastive_lora": 4
+  },
+  "methods": [
+    "gradient_experts",
+    "gradient_specific_experts",
+    "contrastive_experts",
+    "standard_lora",
+    "random_layer_lora",
+    "contrastive_lora"
+  ],
+  "final_seeds": [
+    17,
+    43,
+    71
+  ],
+  "fresh_final_target_n": 192,
+  "fresh_final_control_n": 192,
+  "files": {
+    "benchmark_snapshot.csv": "37fe52c5e03cb38a2fb3e17dc8e8f6018ff1f5519515381b32423c64bb56d12d",
+    "benchmark_snapshot_manifest.json": "5dec69e778036e6b54c47fb227ff163cfbb5e87bd9ab5dd9ec0d500654a99090",
+    "v9_reconstructed_exclusion_ids.json": "eba2f16fd8d1e5cc7af43b6504258372e34521f5418c393b8e51001b9e748eef",
+    "protocol_config.json": "80cdd7a2fb68f5f0aef15aa641b66056d921b4162e36b1260c24e7295d8a038e",
+    "global_gradient_screen.csv": "6196ad3d7a315e55fe269aec55d0f5a0d6f2684d9e9189dc30d8722e8f439e03",
+    "selection_precise_expert_geometry.csv": "422f5043a7dc401a42d37a84c8378ad03460e21fae3d87f9602199e06c283207",
+    "frozen_expert_selectors.json": "331d8e88a61329268239334b910d3802ca403012ecba85773be5148778da495c",
+    "attention_gradient_geometry.csv": "bbcd82ac81ad987be518b37705c6c19307a74225bdc616fbee5619ebd3297251",
+    "lora_budget_plan.json": "c4798d531c3067bfca01775af800f15f04a57023f325e5d3c217cac53bfdd0a6",
+    "lr_calibration_base_generation.csv": "346cd23e8cf7433d31e39519a10b0f030e329d4c0f551f31689602864b7ff8df",
+    "dose_calibration_base_generation.csv": "28c461818b0d2959b942c08722aef875085d531654f6321d044b69fe5adf6760",
+    "family_lr_calibration.csv": "eab94a9e60f4dcc2f775aecb01b843c508d643d8547963565807a33f5fdd8d00",
+    "frozen_family_lrs.json": "d73c8ea7928093d1c83ffbde6f7baea87197bf6dec9f0431551f7a04fd6ad75b",
+    "method_dose_calibration.csv": "f1757bb80e8c715cb2e5bdd7f5f9a780b528f9102572aa582ad54baa0a2237b3",
+    "frozen_method_doses.json": "7b4183ae39ead278a025b1150ef35831aa7244464c5fbab824de6461c61af58f",
+    "FROZEN_BEFORE_FINAL_TEST.json": "a332a94a671e74686391421a4fc267149e3809c293b63f0bf5d935e8e2538353",
+    "fresh_final_base_detail.npz": "19759d217e6e6a2aed4ef46b483d2d01179e7fcfbe5bf9931da31936bf47f0f5",
+    "fresh_final_base_generation.csv": "ba2127a651bbca6717a36c2330c734126d432374dd540ae69cd450306d5f80d3",
+    "fresh_final_results.csv": "35b13afdd4bfd39cd4fc91a24b7bb8009a2050dc1fe8c2456d755094f3928efa",
+    "fresh_final_summary.csv": "1ace80eed5eab50d5862603ffdab32d52a683c19ec6b2f56716cbc3fde6112e9",
+    "fresh_final_pairwise_bootstrap.csv": "9d9134b95294fadd650465d1c4c088b932abc1bc311162eb4263266d7a73b069",
+    "v10_evidence_report.md": "03ff0b47c9cf040977c3863870665865bcbbcfaec0e19e8716422f37e2936c88"
+  }
+}

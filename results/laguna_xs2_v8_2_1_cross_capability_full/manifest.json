@@ -1,0 +1,47 @@
+{
+  "protocol_version": "v8.2.1-full-audit",
+  "protocol_hash": "30bcde3f33e41cbd",
+  "created_utc": "2026-08-15T20:55:21.832274+00:00",
+  "model_id": "poolside/Laguna-XS.2",
+  "experiment_csv": "/home/ec2-user/workspace/laguna_v8_cross_capability_experiment.csv",
+  "experiment_csv_sha256": "e9fddf34d8654e74db3ecda008bf4450db48e18a209368aa46ba35591fc05091",
+  "capabilities_run": [
+    "python",
+    "sql",
+    "systems",
+    "algorithms"
+  ],
+  "primary_adaptation_evaluation": "exact-baseline FP32 expert-delta adapter path",
+  "secondary_deployment_audit": "trained FP32 masters cast to BF16 and merged into native Laguna experts",
+  "architecture": {
+    "sparse_layers": 39,
+    "experts_per_layer": 256,
+    "global_routed_positions": 9984,
+    "params_per_expert": 3145728
+  },
+  "protocol": {
+    "population_n": 48,
+    "selector_top_n": 8,
+    "global_gradient_cases_per_kind": 10,
+    "precise_gradient_cases_per_kind": 12,
+    "causal_top_layers": 8,
+    "causal_coalition_pool": 16,
+    "causal_search_seeds": [
+      17,
+      53,
+      101,
+      211
+    ],
+    "confirm_order_seeds": [
+      11,
+      23,
+      47
+    ],
+    "budget_ks": [
+      1,
+      2,
+      4,
+      8
+    ]
+  }
+}

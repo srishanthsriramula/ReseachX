@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-08-15T09:58:12.417384+00:00",
+  "model_id": "poolside/Laguna-XS.2",
+  "model_path": "/home/ec2-user/workspace/models/Laguna-XS.2",
+  "experiment_csv": "/home/ec2-user/workspace/laguna_frontend_experiment.csv",
+  "experiment_csv_sha256": "9380c9f55b6decfaa2c0341fe8709fbed150cf6124d0d4ad1572baefafdfbb00",
+  "architecture": {
+    "sparse_layers": 39,
+    "experts_per_layer": 256,
+    "global_routed_positions": 9984,
+    "params_per_expert": 3145728
+  },
+  "global_gradient_screen": {
+    "cases_per_kind": 8,
+    "dtype": "BF16 fused-parameter screening gradients"
+  },
+  "panel": {
+    "population_random": 48,
+    "sentinel": 24,
+    "total": 72,
+    "panel_seed": 2027,
+    "precise_gradient_cases_per_kind": 12
+  },
+  "atlas_adaptation": {
+    "lr": 1e-05,
+    "epochs": 1,
+    "max_updates": 7,
+    "grad_accum": 8,
+    "order_seed": 101,
+    "evaluation": "atlas validation only"
+  },
+  "final_confirmation": {
+    "selectors": {
+      "panel_causal": [
+        36,
+        229
+      ],
+      "global_routing": [
+        33,
+        1
+      ],
+      "global_gradient": [
+        30,
+        229
+      ],
+      "global_gradient_specific": [
+        36,
+        95
+      ],
+      "validation_write_oracle": [
+        3,
+        29
+      ]
+    },
+    "lr": 1e-05,
+    "epochs": 3,
+    "max_updates": 50,
+    "grad_accum": 8,
+    "order_seeds": [
+      11,
+      23,
+      47
+    ],
+    "evaluation": "untouched final test"
+  },
+  "budget_curve": {
+    "methods": [
+      "gradient",
+      "gradient_specific",
+      "routing"
+    ],
+    "k": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "seed": 11
+  }
+}

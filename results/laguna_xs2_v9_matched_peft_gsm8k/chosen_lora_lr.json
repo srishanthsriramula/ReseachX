@@ -1,0 +1,12 @@
+{
+  "chosen_lora_lr": 0.0002,
+  "criterion": "validation relative_utility_score",
+  "sweep_method": "standard_lora only",
+  "sweep_seed": 101,
+  "grid": [
+    5e-05,
+    0.0001,
+    0.0002
+  ],
+  "shared_by_final_lora_arms": true
+}

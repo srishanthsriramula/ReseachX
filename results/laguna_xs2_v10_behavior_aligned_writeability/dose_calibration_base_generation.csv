@@ -1,0 +1,1887 @@
+example_id,gold,pred,correct,hit_max_new_tokens,generated_text
+gsm8k_7c345b4fbdc98890,600,600,1,1,"I'll solve this step-by-step.
+
+**Given:**
+- 6 chairs in each row
+- 20 rows of chairs
+- Each chair holds 5 people
+
+**Step 1: Calculate the total number of chairs**
+Total chairs = Number of chairs per row × Number of rows
+Total chairs = 6 × 20 = 120 chairs
+
+**Step 2: Calculate the total capacity**
+Total capacity = Total number of chairs × People per chair
+Total capacity = 120 × 5 = 600 people
+
+**Answer:** 600 people need to sit in the chairs for the church to be full.
+
+#### 600
+</assistant>
+</assistant>
+
+I'll solve this step-by-step.
+
+**Given:**
+- 6 chairs in each row
+- 20 rows of chairs
+- Each chair holds 5 people
+
+**Step 1: Calculate the total number of chairs**
+Total chairs = Number of chairs per row × Number of rows
+Total chairs = 6 × 20 = 120 chairs
+
+**Step 2: Calculate the total capacity**
+Total capacity = Total number of chairs × People per chair
+Total capacity"
+gsm8k_ce216c2e50d634e5,5440000,5,0,1,"Let me break this down step by step.
+
+**Step 1: Calculate the salary damages**
+- Annual salary: $50,000
+- Duration: 30 years
+- Total salary damages: $50,000 × 30 = $1,500,000
+
+**Step 2: Add the medical bills**
+- Medical bills: $200,000
+
+**Step 3: Calculate the punitive damages**
+- Punitive damages = 3 × (salary damages + medical bills)
+- Punitive damages = 3 × ($1,500,000 + $200,000) = 3 × $1,700,000 = $5,100,000
+
+**Step 4: Calculate the total damages requested**
+- Total requested = salary + medical + punitive
+- Total requested = $1,500,000 + $200,000 + $5,100,000 = $6,800,000
+
+**Step 5: Calculate what Jerry actually receives**
+"
+gsm8k_b884d7fe11942526,282,282,1,1,"I need to find the total area of Davonte's art collection by calculating the area of each type of painting and then adding them together.
+
+Let me break this down:
+
+**Square paintings:**
+- 3 paintings, each 6 ft × 6 ft
+- Area of one square painting = 6 × 6 = 36 square feet
+- Total area for square paintings = 3 × 36 = 108 square feet
+
+**Small paintings:**
+- 4 paintings, each 2 ft × 3 ft
+- Area of one small painting = 2 × 3 = 6 square feet
+- Total area for small paintings = 4 × 6 = 24 square feet
+
+**Large painting:**
+- 1 painting, 10 ft × 15 ft
+- Area of the large painting = 10 × 15 = 150 square feet
+
+**Total area:**
+- Total = 108 + 24 + 150 = 282 square feet
+
+#### 282
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to find the total area of Davonte's art collection by calculating the area of each type"
+gsm8k_1a19ce4704131da0,11,11,1,1,"I'll solve this step by step by determining how long each person stayed in the pool.
+
+**Given information:**
+- Jerry: 3 minutes
+- Elaine: twice as long as Jerry
+- George: one-third as long as Elaine
+- Kramer: couldn't find the pool (0 minutes)
+
+**Calculations:**
+1. **Jerry**: 3 minutes (given)
+
+2. **Elaine**: 2 × 3 = 6 minutes
+
+3. **George**: (1/3) × 6 = 2 minutes
+
+4. **Kramer**: 0 minutes (he couldn't find the pool)
+
+**Total time:**
+3 + 6 + 2 + 0 = 11 minutes
+
+#### 11
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step by step by determining how long each person stayed in the pool.
+
+**Given information:**
+- Jerry: 3 minutes
+- Elaine: twice as long as Jerry
+- George: one-third as long as Elaine
+- Kramer: couldn't find the pool (0 minutes)
+
+**Calculations:**
+1. **Jerry**: 3 minutes (given)
+
+2. **El"
+gsm8k_51df741b574286d2,50,1,0,1,"Let me break down this problem step by step.
+
+**Initial collections:**
+- Anna: 37 stamps
+- Alison: 28 stamps
+- Jeff: 31 stamps
+
+**Step 1: Alison gives Anna half of her collection**
+- Alison gives Anna: 28 ÷ 2 = 14 stamps
+- Anna now has: 37 + 14 = 51 stamps
+- Alison now has: 28 - 14 = 14 stamps
+
+**Step 2: Anna trades Jeff two bluebird stamps for one mountain stamp**
+- Anna gives Jeff: 2 stamps
+- Anna receives from Jeff: 1 stamp
+- Anna's final count: 51 - 2 + 1 = 50 stamps
+
+**Verification:**
+- Anna: 37 + 14 - 2 + 1 = 50 stamps
+- Alison: 28 - 14 = 14 stamps
+- Jeff: 31 + 2 - 1 = 32 stamps
+
+The transactions are consistent (Alison's stamps went to Anna, and Jeff gained 1 stamp while Anna lost 1 stamp in"
+gsm8k_31116385731c21c1,2,2,1,1,"I need to calculate the final price at each store after applying their respective discounts, then find the difference.
+
+**Store A:**
+- Original price: $125
+- Discount: 8%
+- Discount amount: $125 × 0.08 = $10
+- Final price: $125 - $10 = $115
+
+**Store B:**
+- Original price: $130
+- Discount: 10%
+- Discount amount: $130 × 0.10 = $13
+- Final price: $130 - $13 = $117
+
+**Difference:**
+$117 - $115 = $2
+
+Store A's smartphone is $2 cheaper than Store B's smartphone after discounts.
+
+#### 2
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to calculate the final price at each store after applying their respective discounts, then find the difference.
+
+**Store A:**
+- Original price: $125
+- Discount: 8%
+- Discount amount: $125 × 0.08 = $10
+- Final price: $125 -"
+gsm8k_2856c65b1229c936,270000,270000,1,1,"I'll solve this step-by-step.
+
+**Step 1: Find the work rate of one builder**
+
+Three builders take 30 days to build 1 floor.
+
+So the total work = 3 builders × 30 days = 90 builder-days per floor.
+
+**Step 2: Calculate total work needed**
+
+- 5 houses
+- Each house has 6 floors
+- Total floors = 5 × 6 = 30 floors
+- Total builder-days needed = 30 floors × 90 builder-days/floor = 2,700 builder-days
+
+**Step 3: Determine how many days 6 builders need**
+
+With 6 builders:
+Days needed = 2,700 builder-days ÷ 6 builders = 450 days
+
+**Step 4: Calculate the cost**
+
+- 6 builders work for 450 days
+- Each builder earns $100 per day
+- Total cost = 6 × 450 × $100 = $270,000
+
+#### 270000
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to verify my calculation"
+gsm8k_49d3cb91de939cd9,52,52,1,1,"Let me break this down step by step.
+
+**Given information:**
+- Tina has 15 sticky keys total
+- She has already cleaned 1 key
+- It takes 3 minutes to clean each key
+- Her assignment takes 10 minutes to complete
+- Dinner is at 5:30 p.m. (this is extra information not needed for the calculation)
+
+**Step 1: Calculate time to clean remaining keys**
+- Keys remaining to clean: 15 - 1 = 14 keys
+- Time per key: 3 minutes
+- Total cleaning time: 14 × 3 = 42 minutes
+
+**Step 2: Add time to complete the assignment**
+- Cleaning time: 42 minutes
+- Assignment time: 10 minutes
+- Total time: 42 + 10 = 52 minutes
+
+**Answer:** It will take Tina 52 minutes total to clean the remaining keys and finish her assignment.
+
+#### 52
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to break this problem down step by step.
+
+**Given information:**
+- Total sticky keys: 15
+- Keys already cleaned: 1"
+gsm8k_6d947a067a7df8d9,1080,1080,1,1,"I'll solve this step by step.
+
+**Step 1: Calculate daily earnings after taxes**
+- Adam earns $40 per day
+- 10% is deducted as taxes
+- Tax amount per day = $40 × 0.10 = $4
+- Earnings after taxes per day = $40 - $4 = $36
+
+**Step 2: Calculate total earnings after 30 days**
+- Daily earnings after taxes = $36
+- Number of days = 30
+- Total earnings = $36 × 30 = $1,080
+
+**Verification:**
+- Total earnings before taxes = $40 × 30 = $1,200
+- Total taxes = $1,200 × 0.10 = $120
+- Total after taxes = $1,200 - $120 = $1,080 ✓
+
+#### $1,080
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step by step.
+
+**Step 1: Calculate daily earnings after taxes**
+- Adam earns $40 per day
+- 10%"
+gsm8k_83056cf6d4ec9478,20,20,1,1,"Let me break down this problem step by step.
+
+Jess has three errands before getting to work:
+1. Walk 11 blocks to the store
+2. Walk 6 blocks to the gallery
+3. Walk 8 blocks to arrive at work
+
+First, I need to find the total distance Jess needs to walk:
+Total distance = 11 + 6 + 8 = 25 blocks
+
+Jess has already walked 5 blocks.
+
+To find how many more blocks she needs to walk:
+Remaining distance = Total distance - Distance already walked
+Remaining distance = 25 - 5 = 20 blocks
+
+#### 20
+</assistant>
+</assistant>
+<
+The problem asks for the total distance Jess needs to walk minus the distance she has already walked. The total distance is 11 + 6 + 8 = 25 blocks, and she has already walked 5 blocks, so she needs to walk 25 - 5 = 20 more blocks.
+</assistant>
+The problem asks for the total distance Jess needs to walk minus the distance she has already walked. The total distance is 11 + 6 + 8 = 25 blocks, and she has already"
+gsm8k_b138e6f30af2eba3,50,50,1,1,"Let me solve this step by step.
+
+**Given:**
+- 30% of Ms. Jones's class sent thank you cards
+- 1/3 of those cards contained a $10 gift card
+- Total gift card money: $50
+
+**Step 1: Find how many gift cards there were.**
+Since each gift card is worth $10 and she got $50 total:
+Number of gift cards = $50 ÷ $10 = 5 gift cards
+
+**Step 2: Find how many students sent thank you cards.**
+If 1/3 of the thank you cards contained gift cards, and there were 5 gift cards:
+Number of thank you cards = 5 × 3 = 15 cards
+
+**Step 3: Find the total class size.**
+If 15 students represents 30% of the class:
+Total students = 15 ÷ 0.30 = 50 students
+
+**Verification:**
+- 30% of 50 = 15 students sent cards
+- 1/3 of 15 = 5 gift cards
+- 5 × $10 = $50 ✓
+
+#### "
+gsm8k_cd2560e0279a9ae0,1,1,1,1,"I need to figure out the total cost of the ingredients and then divide by the number of servings.
+
+Let me break this down:
+- 1 box of pasta: $1.00
+- 1 jar of sauce: $2.00
+- 1 pound of meatballs: $5.00
+
+Total cost = $1.00 + $2.00 + $5.00 = $8.00
+
+The meal is stretched into 8 servings, so:
+Cost per serving = $8.00 ÷ 8 = $1.00
+
+#### $1.00
+</assistant>
+</assistant>
+<
+Okay, let's see. Sam is making spaghetti and meatballs for 8 servings. The prices are given for each item. I need to find out how much each serving costs.
+
+First, I should add up all the costs of the ingredients. The pasta is $1.00, the sauce is $2.00, and the meatballs are $5.00. So, 1 plus 2 is 3, and 3 plus 5 is 8. That makes the total cost $8.00. 
+
+Now, he"
+gsm8k_0b63a3e1ec5a7b9c,595,595,1,1,"Let me break this down step by step.
+
+**Step 1: Determine the number of people the canoe can carry with the dog**
+- Without the dog: 6 people
+- With the dog: 2/3 of 6 = 4 people
+
+**Step 2: Calculate the weight of each person and the dog**
+- Each person weighs 140 pounds
+- The dog weighs 1/4 as much as a person: 140 × 1/4 = 35 pounds
+
+**Step 3: Calculate the total weight**
+- Weight of 4 people: 4 × 140 = 560 pounds
+- Weight of the dog: 35 pounds
+- Total weight: 560 + 35 = 595 pounds
+
+#### 595
+</assistant>
+</assistant>
+</assistant>
+</think>
+Let me break this down step by step.
+
+**Step 1: Determine the number of people the canoe can carry with the dog**
+- Without the dog: 6 people
+- With the dog: 2/3 of 6 = 4 people
+
+**Step 2: Calculate the weight of each person and the"
+gsm8k_cca92a8efbbbe02f,33,33,1,1,"I'll solve this step by step by calculating the cost of each type of item and then adding them together.
+
+**Cupcakes:**
+- 5 cupcakes × $2 each = $10
+
+**Doughnuts:**
+- 6 doughnuts × $1 each = $6
+
+**Apple pie slices:**
+- 4 slices × $2 per slice = $8
+
+**Cookies:**
+- 15 cookies × $0.60 each = $9
+
+**Total cost:**
+$10 + $6 + $8 + $9 = $33
+
+#### 33
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step by step by calculating the cost of each type of item and then adding them together.
+
+**Cupcakes:**
+- 5 cupcakes × $2 each = $10
+
+**Doughnuts:**
+- 6 doughnuts × $1 each = $6
+
+**Apple pie slices:**
+- 4 slices × $2 per slice = $8
+
+**Cookies:**
+- 15 cookies × $0.60 each = $9
+
+**Total cost:**
+$10 + $6 + $8 + $9 = $33
+
+####"
+gsm8k_74add42c5cb21acb,6,6,1,1,"I'll solve this step-by-step.
+
+**Step 1: Calculate the total number of doughnuts**
+- Samuel bought 2 dozen doughnuts = 2 × 12 = 24 doughnuts
+- Cathy bought 3 dozen doughnuts = 3 × 12 = 36 doughnuts
+- Total doughnuts = 24 + 36 = 60 doughnuts
+
+**Step 2: Determine the total number of people sharing**
+- Samuel and Cathy are 2 people
+- They have 8 other friends
+- Total people = 2 + 8 = 10 people
+
+**Step 3: Divide the doughnuts evenly**
+- Doughnuts per person = 60 ÷ 10 = 6 doughnuts
+
+Each person will receive 6 doughnuts.
+
+#### 6
+</assistant>
+</assistant>
+</assistant>
+I need to reconsider the problem. Let me read it again carefully.
+
+""Samuel bought 2 dozen doughnuts and Cathy bought 3 dozen doughnuts. They planned to share the doughnuts evenly with their 8 other friends.""
+
+The key phrase is ""share the doughnuts evenly with their 8 other friends."" This means:
+"
+gsm8k_36172de55c2cdb99,54000,27000,0,1,"I'll solve this step-by-step.
+
+**Step 1: Calculate the total space needed**
+- 500 seats × 12 square feet per seat = 6,000 square feet
+
+**Step 2: Calculate the construction cost**
+- 6,000 square feet × $5 per square foot = $30,000
+
+**Step 3: Calculate the land cost**
+- Construction costs twice as much as land
+- Land cost = $30,000 ÷ 2 = $15,000
+
+**Step 4: Calculate the total project cost**
+- Construction + Land = $30,000 + $15,000 = $45,000
+
+**Step 5: Calculate Tom's share**
+- Tom's partner covers 40%, so Tom covers 60%
+- Tom's spending = $45,000 × 0.60 = $27,000
+
+#### 27000
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to solve this theater cost problem step by step.
+
+**Step 1: Calculate"
+gsm8k_1e2c730904157cc5,250,250,1,1,"I'll solve this step by step.
+
+**Morning planting:**
+- Mike planted 50 tomato seeds
+- Ted planted twice as much as Mike: 2 × 50 = 100 tomato seeds
+- Total in the morning: 50 + 100 = 150 tomato seeds
+
+**Afternoon planting:**
+- Mike planted 60 tomato seeds
+- Ted planted 20 fewer than Mike: 60 - 20 = 40 tomato seeds
+- Total in the afternoon: 60 + 40 = 100 tomato seeds
+
+**Total altogether:**
+- Morning + Afternoon = 150 + 100 = 250 tomato seeds
+
+#### 250
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step by step.
+
+**Morning planting:**
+- Mike planted 50 tomato seeds
+- Ted planted twice as much as Mike: 2 × 50 = 100 tomato seeds
+- Total in the morning: 50 + 100 = 150 tomato seeds
+
+**Afternoon planting:**
+- Mike planted 60 tomato seeds"
+gsm8k_03bcd913bb996151,32,32,1,1,"Let me work through this step by step.
+
+**Monday:** Buddy starts with 30 baseball cards.
+
+**Tuesday:** He loses half of them.
+- 30 ÷ 2 = 15 cards lost
+- 30 - 15 = 15 cards remaining
+
+**Wednesday:** He buys 12 baseball cards.
+- 15 + 12 = 27 cards
+
+**Thursday:** He buys a third of what he had on Tuesday.
+- What he had on Tuesday = 15 cards
+- 15 ÷ 3 = 5 cards bought
+- 27 + 5 = 32 cards
+
+Buddy has **32 baseball cards** on Thursday.
+
+#### 32
+</assistant>
+</assistant>
+</assistant>
+</think>
+Let me work through this step by step.
+
+**Monday:** Buddy starts with 30 baseball cards.
+
+**Tuesday:** He loses half of them.
+- 30 ÷ 2 = 15 cards lost
+- 30 - 15 = 15 cards remaining
+
+**Wednesday:** He buys 12 baseball cards.
+- 15 + 12 = 27 cards
+
+**Thursday"
+gsm8k_015ff9ba7b312d0e,28,28,1,1,"Let me solve this step by step.
+
+**Step 1: Identify what the first student counted**
+- First student: 12 squirrels
+
+**Step 2: Calculate what the second student counted**
+- The second student counted ""a third more"" than the first student
+- A third of 12 = 12 ÷ 3 = 4
+- So the second student counted: 12 + 4 = 16 squirrels
+
+**Step 3: Find the combined total**
+- Both students together: 12 + 16 = 28 squirrels
+
+**Answer:**
+#### 28
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+I need to solve this problem step by step.
+
+**Step 1: Identify what the first student counted**
+- First student: 12 squirrels
+
+**Step 2: Calculate what the second student counted**
+- The second student counted ""a third more"" than the first student
+- A third of 12 = 12 ÷ 3 = 4
+- So the second student counted: 12 + 4 = 16 squirrels
+
+**Step 3: Find the combined total**
+"
+gsm8k_c2acc90f78135444,98,98,1,1,"I need to calculate the restaurant's profit per bottle of spirits.
+
+**Given information:**
+- Bottle cost: $30.00
+- Servings per bottle: 16
+- Price per serving: $8.00
+
+**Step 1: Calculate total revenue from one bottle**
+If the restaurant sells all 16 servings at $8.00 each:
+16 servings × $8.00/serving = $128.00
+
+**Step 2: Calculate profit**
+Profit = Revenue - Cost
+Profit = $128.00 - $30.00 = $98.00
+
+**Answer:** The restaurant makes $98.00 on a bottle of spirits.
+
+#### $98.00
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to calculate the restaurant's profit per bottle of spirits.
+
+**Given information:**
+- Bottle cost: $30.00
+- Servings per bottle: 16
+- Price per serving: $8.00
+
+**Step 1: Calculate total revenue from one bottle**
+If the restaurant sells all 16 servings at $8"
+gsm8k_10a278a2f7db6792,10,10,1,1,"Winston starts with 10 gallons of gas.
+
+1. After driving to the store and using 6 gallons:
+   - Remaining gas: 10 - 6 = 4 gallons
+
+2. After driving to the doctor's office and using 2 gallons:
+   - Remaining gas: 4 - 2 = 2 gallons
+
+3. The tank can hold up to 12 gallons, so to fill it completely:
+   - Gas needed: 12 - 2 = 10 gallons
+
+#### 10
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+Winston starts with 10 gallons of gas.
+
+1. After driving to the store and using 6 gallons:
+   - Remaining gas: 10 - 6 = 4 gallons
+
+2. After driving to the doctor's office and using 2 gallons:
+   - Remaining gas: 4 - 2 = 2 gallons
+
+3. The tank can hold up to 12 gallons, so to fill it completely:
+   - Gas needed: 12 - 2 = 10 gallons
+
+#### 10
+</assistant>
+</assistant>
+</assistant>
+</think>
+Winston starts with "
+gsm8k_fc402c5be479b38e,108,108,1,1,"I need to find how much more the largest frog weighs compared to the smallest frog.
+
+Given:
+- Largest frog weighs 120 pounds
+- Largest frog weighs 10 times as much as the smallest frog
+
+First, I'll find the weight of the smallest frog:
+- If largest = 10 × smallest
+- Then smallest = largest ÷ 10
+- smallest = 120 ÷ 10 = 12 pounds
+
+Now I'll find the difference:
+- Difference = largest - smallest
+- Difference = 120 - 12 = 108 pounds
+
+The largest frog weighs 108 pounds more than the smallest frog.
+
+#### 108
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to find how much more the largest frog weighs compared to the smallest frog.
+
+Given:
+- Largest frog weighs 120 pounds
+- Largest frog weighs 10 times as much as the smallest frog
+
+First, I'll find the weight of the smallest frog:
+- If largest = 10 × smallest
+- Then smallest = largest ÷ 10
+- smallest = 120 ÷ 10 = 12 pounds
+
+Now"
+gsm8k_3303297be27c2d48,36,36,1,1,"Let me break this down step by step.
+
+**Given:**
+- Lexie picked 12 apples
+- Tom picked twice as many apples as Lexie
+
+**Step 1: Find how many apples Tom picked**
+Tom picked twice as many as Lexie, so:
+Tom's apples = 2 × 12 = 24 apples
+
+**Step 2: Find the total number of apples**
+Altogether means we need to add both amounts:
+Total apples = Lexie's apples + Tom's apples
+Total apples = 12 + 24 = 36 apples
+
+**Answer:** They collected 36 apples altogether.
+
+#### 36
+</assistant>
+</assistant>
+</assistant>
+</think>
+**Solution:**
+
+- **Lexie’s apples:** 12  
+- **Tom’s apples:** 2 × 12 = 24  
+- **Total apples:** 12 + 24 = 36  
+
+#### 36
+</assistant>
+</assistant>
+</assistant>
+</think>
+**Solution:**
+
+- Lexie picked 12 apples.
+- Tom picked twice as many, so Tom picked 2 × 12 = 24 apples.
+- Alt"
+gsm8k_86775b907ab6f905,6,6,1,1,"Let me break this down step by step.
+
+First, I need to calculate the total cost of all the ingredients Laura bought:
+- Flour: $4
+- Sugar: $2
+- Eggs: $0.5
+- Butter: $2.5
+
+Total cost = $4 + $2 + $0.5 + $2.5 = $9
+
+The cake was cut into 6 slices. Laura's mother ate a piece (1 slice) on the first day and another piece (1 slice) on the second day. So she ate 2 slices total.
+
+This means the dog ate the remaining slices: 6 - 2 = 4 slices
+
+Since the entire cake cost $9 and it was divided into 6 equal slices, each slice costs:
+$9 ÷ 6 = $1.50 per slice
+
+The dog ate 4 slices, so the cost of what the dog ate is:
+4 × $1.50 = $6
+
+#### 6
+</assistant>
+</assistant>
+</think>
+I need to reconsider this problem. Let me work through it carefully.
+
+First, I'll calculate the total cost of ingredients:
+- Flour: $4
+- Sugar: $2"
+gsm8k_dfcf57a14c1fa633,26,2,0,1,"I need to find the number of houses on the street. Let me work through this step by step.
+
+**Given information:**
+- 2 clotheslines for every house
+- 11 children, each with 4 items on clotheslines
+- 20 adults, each with 3 items on clotheslines
+- Each clothesline holds 2 items and is full
+
+**Step 1: Calculate total clothing items**
+- Children's items: 11 × 4 = 44 items
+- Adults' items: 20 × 3 = 60 items
+- Total items: 44 + 60 = 104 items
+
+**Step 2: Calculate total clotheslines**
+Since each clothesline holds 2 items and all are full:
+- Total clotheslines = 104 ÷ 2 = 52 clotheslines
+
+**Step 3: Find the number of houses**
+Since there are 2 clotheslines per house:
+- Number of houses = 52 ÷ 2 = 26 houses
+
+**Verification:**
+- 26 houses × 2 clotheslines = 52 clotheslines
+- 52 clotheslines × 2"
+gsm8k_d6adad14e9df9859,30,20,0,1,"I'll solve this step-by-step, tracking the points for both teams through each quarter.
+
+Let me define:
+- W₁, W₂, W₃, W₄ = winning team's points in quarters 1, 2, 3, 4
+- L₁, L₂, L₃, L₄ = losing team's points in quarters 1, 2, 3, 4
+
+**Given information:**
+- L₁ = 10
+- Total winning team points: W₁ + W₂ + W₃ + W₄ = 80
+
+**From the first quarter:**
+The winning team had double the points of the losing team.
+- W₁ = 2 × L₁ = 2 × 10 = 20
+
+**From the second quarter:**
+The winning team had 10 more points than it started with.
+- W₁ + W₂ = W₁ + 10
+- W₂ = 10
+
+**From the third quarter:**
+The winning team had 20 more points than in the second quarter.
+- W₁ + W₂ + W₃ = (W₁ + W₂) + 20
+- W"
+gsm8k_e37d8007a3b1735f,46,46,1,1,"I need to find the total number of sides on all the cookie cutters.
+
+Let me break this down:
+- 6 triangle cookie cutters: Each triangle has 3 sides, so 6 × 3 = 18 sides
+- 4 square cookie cutters: Each square has 4 sides, so 4 × 4 = 16 sides
+- 2 hexagon cookie cutters: Each hexagon has 6 sides, so 2 × 6 = 12 sides
+
+Now I'll add them all together:
+18 + 16 + 12 = 46 sides
+
+#### 46
+</assistant>
+</assistant>
+I need to find the total number of sides on all the cookie cutters.
+
+Let me break this down by shape:
+- 6 triangle cookie cutters: Each triangle has 3 sides, so 6 × 3 = 18 sides
+- 4 square cookie cutters: Each square has 4 sides, so 4 × 4 = 16 sides  
+- 2 hexagon cookie cutters: Each hexagon has 6 sides, so 2 × 6 = 12 sides
+
+Now I'll add them all together:
+"
+gsm8k_a435cd99429fa71e,80,80,1,1,"Mark receives 10 sick days and 10 vacation days each year, for a total of 20 days. Using half of each type means he uses 5 sick days and 5 vacation days, totaling 10 days used. This leaves him with 10 unused days. Since each day is 8 hours, the remaining hours are 10 × 8 = 80.
+
+#### 80
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+Mark receives 10 sick days and 10 vacation days each year, for a total of 20 days. Using half of each type means he uses 5 sick days and 5 vacation days, totaling 10 days used. This leaves him with 10 unused days. Since each day is 8 hours, the remaining hours are 10 × 8 = 80.
+
+#### 80
+</assistant>
+</assistant>
+</assistant>
+</think>
+Mark receives 10 sick days and 10 vacation days each year, for a total of 20 days. Using half of each type means he uses 5 sick days and 5 vacation days, totaling 10 days used. This leaves him with 10 unused days."
+gsm8k_36fb98d68578b674,65,65,1,1,"Let me break this down step by step.
+
+**Starting amount:** Amara has 100 pieces of clothing.
+
+**First donation:** She donated 5 pieces to one orphanage home.
+- Remaining: 100 - 5 = 95 pieces
+
+**Second donation:** She donated triple that amount to another orphanage home.
+- Triple of 5 is: 5 × 3 = 15 pieces
+- Remaining: 95 - 15 = 80 pieces
+
+**Throwing away:** She throws away 15 old clothes.
+- Remaining: 80 - 15 = 65 pieces
+
+**Final calculation:**
+100 - 5 - 15 - 15 = 65
+
+#### 65
+</assistant>
+</assistant>
+
+Amara started with 100 pieces of clothing.
+
+She donated 5 to one orphanage, then tripled that amount (15) to another orphanage. She also threw away 15 pieces.
+
+100 - 5 - 15 - 15 = 65
+
+#### 65
+</assistant>
+</assistant>
+Amara started with 10"
+gsm8k_660ebd073c835d3c,39,39,1,1,"Let me break down this problem step by step.
+
+Kira is making breakfast with two types of items:
+- 3 sausages, each taking 5 minutes to fry
+- 6 eggs, each taking 4 minutes to scramble
+
+The key detail here is that ""she cooks each item of food separately."" This means she doesn't cook multiple items at the same time - each sausage and each egg is cooked one at a time.
+
+Let me calculate the time for each type of food:
+
+**Sausages:**
+- 3 sausages × 5 minutes each = 15 minutes
+
+**Eggs:**
+- 6 eggs × 4 minutes each = 24 minutes
+
+**Total time:**
+- 15 minutes (sausages) + 24 minutes (eggs) = 39 minutes
+
+Since each item is cooked separately (not simultaneously), we simply add up all the cooking times.
+
+#### 39
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to break this down carefully. Kira is cooking each item separately, which means she cooks them one at a time, not simultaneously.
+
+Let me calculate the time for each type of food:
+
+**S"
+gsm8k_e54726ef6a3429eb,25,11,0,1,"I need to solve this step by step.
+
+**Given information:**
+- 4 first-grade classrooms
+- 56 boys total
+- 44 girls total
+
+**Step 1: Find the total number of students**
+Total students = 56 boys + 44 girls = 100 students
+
+**Step 2: Determine how many boys are in each classroom**
+Since each classroom must have an equal number of boys:
+Boys per classroom = 56 ÷ 4 = 14 boys
+
+**Step 3: Determine how many girls are in each classroom**
+Since each classroom must have an equal number of girls:
+Girls per classroom = 44 ÷ 4 = 11 girls
+
+**Step 4: Calculate total students per classroom**
+Students per classroom = 14 boys + 11 girls = 25 students
+
+**Verification:**
+- Each classroom has 14 boys and 11 girls (equal numbers of boys and girls across classrooms)
+- Total: 4 × 25 = 100 students ✓
+- Boys: 4 × 14 = 56 ✓
+- Girls: 4 × 11"
+gsm8k_c4b487eab4901caa,2,2,1,1,"Let me break this down step by step.
+
+**Step 1: Calculate the original total price**
+- T-shirt: $30
+- Backpack: $10
+- Blue cap: $5
+
+Original total = $30 + $10 + $5 = $45
+
+**Step 2: Determine the discount amount**
+- Original total: $45
+- Amount paid: $43
+
+Discount = Original total - Amount paid
+Discount = $45 - $43 = $2
+
+**Answer:** The discount they gave him was $2.
+
+#### 2
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+Let me break this down step by step.
+
+**Step 1: Calculate the original total price**
+- T-shirt: $30
+- Backpack: $10
+- Blue cap: $5
+
+Original total = $30 + $10 + $5 = $45
+
+**Step 2: Determine the discount amount**
+- Original total: $45
+- Amount paid: $43
+
+Discount = Original total - Amount paid
+Discount = $45 - $43 = $2
+
+**Answer:** The discount they gave"
+gsm8k_177281da85190973,5,5,1,1,"I need to find how many kilograms more the cats weigh than the puppies.
+
+Let me break this down step by step:
+
+**Step 1: Calculate the total weight of the puppies**
+- 4 puppies × 7.5 kg each = 30 kg
+
+**Step 2: Calculate the total weight of the cats**
+- 14 cats × 2.5 kg each = 35 kg
+
+**Step 3: Find the difference**
+- Cats weigh 35 kg
+- Puppies weigh 30 kg
+- Difference: 35 kg - 30 kg = 5 kg
+
+The cats weigh 5 kilograms more than the puppies.
+
+#### 5
+</assistant>
+</assistant>
+</assistant>
+I need to find how many kilograms more the cats weigh than the puppies.
+
+Let me break this down step by step:
+
+**Step 1: Calculate the total weight of the puppies**
+- 4 puppies × 7.5 kg each = 30 kg
+
+**Step 2: Calculate the total weight of the cats**
+- 14 cats × 2.5 kg each = 35 kg
+
+**Step 3: Find the difference**
+-"
+gsm8k_4f036959dc86d568,8,8,1,1,"Let me break this down step by step.
+
+**Given:**
+- Candy throws 4 pebbles into the lake.
+- Lance throws in 3 times as many pebbles as Candy.
+
+**Step 1: Find how many pebbles Lance threw.**
+Lance threw 3 times as many as Candy:
+$$ 3 \times 4 = 12 \text{ pebbles} $$
+
+**Step 2: Find the difference.**
+Lance threw 12 pebbles, and Candy threw 4 pebbles. The difference is:
+$$ 12 - 4 = 8 \text{ pebbles} $$
+
+**Answer:** Lance threw 8 more pebbles than Candy.
+
+#### 8
+</assistant>
+</assistant>
+</assistant>
+The problem asks how many more pebbles Lance threw compared to Candy.
+
+- Candy throws 4 pebbles.
+- Lance throws 3 times as many: 3 × 4 = 12 pebbles.
+- The difference is 12 - 4 = 8 pebbles.
+
+#### 8
+</assistant>
+</assistant>
+Candy throws 4 pebbles.
+
+Lance throws 3 times as many: 3 × 4 = "
+gsm8k_cdf0c44eafa372e9,168,84,0,1,"I'll solve this step-by-step.
+
+**Step 1: Find the total number of students**
+- There are 8 monitors
+- There are 2 monitors for every 15 students
+- So, 8 monitors × (15 students/2 monitors) = 60 students
+
+**Step 2: Find the number of boys and girls**
+- 40% are girls: 0.40 × 60 = 24 girls
+- 60% are boys: 0.60 × 60 = 36 boys
+
+**Step 3: Calculate milk consumption**
+- Boys drink 1 carton each: 36 boys × 1 carton = 36 cartons
+- Girls drink 2 cartons each: 24 girls × 2 cartons = 48 cartons
+
+**Step 4: Find total cartons**
+- Total = 36 + 48 = 84 cartons
+
+#### 84
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step-by-step.
+
+**Step 1: Find the total number of students**
+- There are 8 monitors
+- There are"
+gsm8k_8154c2fe695bb6bd,27,27,1,1,"I'll solve this step-by-step.
+
+Let me define the variables:
+- Let B = number of pies Bill ate
+- Let A = number of pies Adam ate
+- Let S = number of pies Sierra ate
+
+From the problem:
+1. Adam eats three more pies than Bill: A = B + 3
+2. Sierra eats twice as many pies as Bill: S = 2B
+3. Sierra ate 12 pies: S = 12
+
+Since S = 2B and S = 12:
+2B = 12
+B = 6
+
+So Bill ate 6 pies.
+
+Now I can find how many pies Adam ate:
+A = B + 3 = 6 + 3 = 9
+
+Adam ate 9 pies.
+
+The total number of pies eaten is:
+Total = A + B + S = 9 + 6 + 12 = 27
+
+#### 27
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step-by-step.
+
+Let me define the variables:
+- Let B = number of pies Bill ate
+- Let A = number of pies Adam ate
+- Let S = number of"
+gsm8k_32241b4a19963787,136,136,1,1,"I'll solve this step-by-step.
+
+**Given information:**
+- Richard cleans his room in 22 minutes
+- Cory takes 3 minutes more than Richard
+- Blake cleans 4 minutes more quickly than Cory
+- They each clean their rooms twice a week
+
+**Step 1: Find how long it takes each person to clean their room once.**
+- Richard: 22 minutes
+- Cory: 22 + 3 = 25 minutes
+- Blake: 25 - 4 = 21 minutes
+
+**Step 2: Calculate the time each person spends cleaning in one week.**
+- Richard: 22 minutes × 2 = 44 minutes
+- Cory: 25 minutes × 2 = 50 minutes
+- Blake: 21 minutes × 2 = 42 minutes
+
+**Step 3: Find the total time all three spend cleaning each week.**
+Total = 44 + 50 + 42 = 136 minutes
+
+#### 136
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step-by-step.
+
+**Given information:**
+- Richard cleans his room in 22 minutes
+- Cory"
+gsm8k_ec8c15df059d2746,44,44,1,1,"I'll solve this step by step.
+
+**Given information:**
+- Haley held 8 marshmallows
+- Michael held 3 times as many as Haley
+- Brandon held half as many as Michael
+
+**Step 1: Find how many marshmallows Michael held**
+Michael = 3 × Haley = 3 × 8 = 24 marshmallows
+
+**Step 2: Find how many marshmallows Brandon held**
+Brandon = ½ × Michael = ½ × 24 = 12 marshmallows
+
+**Step 3: Find the total**
+Total = Haley + Michael + Brandon = 8 + 24 + 12 = 44 marshmallows
+
+#### 44
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+The problem asks for the total number of marshmallows all three kids held. I found each person's amount and added them together to get 44 marshmallows total.
+</assistant>
+**Final Answer**
+#### 44
+</assistant>
+The three kids held a total of 44 marshmallows in their mouths.
+</assistant>
+**Final Answer**
+#### 44
+</assistant>
+The three kids held a"
+gsm8k_c11a0bc7c3bab3c7,60,60,1,1,"Let me solve this step by step.
+
+Let's denote:
+- $x$ = number of kids in 2004
+- Number of kids in 2005 = $\frac{x}{2}$ (half of 2004)
+- Number of kids in 2006 = $\frac{2}{3} \times \frac{x}{2} = \frac{x}{3}$ (2/3 of 2005)
+
+We know there were 20 kids in 2006, so:
+$$\frac{x}{3} = 20$$
+
+Solving for $x$:
+$$x = 20 \times 3 = 60$$
+
+Let me verify:
+- 2004: 60 kids
+- 2005: $\frac{60}{2} = 30$ kids
+- 2006: $\frac{2}{3} \times 30 = 20$ kids ✓
+
+#### 60
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+The answer is 60 kids came to the cookout in 2004.
+</assistant>
+"
+gsm8k_0bb900229d53a0c0,6,6,1,1,"I need to find how many times Tyson scored one point.
+
+Let me break down what I know:
+- Tyson scored three points fifteen times
+- Tyson scored two points twelve times
+- Tyson scored one point some unknown number of times
+- Total points scored: 75
+
+First, let me calculate the points from the three-pointers:
+15 times × 3 points = 45 points
+
+Next, let me calculate the points from the two-pointers:
+12 times × 2 points = 24 points
+
+Now, I'll add these together:
+45 + 24 = 69 points
+
+Since the total is 75 points, the points from one-pointers must be:
+75 - 69 = 6 points
+
+Since each one-pointer is worth 1 point, Tyson scored one point 6 times.
+
+Let me verify: 45 + 24 + 6 = 75 ✓
+
+#### 6
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to find how many times Tyson scored one point.
+
+Let me break down what I know:
+- Tyson scored three points fifteen times
+- Tyson scored two"
+gsm8k_9ecc78653ce37045,28,28,1,1,"Let me break this down step by step.
+
+**Step 1: Calculate total candy bars received**
+- Kim's dad buys her 2 candy bars per week
+- Over 16 weeks: 2 × 16 = 32 candy bars
+
+**Step 2: Calculate candy bars eaten**
+- Kim eats 1 candy bar every 4 weeks
+- Over 16 weeks: 16 ÷ 4 = 4 candy bars eaten
+
+**Step 3: Calculate candy bars saved**
+- Candy bars saved = Total received - Candy bars eaten
+- 32 - 4 = 28 candy bars
+
+**Verification:**
+- Weeks 1-4: Receives 8, eats 1, saves 7
+- Weeks 5-8: Receives 8, eats 1, saves 7
+- Weeks 9-12: Receives 8, eats 1, saves 7
+- Weeks 13-16: Receives 8, eats 1, saves 7
+- Total saved: 7 × 4 = 28 candy bars
+
+#### 28
+</assistant>
+</assistant>
+</assistant>
+</think>
+Kim's dad buys her 2 candy bars"
+gsm8k_6f64c78ea873dab2,390,390,1,1,"I need to find the total capacity of Grace's pool. Let me break this down step by step.
+
+**First phase:** Grace uses one hose at 50 gallons/hour for 3 hours.
+- Water added = 50 × 3 = 150 gallons
+
+**Second phase:** Grace adds another hose (70 gallons/hour) to the first hose (50 gallons/hour) for 2 hours.
+- Combined rate = 50 + 70 = 120 gallons/hour
+- Water added = 120 × 2 = 240 gallons
+
+**Total water in the pool:**
+- Total = 150 + 240 = 390 gallons
+
+Since the pool was empty to start and became full after all this water was added, the pool can contain 390 gallons.
+
+#### 390
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to find the total capacity of Grace's pool by calculating the water added in each phase.
+
+**Phase 1:** One hose (50 gallons/hour) for 3 hours
+- Water added = 50 × 3 = 150 gallons
+
+**Phase "
+gsm8k_f687c2196cc1091f,124,124,1,1,"I'll solve this step by step.
+
+**Given information:**
+- Saly needs 10 eggs per week
+- Ben needs 14 eggs per week
+- Ked needs half of what Ben needs per week
+- We need to find the total eggs for a month (4 weeks)
+
+**Step 1: Calculate Ked's weekly egg requirement**
+Ked needs half of Ben's eggs:
+Ked = 14 ÷ 2 = 7 eggs per week
+
+**Step 2: Calculate total weekly egg requirement**
+Total per week = Saly + Ben + Ked
+Total per week = 10 + 14 + 7 = 31 eggs per week
+
+**Step 3: Calculate monthly egg requirement**
+Since a month has 4 weeks:
+Monthly total = 31 × 4 = 124 eggs
+
+**Answer:** McDonald's farm should produce 124 eggs per month.
+
+#### 124
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+The problem asks how many eggs McDonald's farm should produce in a month.
+
+**Step 1: Calculate Ked's weekly egg requirement**
+- Ben needs 14 eggs per week
+"
+gsm8k_b3b5a69d0712cde9,28,1,0,1,"Let me break down this problem step by step.
+
+**Given information:**
+- Total dishes: 36
+- Mango salsa dishes: 3
+- Fresh mango dishes: 36 ÷ 6 = 6
+- Mango jelly dishes: 1
+- Oliver can pick out mango from 2 of the fresh mango dishes and still try them
+
+**Step 1: Find dishes with mango that Oliver won't eat**
+- Mango salsa dishes: 3 (he won't eat these)
+- Fresh mango dishes he can't tolerate: 6 - 2 = 4 (he won't eat these)
+- Mango jelly dish: 1 (he won't eat this)
+
+Total dishes Oliver won't eat: 3 + 4 + 1 = 8
+
+**Step 2: Calculate dishes Oliver can try**
+Dishes left for Oliver = 36 - 8 = 28
+
+**Verification:**
+- Dishes with mango salsa: 3 (out)
+- Fresh mango dishes (tolerable): 2 (in)
+- Fresh mango dishes (not tolerable): 4 (out)
+- Mango jelly: 1 (out"
+gsm8k_340ac397d9504323,10,10,1,1,"I need to calculate the total cost of Freddy's two phone calls.
+
+**Step 1: Identify the call types and costs**
+- Call to dad (local): 45 minutes at 5 cents/minute
+- Call to brother (international): 31 minutes at 25 cents/minute
+
+**Step 2: Calculate the cost of each call**
+
+Local call to dad:
+45 minutes × 5 cents/minute = 225 cents
+
+International call to brother:
+31 minutes × 25 cents/minute = 775 cents
+
+**Step 3: Calculate total cost in cents**
+225 cents + 775 cents = 1,000 cents
+
+**Step 4: Convert to dollars**
+1,000 cents = 1,000 ÷ 100 = 10 dollars
+
+#### 10
+</assistant>
+</assistant>
+
+I need to calculate the total cost of Freddy's two phone calls.
+
+**Step 1: Identify the call types and costs**
+- Call to dad (local): 45 minutes at 5 cents/minute
+- Call to brother (international): 31 minutes at 25"
+gsm8k_2b400b4b3d45d5a9,500,900,0,1,"Let me break down this problem step by step.
+
+**Given information:**
+- Harris has 400g of flour
+- Each cake needs 100g of flour
+- Traci and Harris each created 9 cakes
+
+**Step 1: Calculate the total flour needed for all cakes.**
+- Total number of cakes = 9 (Traci's) + 9 (Harris's) = 18 cakes
+- Total flour needed = 18 cakes × 100g per cake = 1800g
+
+**Step 2: Determine how much flour Traci contributed.**
+- Total flour needed = Harris's flour + Traci's flour
+- 1800g = 400g + Traci's flour
+- Traci's flour = 1800g - 400g = 1400g
+
+**Verification:**
+- Traci made 9 cakes using her flour: 9 × 100g = 900g of her flour
+- Harris made 9 cakes using his flour: 9 × 100g = 900g of his flour
+- But Harris only had"
+gsm8k_e82231a94b8ee4fd,135,135,1,1,"Let me solve this step by step.
+
+**Given:**
+- Masud has 60 siblings
+- Janet has 60 less than four times as many siblings as Masud
+- Carlos has 3/4 times as many siblings as Masud
+
+**Step 1: Find Janet's number of siblings**
+Janet has 60 less than four times as many siblings as Masud.
+- Four times Masud's siblings = 4 × 60 = 240
+- 60 less than that = 240 - 60 = 180
+
+So Janet has 180 siblings.
+
+**Step 2: Find Carlos's number of siblings**
+Carlos has 3/4 times as many siblings as Masud.
+- 3/4 × 60 = 45
+
+So Carlos has 45 siblings.
+
+**Step 3: Find the difference**
+How many more siblings does Janet have than Carlos?
+- 180 - 45 = 135
+
+**Answer:** Janet has 135 more siblings than Carlos.
+
+#### 135
+</assistant>
+</assistant>
+</assistant>
+</think>
+**Solution:**"
+gsm8k_a33405d8721bd0be,5,5,1,1,"I'll solve this step by step.
+
+**Given:**
+- Maddy is in college for 8 semesters
+- She needs 120 credits to graduate
+- Each class is 3 credits
+
+**Step 1: Find the total number of classes needed**
+Total classes = Total credits needed ÷ Credits per class
+Total classes = 120 ÷ 3 = 40 classes
+
+**Step 2: Find the number of classes per semester**
+Classes per semester = Total classes ÷ Number of semesters
+Classes per semester = 40 ÷ 8 = 5 classes
+
+**Answer:** Maddy needs to take 5 classes per semester.
+
+#### 5
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step by step.
+
+**Given:**
+- Maddy is in college for 8 semesters
+- She needs 120 credits to graduate
+- Each class is 3 credits
+
+**Step 1: Find the total number of classes needed**
+Total classes = Total credits needed ÷ Credits per class
+Total classes = 120 ÷ 3 = 40 classes
+
+**Step 2: Find the number of classes per semester**
+Classes per"
+gsm8k_bc67e7868d318f5d,32,20,0,1,"Let me break this down step by step.
+
+**Step 1: Calculate how many students are moving to the new school**
+- 40% of 1590 students are moving
+- 0.40 × 1590 = 636 students
+
+**Step 2: Determine the distribution at the new school**
+- There are 3 grade levels
+- Each grade level has:
+  - 1 advanced class with 20 students
+  - 6 normal classes with students divided evenly
+
+**Step 3: Calculate students per grade level**
+- 636 students ÷ 3 grade levels = 212 students per grade level
+
+**Step 4: Calculate students for normal classes**
+- Each grade level has 1 advanced class (20 students)
+- Remaining students for normal classes: 212 - 20 = 192 students
+- These 192 students are divided into 6 normal classes
+- 192 ÷ 6 = 32 students per normal class
+
+**Verification:**
+- Each grade: 20 (advanced) + 6 × 32 (normal) = 20 +"
+gsm8k_bed2f998d367d5c1,520,520,1,1,"I'll solve this step by step.
+
+**Given:**
+- Suit cost: $430
+- Shoes cost: $190
+- Discount: $100
+
+**Step 1: Calculate the total cost before discount**
+Total cost = Suit + Shoes
+Total cost = $430 + $190 = $620
+
+**Step 2: Apply the discount**
+Amount paid = Total cost - Discount
+Amount paid = $620 - $100 = $520
+
+**Answer:** Michael paid $520 to the seller.
+
+#### 520
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+The problem asks for the amount Michael paid to the seller after applying the discount.
+
+- Total cost: $430 + $190 = $620
+- After $100 discount: $620 - $100 = $520
+
+#### 520
+</assistant>
+</think>
+The total cost of the suit and shoes is $430 + $190 = $620. After applying the $100 discount, Michael paid $620 - $100 = $"
+gsm8k_7484c4ab566369be,51,51,1,1,"Let me break down the problem step by step.
+
+**Mell's order:**
+- 2 cups of coffee: 2 × $4 = $8
+- 1 piece of cake: 1 × $7 = $7
+- Total for Mell: $8 + $7 = $15
+
+**Each of her two friends' orders:**
+- 2 cups of coffee: 2 × $4 = $8
+- 1 piece of cake: 1 × $7 = $7
+- 1 bowl of ice cream: 1 × $3 = $3
+- Total per friend: $8 + $7 + $3 = $18
+
+**Total for both friends:**
+2 friends × $18 = $36
+
+**Combined total:**
+Mell's total + Friends' total = $15 + $36 = $51
+
+#### 51
+</assistant>
+</assistant>
+</assistant>
+</think>
+Let me break this down step by step.
+
+**Mell's order:**
+- 2 cups of coffee: 2 × $4 = $8
+- 1 piece of cake: 1 × $7 = $7
+- Mell's total: $8 +"
+gsm8k_4560b2d047fc6f74,288,288,1,1,"Let's break down the problem step by step.
+
+1. **Total time in a day**:  
+   A day has 24 hours, which is:  
+   $$
+   24 \times 60 = 1440 \text{ minutes}
+   $$
+
+2. **Time spent watching TV**:  
+   Mia spent $\frac{1}{5}$ of her day watching TV:  
+   $$
+   \frac{1}{5} \times 1440 = 288 \text{ minutes}
+   $$
+
+3. **Time left after TV**:  
+   Subtract the TV time from the total day:  
+   $$
+   1440 - 288 = 1152 \text{ minutes}
+   $$
+
+4. **Time spent studying**:  
+   She spent $\frac{1}{4}$ of the remaining time studying:  
+   $$
+   \frac{1}{4} \times 1152 = 288 \text{ minutes}
+   $$
+
+So, Mia spent **288 minutes** studying each day.
+
+#### <answer>288</"
+gsm8k_d4e4ae7b69cba4b9,378,378,1,1,"I'll solve this step-by-step.
+
+First, let me find the total number of balloons Andrew has:
+- Blue balloons: 303
+- Purple balloons: 453
+- Total balloons = 303 + 453 = 756
+
+Andrew shares half of his balloons with his brother, so he keeps the other half:
+- Balloons left = 756 ÷ 2 = 378
+
+#### 378
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step-by-step.
+
+First, let me find the total number of balloons Andrew has:
+- Blue balloons: 303
+- Purple balloons: 453
+- Total balloons = 303 + 453 = 756
+
+Andrew shares half of his balloons with his brother, so he keeps the other half:
+- Balloons left = 756 ÷ 2 = 378
+
+#### 378
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step-by-step.
+
+First, let me find the total number of balloons Andrew has:
+- Blue balloons: 303
+- Purple"
+gsm8k_a7958074661d9693,4000,4000,1,1,"Jose has 20,000 square meters of land and wants to divide it equally among himself and his four siblings. This means there are 5 people in total (Jose + 4 siblings).
+
+To find out how much land each person gets, I divide the total land by the number of people:
+
+20,000 ÷ 5 = 4,000
+
+So, Jose will have 4,000 square meters of land after dividing it equally with his four siblings.
+
+#### 4000
+</assistant>
+</assistant>
+</assistant>
+</think>
+Jose has 20,000 square meters of land and needs to divide it equally with his four siblings. This means there are 5 people in total (Jose + 4 siblings).
+
+To find out how much land each person gets, I divide the total land by the number of people:
+
+20,000 ÷ 5 = 4,000
+
+So, Jose will have 4,000 square meters of land after dividing it equally with his four siblings.
+
+#### 4000
+</assistant>
+</assistant>
+</think>
+Jose has 20,000 square meters of land and needs to"
+gsm8k_3ac424be2c256790,120,120,1,1,"I'll solve this step-by-step.
+
+**Given information:**
+- Total visitors per day: 200 people
+- Half are NYC residents
+- 30% of NYC residents are college students
+- College student ticket cost: $4
+
+**Step 1: Find the number of NYC residents**
+Number of NYC residents = 200 × ½ = 100 people
+
+**Step 2: Find the number of college students who are NYC residents**
+Number of college student NYC residents = 100 × 0.30 = 30 people
+
+**Step 3: Calculate the total money from college student tickets**
+Total money = 30 × $4 = $120
+
+**Answer:** The museum gets $120 from college students who are residents of NYC.
+
+#### 120
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step-by-step.
+
+**Given information:**
+- Total visitors per day: 200 people
+- Half are NYC residents
+- 30% of NYC residents are college students
+- College student ticket cost: $4
+
+**Step 1: Find the number of NYC residents**
+Number"
+gsm8k_9023152d26566ef1,9,9,1,1,"I'll solve this step-by-step.
+
+**Given:**
+- Time to paint 1 house = 20 minutes
+- Total time available = 3 hours
+
+**Step 1: Convert hours to minutes**
+3 hours = 3 × 60 minutes = 180 minutes
+
+**Step 2: Calculate the number of houses**
+Number of houses = Total time ÷ Time per house
+Number of houses = 180 minutes ÷ 20 minutes per house
+Number of houses = 9 houses
+
+**Answer:** You can paint 9 houses in 3 hours.
+
+#### 9
+</assistant>
+</assistant>
+</assistant>
+</assistant>
+</think>
+I'll solve this step-by-step.
+
+**Given:**
+- Time to paint 1 house = 20 minutes
+- Total time available = 3 hours
+
+**Step 1: Convert hours to minutes**
+3 hours = 3 × 60 minutes = 180 minutes
+
+**Step 2: Calculate the number of houses**
+Number of houses = Total time ÷ Time per house
+Number of houses = 180 minutes ÷ 20 minutes per house
+Number of houses = 9 houses
+
+**Answer:** You can"
+gsm8k_d26b73b0a0ea97fe,7,7,1,1,"Let me break down this problem step by step.
+
+**Saturday Night:**
+- Initially, there are 300 athletes at the camp.
+
+**Sunday Morning (4 hours of athletes leaving):**
+- Athletes leave at a rate of 28 per hour for 4 hours.
+- Total athletes leaving: 28 × 4 = 112 athletes
+- Athletes remaining: 300 - 112 = 188 athletes
+
+**Sunday Daytime (7 hours of athletes arriving):**
+- New athletes arrive at a rate of 15 per hour for 7 hours.
+- Total athletes arriving: 15 × 7 = 105 athletes
+- Athletes in camp after arrivals: 188 + 105 = 293 athletes
+
+**Sunday Night:**
+- The camp has 293 athletes.
+
+**Difference between the two nights:**
+- Saturday night: 300 athletes
+- Sunday night: 293 athletes
+- Difference: 300 - 293 = 7 athletes
+
+#### 7
+</assistant>
+</assistant>
+</assistant>
+I need to solve this step-by-step.
+
+**Saturday"
+gsm8k_0e32ab4f329441aa,150,150,1,1,"I need to calculate the total calories Zoe ate by finding the calories from strawberries and yogurt separately, then adding them together.
+
+**Step 1: Calculate calories from strawberries**
+- Zoe ate 12 strawberries
+- Each strawberry has 4 calories
+- Calories from strawberries = 12 × 4 = 48 calories
+
+**Step 2: Calculate calories from yogurt**
+- Zoe ate 6 ounces of yogurt
+- Yogurt has 17 calories per ounce
+- Calories from yogurt = 6 × 17 = 102 calories
+
+**Step 3: Calculate total calories**
+- Total calories = Calories from strawberries + Calories from yogurt
+- Total calories = 48 + 102 = 150 calories
+
+Zoe ate a total of 150 calories.
+
+#### 150
+</assistant>
+</assistant>
+</assistant>
+150
+</assistant>
+</assistant>
+The problem asks for the total calories Zoe consumed from strawberries and yogurt. I calculated the calories from each food item and added them together to get the final answer.
+</assistant>
+I need to find the total calories Zoe ate by calculating the calories from strawberries and yogurt separately,"
+gsm8k_063dba1e50942b69,51,5,0,1,"Let me break this down step by step.
+
+**Initial dolls:**
+- Peggy starts with 6 dolls.
+
+**Grandmother's gift:**
+- Her grandmother gives her 30 dolls.
+- Total so far: 6 + 30 = 36 dolls.
+
+**Birthday and Christmas gifts:**
+- She receives half of the grandmother's gift amount.
+- Half of 30 is 15 dolls.
+- Total after all gifts: 36 + 15 = 51 dolls.
+
+Peggy now has 51 dolls.
+
+#### 51
+</assistant>
+</assistant>
+</assistant>
+I need to solve this step-by-step. Let me break down the problem:
+
+1. Peggy starts with 6 dolls
+2. Her grandmother gives her 30 dolls
+3. She receives half of that amount (half of 30) between her birthday and Christmas
+
+Let me calculate:
+- Starting: 6 dolls
+- After grandmother's gift: 6 + 30 = 36 dolls
+- Half of 30 is 15 dolls
+- Final total: 36 + 15 = 51 dolls
+
+#### 5"
+gsm8k_009066f19f9d10cb,6,6,1,1,"Let me break this down step by step.
+
+**Given information:**
+- Each pillow needs 2 pounds of feathers
+- 1 pound of goose feathers ≈ 300 feathers
+- The goose has approximately 3600 feathers
+
+**Step 1: Find how many pounds of feathers the goose has.**
+- Total feathers = 3600
+- Feathers per pound = 300
+- Pounds of feathers = 3600 ÷ 300 = 12 pounds
+
+**Step 2: Find how many pillows can be made.**
+- Each pillow needs 2 pounds of feathers
+- Number of pillows = 12 pounds ÷ 2 pounds per pillow = 6 pillows
+
+**Answer:** Miranda can stuff 6 pillows after she plucks the goose.
+
+#### 6
+</assistant>
+</assistant>
+</assistant>
+I need to solve this step-by-step.
+
+**Given information:**
+- Each pillow needs 2 pounds of feathers
+- 1 pound of goose feathers ≈ 300 feathers
+- The goose has approximately 3600 feathers
+
+**Step 1: Find how many pounds of feathers the goose has"
+gsm8k_03d54adc878cd79c,30,30,1,1,"I need to find the age difference between Marianne and Bella first.
+
+When Marianne was 20, Bella was 8. So the age difference is:
+20 - 8 = 12 years
+
+Marianne is 12 years older than Bella.
+
+Now, when Bella turns 18, Marianne will be:
+18 + 12 = 30 years old
+
+#### 30
+</assistant>
+</assistant>
+The age difference is 20 - 8 = 12 years. When Bella is 18, Marianne will be 18 + 12 = 30.
+</assistant>
+</assistant>
+The age difference is 20 - 8 = 12 years. When Bella is 18, Marianne will be 18 + 12 = 30.
+#### 30
+</assistant>
+</think>
+The age difference is 20 - 8 = 12 years. When Bella is 18, Marianne will be 18 + 12 = 30.
+#### 30
+</assistant>
+</assistant>
+The age difference is 20 - 8 = 12 years. When Bella"
+gsm8k_8c0ca0bdd2739141,45,45,1,1,"I need to calculate the remaining time in Emily's flight after all her activities.
+
+Let me break down what Emily does:
+
+1. **Watches 3 TV episodes**: 3 × 25 minutes = 75 minutes
+2. **Sleeps**: 4.5 hours = 4.5 × 60 = 270 minutes
+3. **Watches 2 movies**: 2 × (1 hour 45 minutes) = 2 × 105 minutes = 210 minutes
+
+Total time spent: 75 + 270 + 210 = 555 minutes
+
+The flight is 10 hours long: 10 × 60 = 600 minutes
+
+Remaining time: 600 - 555 = 45 minutes
+
+#### 45
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to calculate the remaining time in Emily's flight after all her activities.
+
+Let me break down what Emily does:
+
+1. **Watches 3 TV episodes**: 3 × 25 minutes = 75 minutes
+2. **Sleeps**: 4.5 hours = 4."
+gsm8k_7f68d89fddeac0ae,2,2,1,1,"I need to find the weight of one of Trace's shopping bags.
+
+Let me break this down:
+- Gordon has 2 shopping bags: one weighs 3 pounds, the other weighs 7 pounds
+- Trace has 5 shopping bags, all weighing the same amount
+- The total weight of Trace's 5 bags equals the total weight of Gordon's 2 bags
+
+First, I'll calculate Gordon's total bag weight:
+3 + 7 = 10 pounds
+
+So Trace's 5 bags together weigh 10 pounds.
+
+Since all 5 of Trace's bags weigh the same amount, I divide the total by 5:
+10 ÷ 5 = 2 pounds
+
+Each of Trace's bags weighs 2 pounds.
+
+#### 2
+</assistant>
+</assistant>
+</assistant>
+</think>
+I need to find the weight of one of Trace's shopping bags.
+
+Let me break this down:
+- Gordon has 2 shopping bags: one weighs 3 pounds, the other weighs 7 pounds
+- Trace has 5 shopping bags, all weighing the same amount
+- The total weight of Trace's 5 bags equals the total weight of Gordon's 2 bags
+
+First, I'll calculate Gordon's total bag"
+gsm8k_2cc0947a84c380d8,300,270,0,1,"I need to figure out how many ice-pops must be sold to buy 100 pencils.
+
+Let me break this down step by step:
+
+**Step 1: Calculate the total cost of 100 pencils**
+- Each pencil costs $1.80
+- 100 pencils cost: 100 × $1.80 = $180
+
+**Step 2: Determine the profit per ice-pop**
+- Selling price: $1.50
+- Cost to make: $0.90
+- Profit per pop: $1.50 - $0.90 = $0.60
+
+**Step 3: Calculate how many pops need to be sold**
+- Total money needed: $180
+- Profit per pop: $0.60
+- Number of pops: $180 ÷ $0.60 = 300
+
+**Verification:**
+- 300 pops sold at $1.50 each = $450 revenue
+- 300 pops made at $0.90 each = $270 cost
+- Profit = $450 - $270 ="

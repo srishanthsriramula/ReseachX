@@ -1,0 +1,335 @@
+{
+  "protocol_hash": "792fd9d4a19c5f37",
+  "snapshot_sha256": "8cedb762f6d18ef0dc2f3a828bae64d68da03643238aa2659d93a65a289e361b",
+  "expert_budget_k": 4,
+  "expert_target_params": 12582912,
+  "expert_lr": 1e-05,
+  "chosen_lora_lr": 0.0002,
+  "expert_sets": {
+    "random_experts": [
+      [
+        35,
+        206
+      ],
+      [
+        10,
+        233
+      ],
+      [
+        5,
+        232
+      ],
+      [
+        6,
+        209
+      ]
+    ],
+    "routing_experts": [
+      [
+        19,
+        64
+      ],
+      [
+        24,
+        52
+      ],
+      [
+        8,
+        129
+      ],
+      [
+        5,
+        177
+      ]
+    ],
+    "causal_experts": [
+      [
+        8,
+        184
+      ],
+      [
+        6,
+        73
+      ],
+      [
+        21,
+        183
+      ],
+      [
+        19,
+        64
+      ]
+    ],
+    "gradient_experts": [
+      [
+        30,
+        229
+      ],
+      [
+        20,
+        219
+      ],
+      [
+        21,
+        183
+      ],
+      [
+        18,
+        43
+      ]
+    ],
+    "gradient_specific_experts": [
+      [
+        8,
+        184
+      ],
+      [
+        19,
+        34
+      ],
+      [
+        27,
+        247
+      ],
+      [
+        21,
+        183
+      ]
+    ]
+  },
+  "lora_plans": {
+    "standard_lora": {
+      "rank": 12,
+      "predicted_trainable_params": 12288000,
+      "budget_rel_error": 0.0234375,
+      "coefficient": 1024000,
+      "module_count": 160,
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "method": "standard_lora",
+      "actual_trainable_params": 12288000,
+      "actual_budget_rel_error": 0.0234375,
+      "no_op_max_nll_diff": 0.0,
+      "delete_restore_max_nll_diff": 0.0
+    },
+    "random_layer_lora": {
+      "rank": 60,
+      "predicted_trainable_params": 12533760,
+      "budget_rel_error": 0.00390625,
+      "coefficient": 208896,
+      "module_count": 32,
+      "layers": [
+        8,
+        10,
+        13,
+        23,
+        26,
+        34,
+        35,
+        38
+      ],
+      "method": "random_layer_lora",
+      "actual_trainable_params": 12533760,
+      "actual_budget_rel_error": 0.00390625,
+      "no_op_max_nll_diff": 0.0,
+      "delete_restore_max_nll_diff": 0.0
+    },
+    "gradient_guided_lora": {
+      "rank": 63,
+      "predicted_trainable_params": 12644352,
+      "budget_rel_error": 0.0048828125,
+      "coefficient": 200704,
+      "module_count": 32,
+      "layers": [
+        20,
+        24,
+        19,
+        23,
+        21,
+        18,
+        16,
+        25
+      ],
+      "method": "gradient_guided_lora",
+      "actual_trainable_params": 12644352,
+      "actual_budget_rel_error": 0.0048828125,
+      "no_op_max_nll_diff": 0.0,
+      "delete_restore_max_nll_diff": 0.0
+    }
+  },
+  "final_order_seeds": [
+    11,
+    23,
+    47
+  ],
+  "generation_eval_ids": [
+    "gsm8k_3c4fc91451b6eb58",
+    "gsm8k_86b3ca5799f36bf1",
+    "gsm8k_696071905a85e126",
+    "gsm8k_817cd01402b580a2",
+    "gsm8k_917565ed017a384e",
+    "gsm8k_38f9608d0911f92a",
+    "gsm8k_f4b7d94c7208bf1c",
+    "gsm8k_a7d78e5a73eb736f",
+    "gsm8k_19d404c12fb104bd",
+    "gsm8k_811e4270a3af3a9c",
+    "gsm8k_7c1ba632402e9dd4",
+    "gsm8k_0264a7faeb62e07f",
+    "gsm8k_7d885e090e8039cf",
+    "gsm8k_c06988738256b843",
+    "gsm8k_ecfd91c7448beb4b",
+    "gsm8k_0270a167830c1841",
+    "gsm8k_315ff63cd782f683",
+    "gsm8k_03ea74dbe0e88912",
+    "gsm8k_27ce0aa517d842b2",
+    "gsm8k_a9798075c6e641a8",
+    "gsm8k_9fa70f2dd7a054f4",
+    "gsm8k_d74c52a87e06166e",
+    "gsm8k_af4f388da257aab7",
+    "gsm8k_afe8220664737568",
+    "gsm8k_533a1de225194628",
+    "gsm8k_27ba563566fc40a1",
+    "gsm8k_883512359703bdbc",
+    "gsm8k_7d9f9a119119c9d5",
+    "gsm8k_5553251d23b75354",
+    "gsm8k_5a6c963924fa1629",
+    "gsm8k_07836807c799f44f",
+    "gsm8k_d24440763988694e",
+    "gsm8k_ff7424c774531191",
+    "gsm8k_7e1e66c77fcfcc50",
+    "gsm8k_b8b978bddbab2afa",
+    "gsm8k_a2520553f46e4ae7",
+    "gsm8k_19f8f54a31c562e3",
+    "gsm8k_19e905ba9674592c",
+    "gsm8k_f23967bf69dffbbf",
+    "gsm8k_c131504c06e44841",
+    "gsm8k_15d709c6a1ea1a13",
+    "gsm8k_3a8bfcb6189a8338",
+    "gsm8k_270649c36e2edec1",
+    "gsm8k_be2e53f5d8e20c08",
+    "gsm8k_cd7058cf798fc433",
+    "gsm8k_c0cd2a6956c0c6c4",
+    "gsm8k_209a34dca12a7b5a",
+    "gsm8k_a278521e9dfab4c4",
+    "gsm8k_dc39201f45aae7ff",
+    "gsm8k_06591e3000388735",
+    "gsm8k_ad6628c18313d944",
+    "gsm8k_4e6419841f3b7e3a",
+    "gsm8k_147eedadf9e112a4",
+    "gsm8k_a864c1e8618c4219",
+    "gsm8k_390c280ec65799fa",
+    "gsm8k_a6d3a04eaa27136f",
+    "gsm8k_5d42fef796c2ead0",
+    "gsm8k_3d994447a15548bb",
+    "gsm8k_d575712318103022",
+    "gsm8k_10431490fcbd69a5",
+    "gsm8k_667b56d0376b6374",
+    "gsm8k_dcfbcec7a0a7ed2c",
+    "gsm8k_b866278ee09d8942",
+    "gsm8k_22d608d67e55ce6b",
+    "gsm8k_3ca0e746f10ccf16",
+    "gsm8k_66878f1c646c979a",
+    "gsm8k_4d6fc740fa65f343",
+    "gsm8k_6315aebb3eed1425",
+    "gsm8k_3a31132f5fea2b42",
+    "gsm8k_c754bacae84f5d4a",
+    "gsm8k_fd00105695254e90",
+    "gsm8k_df0b27fa9460122f",
+    "gsm8k_9237e3582b5184bb",
+    "gsm8k_4b3f3583ecad9e0c",
+    "gsm8k_80c6c993731f0b11",
+    "gsm8k_2e203ecfb155ce3e",
+    "gsm8k_6feb7653ae34934a",
+    "gsm8k_f5990159bcf5060b",
+    "gsm8k_f9e30dcf297d8c78",
+    "gsm8k_fdf9b8a2a9c21ef8",
+    "gsm8k_d9a86b5ea40a1522",
+    "gsm8k_26742dad044ae53f",
+    "gsm8k_7588f7e816026ce9",
+    "gsm8k_d0798145442485f3",
+    "gsm8k_1639fb9ff4daadea",
+    "gsm8k_dc790f42bdf053e8",
+    "gsm8k_cc2a173fae47bb72",
+    "gsm8k_7defe8ce94c417f3",
+    "gsm8k_bfd0d3bee8fedfb6",
+    "gsm8k_2e9bb88c177fdf7e",
+    "gsm8k_a80947ed1965b3e7",
+    "gsm8k_316eac029fc34d0d",
+    "gsm8k_913049ca11c366f5",
+    "gsm8k_09ee1c457c38650a",
+    "gsm8k_dc3605a75eb8adbf",
+    "gsm8k_b3ea54b95e4c78b9",
+    "gsm8k_2e113f31f6278f1c",
+    "gsm8k_c41d4feabce1e9a4",
+    "gsm8k_1084abb10503718a",
+    "gsm8k_885eb87ff9b444b1",
+    "gsm8k_0dd0b319394d0455",
+    "gsm8k_4d9219dc9407b37b",
+    "gsm8k_636a57beba28883a",
+    "gsm8k_0fc31d873d033932",
+    "gsm8k_53b2e43627a40e3e",
+    "gsm8k_9733c6c3497099f2",
+    "gsm8k_6e00747ded27132e",
+    "gsm8k_63acc70208f4e745",
+    "gsm8k_1dd8f2b1009069f3",
+    "gsm8k_488aa286b6b6cddb",
+    "gsm8k_c46455f66de332c0",
+    "gsm8k_c5a5231d32ac6318",
+    "gsm8k_053f45e769c518be",
+    "gsm8k_d82eb7a9201330ae",
+    "gsm8k_c8d0ff7fdd18b09d",
+    "gsm8k_4b4052802bfb783f",
+    "gsm8k_c13af096cc01ade8",
+    "gsm8k_e42a7145093f4bfd",
+    "gsm8k_c4f6c8fbe8abdfa9",
+    "gsm8k_4b7297b47da8c4f1",
+    "gsm8k_7c83b6301b1e5a90",
+    "gsm8k_13e140ab86daaa95",
+    "gsm8k_bd0547cc504bdba2",
+    "gsm8k_d7b5398ffe7a991f",
+    "gsm8k_ff998bb1e3fe4cff",
+    "gsm8k_f0c2ba0b47d7fffd",
+    "gsm8k_5e156993b8efcfcb",
+    "gsm8k_89243ac08dc0b8a7"
+  ]
+}

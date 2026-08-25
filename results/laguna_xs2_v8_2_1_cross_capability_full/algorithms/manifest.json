@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-08-15T20:55:21.211793+00:00",
+  "protocol_version": "v8.2.1-full-audit",
+  "protocol_hash": "30bcde3f33e41cbd",
+  "capability": "algorithms",
+  "model_id": "poolside/Laguna-XS.2",
+  "experiment_csv": "/home/ec2-user/workspace/laguna_v8_cross_capability_experiment.csv",
+  "experiment_csv_sha256": "e9fddf34d8654e74db3ecda008bf4450db48e18a209368aa46ba35591fc05091",
+  "global_positions": 9984,
+  "population_n": 48,
+  "panel_total": 75,
+  "causal_candidate_count": 220,
+  "causal_greedy_order": [
+    [
+      32,
+      121
+    ],
+    [
+      5,
+      119
+    ],
+    [
+      27,
+      86
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      27,
+      146
+    ],
+    [
+      14,
+      32
+    ],
+    [
+      27,
+      246
+    ],
+    [
+      10,
+      23
+    ]
+  ],
+  "selectors": {
+    "causal": [
+      32,
+      121
+    ],
+    "routing": [
+      32,
+      121
+    ],
+    "gradient": [
+      30,
+      229
+    ],
+    "gradient_specific": [
+      32,
+      121
+    ]
+  },
+  "validation_examples": 50,
+  "final_test_examples": 50,
+  "confirm_seeds": [
+    11,
+    23,
+    47
+  ],
+  "budget_ks": [
+    1,
+    2,
+    4,
+    8
+  ]
+}
