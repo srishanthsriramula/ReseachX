@@ -44,13 +44,18 @@ In sparse MoE architectures with Top-$k$ softmax gating, expert parameter matric
 For any continuous non-zero parameter perturbation $\Delta W_e$ applied to a routed expert, the output activation shift induces an $\mathcal{O}(1)$ discontinuous jump in downstream router selections:
 $$\lim_{\|\Delta W\| \to 0} \|\Delta \text{MoE}(x)\| = \Omega(1)$$
 
+| Stage | Event | Mechanism / Mathematical Impact |
+|---|---|---|
+| **1. Local Perturbation** | $\\Delta W$ in Layer 18 | Continuous weight edit in Expert 43 shifts activation $\\Delta h_{18} = \\Delta W \\cdot x$ |
+| **2. Boundary Crossing** | Router $G_{19}(\\Delta h)$ | Downstream router logit shift $|z_i - z_j| < \\epsilon$ crosses softmax boundary |
+| **3. Expert Permutation** | Token Re-routing | Expert #12 is replaced by Expert #89 on downstream tokens |
+| **4. Routing Avalanche** | Discrete Cascade | Non-vanishing $\\Omega(1)$ jump compounds across layers 19 → 47 (**$-2.39\\text{ pp}$ Collapse**) |
+
 ```mermaid
-flowchart TD
-    EDIT["Parameter Perturbation ΔW in Expert 43 (Layer 18)"] --> ACT["Output Activation Shift: Δh_18 = h_18 + ΔW · x"]
-    ACT --> ROUTER["Next Layer Router: G_19(Δh_18) = Top8(Softmax(W_g · Δh_18))"]
-    ROUTER --> CROSS["Router Decision Boundary Crossed! (|z_i - z_j| < ε)"]
-    CROSS --> PERM["Expert #12 Permuted to Expert #89 on Downstream Tokens"]
-    PERM --> AVALANCHE["DISCRETE ROUTING AVALANCHE ACROSS LAYERS 19 → 47 (Catastrophic Collapse)"]
+flowchart LR
+    P["ΔW in L18"] --> R["Router G_19 Shift"]
+    R --> D["Decision Boundary Crossed"]
+    D --> A["48-Layer Routing Avalanche"]
 ```
 
 ### Transition Logic:

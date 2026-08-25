@@ -30,12 +30,12 @@ Here is the complete, unfiltered story of what happened at every single step.
 
 Before diving into the versions, let us understand the machine we operated on: **Laguna XS.2**.
 
-```mermaid
-flowchart TD
-    MODEL["Laguna XS.2 (33.4B-A3B Foundation Model)"] --> P1["33.4B Total Parameters (3.0B Active / Token)"]
-    MODEL --> P2["48 Transformer Layers (12 Global + 36 Sliding Window)"]
-    MODEL --> P3["256 Routed SwiGLU Experts + 1 Shared Expert Per Layer"]
-```
+| Architectural Metric | Value | Description |
+|---|---|---|
+| **Total Parameters** | $33.4\\text{B}$ | Full resident model footprint |
+| **Active Per Token** | $3.0\\text{B}$ | Compute FLOPs executed per word |
+| **Transformer Depth** | $48$ Layers | $12$ Global + $36$ Sliding Window Attention |
+| **MoE Routing** | $256$ Experts | Top-$8$ Softmax Gating + $1$ Shared MLP |
 
 Instead of running all 33.4B parameters on every word, **Laguna XS.2 is a Mixture-of-Experts (MoE)** model. On every single token (word), a "Traffic Director" (the **Router**) looks at the word and picks only **8 out of the 256 specialized sub-networks (experts)** to process that word.
 
@@ -186,13 +186,18 @@ Trained 4 matched policies ($K=4$, ~12.58M params) across random seeds on MI300X
 * **Every single routed expert policy caused negative generalization!**
 
 ### 6. The Mathematical Proof: Theorem 1 (Discontinuous Router Bifurcation)
+| Stage | Event | Mechanism / Mathematical Impact |
+|---|---|---|
+| **1. Local Perturbation** | $\\Delta W$ in Layer 18 | Continuous weight edit in Expert 43 shifts activation $\\Delta h_{18} = \\Delta W \\cdot x$ |
+| **2. Boundary Crossing** | Router $G_{19}(\\Delta h)$ | Downstream router logit shift $|z_i - z_j| < \\epsilon$ crosses softmax boundary |
+| **3. Expert Permutation** | Token Re-routing | Expert #12 is replaced by Expert #89 on downstream tokens |
+| **4. Routing Avalanche** | Discrete Cascade | Non-vanishing $\\Omega(1)$ jump compounds across layers 19 → 47 (**$-2.39\\text{ pp}$ Collapse**) |
+
 ```mermaid
-flowchart TD
-    EDIT["Parameter Perturbation ΔW in Expert 43 (Layer 18)"] --> ACT["Output Activation Shift: Δh_18 = h_18 + ΔW · x"]
-    ACT --> ROUTER["Next Layer Router: G_19(Δh_18) = Top8(Softmax(W_g · Δh_18))"]
-    ROUTER --> CROSS["Router Decision Boundary Crossed! (|z_i - z_j| < ε)"]
-    CROSS --> PERM["Expert #12 Permuted to Expert #89 on Downstream Tokens"]
-    PERM --> AVALANCHE["DISCRETE ROUTING AVALANCHE ACROSS LAYERS 19 → 47 (Catastrophic Collapse)"]
+flowchart LR
+    P["ΔW in L18"] --> R["Router G_19 Shift"]
+    R --> D["Decision Boundary Crossed"]
+    D --> A["48-Layer Routing Avalanche"]
 ```
 Because expert parameter matrices are mutually orthogonal ($\|W_i - W_j\| = \Omega(1)$), changing an expert’s weights shifts downstream activations across softmax routing boundaries, triggering a **discrete routing avalanche** across all remaining 47 layers.
 
@@ -331,20 +336,15 @@ Executed **42 independent runs** across 5 random seeds on MI300X:
 * **The Breakthrough Winner**: **Stratified Signature 01** (`[1, 2, 8, 11, 12, 16, 21, 26]`) won decisively (**$79.60\%$, $+1.48\text{ pp}$ gain, max seed $80.99\%$**).
 
 ### 6. Theorem 2: Why Stratified Placement Won (The Jacobian Proof)
-```mermaid
-flowchart TD
-    subgraph Bottleneck ["Congested Bottleneck Editing (v11 Guided: Layers 16-25)"]
-        B1["Contiguous Edited Layers [16, 18, 19, 20, 21, 23, 24, 25]"] --> B2["Jacobian Compounds Multiplicatively: J = ∏ (I + ∇f_l + BA)"]
-        B2 --> B3["Condition Number Explodes: κ(J) ~ e^(K · σ_max)"]
-        B3 --> B4["Representation Collapse (Gain: +0.05 pp)"]
-    end
+| Geometry Strategy | Targeted Layers | Mathematical Condition Number | Outcome / Gain |
+|---|---|---|---|
+| **Bottleneck Editing (Guided)** | `[16, 18, 19, 20, 21, 23, 24, 25]` | Compounds exponentially: $\\kappa \\sim e^{K \\sigma_{\\max}}$ | ❌ **$+0.05\\text{ pp}$ (Stagnant)** |
+| **Stratified Hierarchy (Signature 01)** | `[1, 2, 8, 11, 12, 16, 21, 26]` | Linear bounded growth: $\\kappa \\le 1 + K \\sigma \\rho^{\\Delta l}$ | 🥇 **$+1.48\\text{ pp}$ (Max: $80.99\\%$)** |
 
-    subgraph Stratified ["Stratified Depth Hierarchy (v11 Winner: Signature 01)"]
-        S1["Stratified Layers [1, 2, 8, 11, 12, 16, 21, 26]"] --> S2["Early Steering at Layers 1 & 2"]
-        S2 --> S3["Unedited Layers Act as Contractive Dampers: ||J_un|| ≤ ρ < 1"]
-        S3 --> S4["Linear Condition Growth: κ(J) ≤ 1 + K · σ · ρ^(Δl)"]
-        S4 --> S5["Clean Subspace Rotation (Gain: +1.48 pp, Best: 80.99%)"]
-    end
+```mermaid
+flowchart LR
+    B["Bottleneck [16-25]"] --> BC["κ ~ e^(K·σ) (Collapse)"]
+    S["Stratified [1,2,8...26]"] --> SC["κ ≤ 1 + K·σ·ρ (Stable +1.48 pp)"]
 ```
 When you edit 8 contiguous layers in a row, the perturbations multiply through consecutive layers, causing the Jacobian condition number to explode exponentially ($\kappa \sim e^{K \sigma_{\max}}$).
 Stratified placement places edits early (`[1, 2, 8]`) to steer token routing, and spaces mid-layer edits with unedited LayerNorm/attention steps that act as **contractive shock absorbers**, keeping representation stability linear.
@@ -372,27 +372,20 @@ $$\Delta W^* = (F_{\text{ret}} + \alpha I)^{-1/2} \nabla \mathcal{L}_{\text{task
 We implemented this in PyTorch by injecting a **Forward Pre-Hook** on LoRA inputs:
 $$\tilde{x} = x \cdot (\Sigma_X + \alpha I)^{-1/2}$$
 
+| Phase | Mechanism | Equation |
+|---|---|---|
+| **Forward Pass** | Input Damping | $\\tilde{x} = x \\cdot (\\Sigma_X + \\alpha I)^{-1/2}$ |
+| **Backward Pass** | Natural Gradient | $\\nabla_A \\mathcal{L} = (\\nabla_A \\mathcal{L}_{\\text{uncond}}) \\cdot (\\Sigma_X + \\alpha I)^{-1/2}$ |
+| **AdamW Step** | Covariance-Scaled Update | $\\Delta A \\propto (\\nabla_A \\mathcal{L}) \\cdot (\\Sigma_X + \\alpha I)^{-1/2}$ |
+| **Forward Evaluation** | Closed-Form Response | $\\Delta y = -\\eta B (\\nabla_A \\mathcal{L}) (\\Sigma_X + \\alpha I)^{-1} x$ |
+
 ```mermaid
 flowchart LR
-    subgraph Forward ["Forward Training Pass"]
-        X["Input x"] --> PRE["Pre-Hook: D_α = (Σ_X + α·I)^(-1/2)"]
-        PRE --> XD["Damped Input: x̃ = x · D_α"]
-        XD --> LORA_A["LoRA Matrix A: z = x̃ · A^T"]
-        LORA_A --> LORA_B["LoRA Matrix B: Δy = z · B^T"]
-    end
-
-    subgraph Backward ["Backward Autograd Pass"]
-        LOSS["Loss L"] --> GRAD_Z["∇_z L = ∂L/∂z"]
-        GRAD_Z --> CHAIN["Chain Rule: ∇_A L = (∇_z L)^T · (x · D_α)"]
-        CHAIN --> NAT_GRAD["Riemannian Natural Gradient: (∇_A L_uncond) · D_α"]
-        NAT_GRAD --> OPTIM["AdamW Parameter Step: ΔA ∝ (∇_A L) · D_α"]
-    end
-
-    subgraph Output ["Closed-Form Evaluation Response"]
-        OPTIM -.-> PERTURB["Δy = -η · B · (∇_A L_uncond) · (Σ_X + α·I)^(-1) · x"]
-    end
-
-    Forward --> Backward
+    X["Input x"] --> DAMP["Pre-Hook: D_α"]
+    DAMP --> LORA["LoRA"]
+    LORA --> LOSS["Loss L"]
+    LOSS --> NAT["Natural Gradient"]
+    NAT --> STEP["AdamW Step"]
 ```
 
 On forward generation, the two inverse square roots multiply together:

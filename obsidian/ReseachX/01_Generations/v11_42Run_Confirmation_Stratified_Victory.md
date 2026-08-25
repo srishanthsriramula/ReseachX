@@ -43,20 +43,15 @@ We executed a fully preregistered 42-run confirmatory matrix on AMD Instinct MI3
 ---
 
 ## 4. Theorem 2: Why Stratified Placement Won (The Jacobian Proof)
-```mermaid
-flowchart TD
-    subgraph Bottleneck ["Congested Bottleneck Editing (v11 Guided: Layers 16-25)"]
-        B1["Contiguous Edited Layers [16, 18, 19, 20, 21, 23, 24, 25]"] --> B2["Jacobian Compounds Multiplicatively: J = ∏ (I + ∇f_l + BA)"]
-        B2 --> B3["Condition Number Explodes: κ(J) ~ e^(K · σ_max)"]
-        B3 --> B4["Representation Collapse (Gain: +0.05 pp)"]
-    end
+| Geometry Strategy | Targeted Layers | Mathematical Condition Number | Outcome / Gain |
+|---|---|---|---|
+| **Bottleneck Editing (Guided)** | `[16, 18, 19, 20, 21, 23, 24, 25]` | Compounds exponentially: $\\kappa \\sim e^{K \\sigma_{\\max}}$ | ❌ **$+0.05\\text{ pp}$ (Stagnant)** |
+| **Stratified Hierarchy (Signature 01)** | `[1, 2, 8, 11, 12, 16, 21, 26]` | Linear bounded growth: $\\kappa \\le 1 + K \\sigma \\rho^{\\Delta l}$ | 🥇 **$+1.48\\text{ pp}$ (Max: $80.99\\%$)** |
 
-    subgraph Stratified ["Stratified Depth Hierarchy (v11 Winner: Signature 01)"]
-        S1["Stratified Layers [1, 2, 8, 11, 12, 16, 21, 26]"] --> S2["Early Steering at Layers 1 & 2"]
-        S2 --> S3["Unedited Layers Act as Contractive Dampers: ||J_un|| ≤ ρ < 1"]
-        S3 --> S4["Linear Condition Growth: κ(J) ≤ 1 + K · σ · ρ^(Δl)"]
-        S4 --> S5["Clean Subspace Rotation (Gain: +1.48 pp, Best: 80.99%)"]
-    end
+```mermaid
+flowchart LR
+    B["Bottleneck [16-25]"] --> BC["κ ~ e^(K·σ) (Collapse)"]
+    S["Stratified [1,2,8...26]"] --> SC["κ ≤ 1 + K·σ·ρ (Stable +1.48 pp)"]
 ```
 Contiguous mid-layer editing causes output Jacobian condition number to compound exponentially ($\kappa \sim e^{K \sigma_{\max}}$).
 Stratified placement (`[1, 2, 8, 11, 12, 16, 21, 26]`) separates edits with unedited LayerNorm/attention steps that act as **contractive shock absorbers**, keeping condition number growth linear.

@@ -153,27 +153,20 @@ $$\Delta y = B (\Delta A) \tilde{x} = B \left( -\eta \nabla_A \mathcal{L}_{\text
 $$\Delta y = -\eta B (\nabla_A \mathcal{L}_{\text{uncond}}) \cdot (\Sigma_X + \alpha I)^{-1} x \quad \text{(Exact Closed-Form Natural Gradient!)}$$
 Because the pre-hook is applied during standard matrix multiplication, inference operates with **zero extra FLOPs or latency**. $\blacksquare$
 
+| Phase | Mechanism | Equation |
+|---|---|---|
+| **Forward Pass** | Input Damping | $\\tilde{x} = x \\cdot (\\Sigma_X + \\alpha I)^{-1/2}$ |
+| **Backward Pass** | Natural Gradient | $\\nabla_A \\mathcal{L} = (\\nabla_A \\mathcal{L}_{\\text{uncond}}) \\cdot (\\Sigma_X + \\alpha I)^{-1/2}$ |
+| **AdamW Step** | Covariance-Scaled Update | $\\Delta A \\propto (\\nabla_A \\mathcal{L}) \\cdot (\\Sigma_X + \\alpha I)^{-1/2}$ |
+| **Forward Evaluation** | Closed-Form Response | $\\Delta y = -\\eta B (\\nabla_A \\mathcal{L}) (\\Sigma_X + \\alpha I)^{-1} x$ |
+
 ```mermaid
 flowchart LR
-    subgraph Forward ["Forward Training Pass"]
-        X["Input x"] --> PRE["Pre-Hook: D_α = (Σ_X + α·I)^(-1/2)"]
-        PRE --> XD["Damped Input: x̃ = x · D_α"]
-        XD --> LORA_A["LoRA Matrix A: z = x̃ · A^T"]
-        LORA_A --> LORA_B["LoRA Matrix B: Δy = z · B^T"]
-    end
-
-    subgraph Backward ["Backward Autograd Pass"]
-        LOSS["Loss L"] --> GRAD_Z["∇_z L = ∂L/∂z"]
-        GRAD_Z --> CHAIN["Chain Rule: ∇_A L = (∇_z L)^T · (x · D_α)"]
-        CHAIN --> NAT_GRAD["Riemannian Natural Gradient: (∇_A L_uncond) · D_α"]
-        NAT_GRAD --> OPTIM["AdamW Parameter Step: ΔA ∝ (∇_A L) · D_α"]
-    end
-
-    subgraph Output ["Closed-Form Evaluation Response"]
-        OPTIM -.-> PERTURB["Δy = -η · B · (∇_A L_uncond) · (Σ_X + α·I)^(-1) · x"]
-    end
-
-    Forward --> Backward
+    X["Input x"] --> DAMP["Pre-Hook: D_α"]
+    DAMP --> LORA["LoRA"]
+    LORA --> LOSS["Loss L"]
+    LOSS --> NAT["Natural Gradient"]
+    NAT --> STEP["AdamW Step"]
 ```
 
 ### 4.3 Empirical Verification on AMD Instinct MI300X (v12 Results)
