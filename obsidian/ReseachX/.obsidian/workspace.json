@@ -11,10 +11,14 @@
             "id": "079a2e2fc07fb4c4",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "00_Index/00_Index_MOC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00_Index_MOC"
             }
           }
         ]
@@ -95,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00_Index/00_Index_MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "00_Index/00_Index_MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "00_Index/00_Index_MOC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,15 +190,20 @@
   },
   "active": "079a2e2fc07fb4c4",
   "lastOpenFiles": [
+    "00_Index/ResearchX_Formal_Academic_Treatise.md",
+    "01_Generations/v11_42Run_Confirmation_Stratified_Hierarchy.md",
+    "02_Theorems/Theorem_2_Jacobian_Condition_Number_Explosion.md",
+    "02_Theorems/Theorem_3_Zero_Power_Collinearity_Paradox.md",
+    "02_Theorems/Theorem_1_Discontinuous_MoE_Routing_Bifurcation.md",
+    "01_Generations/v5_Matched_Bakeoff_Router_Avalanche.md",
+    "04_Protocols/Autograd_PreHook_Execution_Graph.md",
+    "03_Architectures/Laguna_XS2_Architecture_Profile.md",
+    "Untitled.md",
     "00_Index/ResearchX_Master_Monograph.md",
     "01_Generations/v1_Causal_Ablation_E229.md",
-    "01_Generations/v5_Matched_Bakeoff_Router_Avalanche.md",
     "Untitled 1.md",
-    "Untitled.md",
-    "03_Architectures/Laguna_XS2_Architecture_Profile.md",
     "05_Swarm/Multi_Agent_Swarm_Orchestration.md",
     "02_Theorems/Theorem_4_Soft_Riemannian_Natural_Gradient_Invariance.md",
-    "02_Theorems/Theorem_1_Discontinuous_MoE_Routing_Bifurcation.md",
     "00_Index/00_Index_MOC.md",
     "Welcome.md",
     "Untitled 1",
@@ -201,12 +213,8 @@
     "03_Architectures",
     "01_Generations/v9_Matched_PEFT_NLL_Accuracy_Paradox.md",
     "01_Generations/v12_Soft_Riemannian_Fisher_Damping.md",
-    "01_Generations/v11_42Run_Confirmation_Stratified_Hierarchy.md",
     "01_Generations",
-    "04_Protocols/Autograd_PreHook_Execution_Graph.md",
     "04_Protocols",
-    "02_Theorems/Theorem_3_Zero_Power_Collinearity_Paradox.md",
-    "02_Theorems/Theorem_2_Jacobian_Condition_Number_Explosion.md",
     "02_Theorems",
     "05_Swarm"
   ]
