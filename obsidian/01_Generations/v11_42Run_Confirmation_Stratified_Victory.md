@@ -14,22 +14,17 @@ We executed a fully preregistered 42-run confirmatory matrix on AMD Instinct MI3
 
 ## 2. Full Empirical Matrix & Leaderboard ($N=384$ Fresh Test Items)
 
-```
-                            v11 Empirical Results (N=384 Fresh Items)
- ─────────────────────────────────────────────────────────────────────────────────────────────
- Placement ID                      Target Layers                           GSM8K Acc   Gain vs Base
- ─────────────────────────────────────────────────────────────────────────────────────────────
- 🥇 random_signature_01 (Stratified) [1, 2, 8, 11, 12, 16, 21, 26]          79.60%       +1.48 pp (Max: 80.99%)
- 🥈 random_signature_05 (Stratified) [2, 3, 6, 8, 20, 25, 34, 36]           79.17%       +1.04 pp
- 🥉 random_signature_02 (Stratified) [4, 8, 16, 19, 26, 27, 33, 34]          79.08%       +0.95 pp
-    random_signature_04             [4, 12, 15, 22, 25, 30, 35, 36]         78.82%       +0.69 pp
-    random_signature_03             [1, 9, 12, 20, 25, 26, 36, 37]          78.39%       +0.26 pp
- ❌ Guided LoRA (Bottleneck)         [16, 18, 19, 20, 21, 23, 24, 25]        78.18%       +0.05 pp
-    random_signature_00             [1, 8, 10, 13, 20, 28, 30, 35]          78.04%       -0.09 pp
- ─────────────────────────────────────────────────────────────────────────────────────────────
-    Standard LoRA (40 Layers)       All 40 Layers (Rank 12)                 77.81%       -0.31 pp
- 🔒 Fresh Base Model (Laguna XS.2)   None                                    78.13%        0.00 pp
-```
+| Rank / Placement ID | Target Layers | GSM8K Accuracy | Gain vs Base ($78.13\%$) |
+|---|---|---|---|
+| 🥇 **`random_signature_01` (Stratified)** | `[1, 2, 8, 11, 12, 16, 21, 26]` | **$79.60\%$** | **$+1.48	ext{ pp}$ (Max: $80.99\%$)** |
+| 🥈 **`random_signature_05` (Stratified)** | `[2, 3, 6, 8, 20, 25, 34, 36]` | **$79.17\%$** | **$+1.04	ext{ pp}$** |
+| 🥉 **`random_signature_02` (Stratified)** | `[4, 8, 16, 19, 26, 27, 33, 34]` | **$79.08\%$** | **$+0.95	ext{ pp}$** |
+| **`random_signature_04`** | `[4, 12, 15, 22, 25, 30, 35, 36]` | **$78.82\%$** | **$+0.69	ext{ pp}$** |
+| **`random_signature_03`** | `[1, 9, 12, 20, 25, 26, 36, 37]` | **$78.39\%$** | **$+0.26	ext{ pp}$** |
+| ❌ **Guided LoRA (Bottleneck)** | `[16, 18, 19, 20, 21, 23, 24, 25]` | **$78.18\%$** | **$+0.05	ext{ pp}$** |
+| **`random_signature_00`** | `[1, 8, 10, 13, 20, 28, 30, 35]` | **$78.04\%$** | **$-0.09	ext{ pp}$** |
+| **Standard LoRA (40 Layers)** | All 40 Layers (Rank 12) | **$77.81\%$** | **$-0.31	ext{ pp}$** |
+| 🔒 **Fresh Base Model (Laguna XS.2)** | None (Unmodified BF16) | **$78.13\%$** | **$0.00	ext{ pp}$** |
 
 ### 📊 Per-Seed Breakdown for Winning Signature 01:
 * Seed 107: **$78.39\%$** ($+0.26\text{ pp}$)

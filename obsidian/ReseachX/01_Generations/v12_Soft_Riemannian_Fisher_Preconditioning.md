@@ -47,19 +47,13 @@ Operating with **zero extra inference latency or FLOPs**.
 
 ## 4. Real Empirical Data: The Completed v12 Confirmation Matrix (MI300X)
 
-```
-                            v12 Empirical Confirmation Results
- ─────────────────────────────────────────────────────────────────────────────────────────────
- Experimental Arm                  Layers Targeted          Alpha (α)   Mean Acc    Control Drift
- ─────────────────────────────────────────────────────────────────────────────────────────────
- 🥇 Stratified Unconditioned (Base) [1, 2, 8, 11, 12, 16, 21, 26]  0.00        79.60%       0.0037
- 🥈 Stratified Riemannian Damped    [1, 2, 8, 11, 12, 16, 21, 26]  0.01        78.91%       0.0024 (↓ 35% overall,
-                                                                                            ↓ 88% on Seed 107!)
- 🥉 Stratified Riemannian Damped    [1, 2, 8, 11, 12, 16, 21, 26]  0.10        78.65%       0.0025
- ❌ Bottleneck Unconditioned        [20, 24, 23, 19, 21, 25, 16, 18] 0.00      78.21%       0.0025
- ─────────────────────────────────────────────────────────────────────────────────────────────
- 🔒 Fresh Base Model (Laguna XS.2)  None                           —          78.13%       0.0000
-```
+| Experimental Arm | Target Layers | Alpha ($lpha$) | GSM8K Accuracy | Gain vs Base ($78.13\%$) | Control Drift (MBPP) |
+|---|---|---|---|---|---|
+| 🥇 **Stratified Unconditioned Baseline** | `[1, 2, 8, 11, 12, 16, 21, 26]` | $0.00$ | **$79.60\%$** | **$+1.48	ext{ pp}$** | $0.0037$ |
+| 🥈 **Stratified Riemannian Damped** | `[1, 2, 8, 11, 12, 16, 21, 26]` | **$0.01$** | **$78.91\%$** | **$+0.78	ext{ pp}$** | **$0.0024$ (↓ 35% overall, ↓ 88% on Seed 107!)** |
+| 🥉 **Stratified Riemannian Damped** | `[1, 2, 8, 11, 12, 16, 21, 26]` | $0.10$ | **$78.65\%$** | **$+0.52	ext{ pp}$** | $0.0025$ |
+| ❌ **Bottleneck Unconditioned Baseline** | `[20, 24, 23, 19, 21, 25, 16, 18]` | $0.00$ | **$78.21\%$** | **$+0.09	ext{ pp}$** | $0.0025$ |
+| 🔒 **Fresh Base Model (Laguna XS.2)** | None | — | **$78.13\%$** | **$0.00	ext{ pp}$** | $0.0000$ |
 
 ### 📊 Per-Seed Detailed Table for v12:
 | Arm | Seed | GSM8K Accuracy | Gain vs Base ($78.13\%$) | MBPP Control Drift |

@@ -71,19 +71,14 @@ $$\Delta y = -\eta B (\nabla_A \mathcal{L}) \cdot (\Sigma_X + \alpha I)^{-1} x$$
 
 ## 4. The Complete Empirical Journey (v1 → v12)
 
-```
-                            Grand Empirical Leaderboard Across Generations
- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- Generation  Tested Architecture            Target Layers                 GSM8K Acc  Gain vs Base  Control Drift
- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- Baseline    Unmodified BF16 Base Model     None                          78.13%       0.00 pp       0.0000
- v1–v5       Causal MoE Expert Surgery      L36 / E229 Bank               75.74%      -2.39 pp      >0.0500 (Fatal)
- v9          Standard Full-Model LoRA       All 40 Layers (Rank 12)       77.81%      -0.31 pp       0.0042
- v10         Gradient-Guided Bottleneck     [16-25] Contiguous (Rank 63)  78.18%      +0.05 pp       0.0025
- v11 🥇      Stratified LoRA (Signature 01) [1, 2, 8, 11, 12, 16, 21, 26] 79.60%      +1.48 pp       0.0037
- v12 🛡️      Soft Riemannian LoRA (α=0.01)  [1, 2, 8, 11, 12, 16, 21, 26] 78.91%      +0.78 pp       0.0024 (↓ 88% on S107!)
- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-```
+| Generation / Stage | Tested Architecture | Target Layers | GSM8K Accuracy | Gain vs Base ($78.13\%$) | Control Drift (MBPP) |
+|---|---|---|---|---|---|
+| **Base Model** | Unmodified BF16 Base Model | None | **$78.13\%$** | $0.00	ext{ pp}$ | $0.0000$ |
+| **v1–v5** | Causal MoE Expert Surgery | L36 / E229 Bank | **$75.74\%$** | **$-2.39	ext{ pp}$** | $>0.0500$ (Fatal Collapse) |
+| **v9** | Standard Full-Model LoRA | All 40 Layers (Rank 12) | **$77.81\%$** | **$-0.31	ext{ pp}$** | $0.0042$ |
+| **v10** | Gradient-Guided Bottleneck | `[16-25]` Contiguous (Rank 63) | **$78.18\%$** | **$+0.05	ext{ pp}$** | $0.0025$ |
+| 🥇 **v11** | Stratified LoRA (`signature_01`) | `[1, 2, 8, 11, 12, 16, 21, 26]` | **$79.60\%$** | **$+1.48	ext{ pp}$** | $0.0037$ |
+| 🛡️ **v12** | Soft Riemannian LoRA ($lpha=0.01$) | `[1, 2, 8, 11, 12, 16, 21, 26]` | **$78.91\%$** | **$+0.78	ext{ pp}$** | **$0.0024$ (↓ 88% on Seed 107!)** |
 
 ---
 

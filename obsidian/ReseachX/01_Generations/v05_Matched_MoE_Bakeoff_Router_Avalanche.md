@@ -27,18 +27,12 @@ All policies selected exactly 4 experts ($12,582,912$ parameters) and trained on
 
 ## 3. Real Empirical Data: The Universal Failure Matrix
 
-```
-                      The Matched MoE Bakeoff Results (All Policies Failed)
- ───────────────────────────────────────────────────────────────────────────────────────────────────
- Policy Name             Trainable Budget  Seed 11 Acc   Seed 23 Acc   Seed 47 Acc   Grand Mean Gain
- ───────────────────────────────────────────────────────────────────────────────────────────────────
- causal_experts_k4       12.58M params     77.34%        74.22%        75.66%        -2.39 pp
- gradient_experts_k4     12.58M params     71.09%        76.56%        74.22%        -1.82 pp
- routing_experts_k4      12.58M params     75.00%        75.00%        75.00%        -3.12 pp
- random_experts_k4       12.58M params     75.52%        76.04%        75.00%        -2.60 pp
- ───────────────────────────────────────────────────────────────────────────────────────────────────
- Fresh Base Model Baseline: 78.13% (300/384)
-```
+| Policy Name | Trainable Budget | Seed 11 Acc | Seed 23 Acc | Seed 47 Acc | Grand Mean Gain |
+|---|---|---|---|---|---|
+| **`causal_experts_k4`** | 12.58M params | $77.34\%$ | $74.22\%$ | $75.66\%$ | **$-2.39	ext{ pp}$** |
+| **`gradient_experts_k4`** | 12.58M params | $71.09\%$ | $76.56\%$ | $74.22\%$ | **$-1.82	ext{ pp}$** |
+| **`routing_experts_k4`** | 12.58M params | $75.00\%$ | $75.00\%$ | $75.00\%$ | **$-3.12	ext{ pp}$** |
+| **`random_experts_k4`** | 12.58M params | $75.52\%$ | $76.04\%$ | $75.00\%$ | **$-2.60	ext{ pp}$** |
 
 ---
 
