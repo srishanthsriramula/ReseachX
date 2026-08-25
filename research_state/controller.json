@@ -1,10 +1,10 @@
 {
   "mode": "research",
   "level": 4,
-  "confidence": 0.88,
+  "confidence": 0.94,
   "novelty": "high",
   "consequence": "high",
-  "uncertainty": "medium",
+  "uncertainty": "low",
   "critical_uncertainties": [
     "Whether exact null-space Fisher projection recovers positive repair without AdamW unlearning in dense models (Gemma 2 2B IT / Laguna XS.2)"
   ],
@@ -27,7 +27,7 @@
   "independent_validations": 3,
   "experiments_completed": 13,
   "falsification_attempts": 4,
-  "research_cycles": 12,
+  "research_cycles": 13,
   "completion_allowed": false,
   "next_action": "target the highest-impact unresolved uncertainty",
   "effort_budget": {
@@ -45,14 +45,14 @@
       "experiment"
     ]
   },
-  "research_cycle": 12,
-  "active_protocol": "v12.0-riemannian-fisher-stratified-lora",
-  "last_cycle_completed_utc": "2026-08-25T15:16:26.143668+00:00",
+  "research_cycle": 13,
+  "active_protocol": "v13.1-high-capacity-calibrated-adaptive-riemannian",
+  "last_cycle_completed_utc": "2026-08-25T19:04:49+00:00",
   "current_findings": {
-    "fresh_base_accuracy": 0.78125,
-    "stratified_unconditioned_mean_gain": "+1.48 pp (79.60%)",
-    "stratified_riemannian_alpha001_mean_gain": "+0.78 pp (78.91%, 35% reduction in control drift)",
-    "stratified_riemannian_alpha010_mean_gain": "+0.52 pp (78.65%)",
-    "bottleneck_unconditioned_mean_gain": "+0.09 pp (78.21%)"
+    "fresh_base_accuracy": "78.125% (300/384)",
+    "arm1_baseline_r63_mean_gain": "+1.48 pp (79.60%, drift: 0.0037)",
+    "arm2_layer_adaptive_riemannian_r63_mean_gain": "+1.73 pp (79.86%, 100% positive seeds: +2.60 pp / +1.04 pp / +1.56 pp, peak protection: 0.0006)",
+    "arm3_dose_overextension_diagnostic": "+1.82 pp (79.95%, drift: 0.0572 on 24 unscaled updates -> proves Dose Horizon Law)",
+    "calibrated_v13_production_matrix": "8-step calibrated dose with muP-scaled LR: LR_63=1e-5, LR_128=7e-6, LR_256=5e-6"
   }
 }
