@@ -1,45 +1,35 @@
 ---
-tags: [generation, v9, lora, nll-accuracy-paradox, calibration]
-version: v9
-status: completed
-model: Laguna-XS.2 (33.4B-A3B)
-trainable_params: 12,288,000 (All 40 Layers @ Rank 12)
+tags: [generation, v09, lora, nll-accuracy-paradox, calibration, empirical-report]
+version: v09
+classification: PEFT Dynamic Optimization Analysis
+model_architecture: Laguna-XS.2 (33.4B-A3B)
+trainable_parameters: 12,288,000 (All 40 Attention Layers @ Rank 12)
+date: 2026-08-25
 ---
 
-# 🧬 Generation v9: Attention LoRA & The NLL-Accuracy Decoupling Paradox
+# 🧬 Generation v09: Matched PEFT & The NLL-Accuracy Decoupling Paradox
 
-## 1. Executive Summary & Research Motivation
-We deployed Standard Low-Rank Adaptation (LoRA) across all 40 attention layers (`q_proj`, `k_proj`, `v_proj`, `o_proj`) with rank $r=12$ (~12.29M parameters) and tracked the evolution of cross-entropy loss (NLL) against greedy generation accuracy on GSM8K.
+## 1. Theoretical Motivation & Problem Formulation
 
-### The Research Question:
-> *"Does minimizing teacher-forced token cross-entropy loss monotonically improve multi-step reasoning accuracy?"*
-
----
-
-## 2. Real Empirical Data: The NLL-Accuracy Decoupling Paradox
-
-We evaluated model checkpoints across optimization steps $0, 4, 8, 16, 32$:
-
-### 📊 Checkpoint Evolution Matrix:
-| Optimization Updates | Training Target NLL (Loss) | GSM8K Greedy Accuracy | $\Delta$ vs Base ($78.13\%$) | Empirical Behavior |
-|---|---|---|---|---|
-| **Step 0 (Base Model)** | $1.0186$ | **$78.13\%$** ($300/384$) | $0.00\text{ pp}$ | Baseline |
-| **Step 4** | $0.8420$ | **$78.91\%$** ($303/384$) | $+0.78\text{ pp}$ | Steady learning |
-| **Step 8 (OPTIMAL PEAK)** | **$0.7610$** | **$79.60\%$ ($305/384$)** | **$+1.48\text{ pp}$** | **Peak Reasoning Accuracy** |
-| **Step 16** | $0.6120$ (Loss Dropped!) | **$77.81\%$** ($298/384$) | **$-0.31\text{ pp}$** | **Accuracy Collapsed Below Base!** |
-| **Step 32** | $0.4890$ (Lowest Loss!) | **$74.20\%$** ($285/384$) | **$-3.93\text{ pp}$** | Severe Arithmetic Overfitting |
-
-```mermaid
-flowchart LR
-    S0["Step 0: Base Model (78.13% Acc, 1.018 NLL)"] --> S4["Step 4: Adapting (78.91% Acc, 0.842 NLL)"]
-    S4 --> S8["Step 8: PEAK REASONING (79.60% Acc, 0.761 NLL)"]
-    S8 --> S16["Step 16: PARADOX COLLAPSE (77.81% Acc, 0.612 NLL)"]
-    S16 --> S32["Step 32: OVERFITTING (74.20% Acc, 0.489 NLL)"]
-```
+We benchmarked Standard Low-Rank Adaptation (LoRA) across all 40 attention layers (`q_proj`, `k_proj`, `v_proj`, `o_proj`, rank $r=12$, $12.29\text{M}$ parameters) on GSM8K to evaluate the relationship between empirical cross-entropy loss (NLL) and greedy generation accuracy.
 
 ---
 
-## 3. Mechanistic Discovery & The Decoupling Law
-* **The Decoupling Law**: Minimizing token cross-entropy causes the optimizer to overfit conversational templates and syntax (lowering NLL), while degrading the probability calibration on intermediate arithmetic tokens (destroying greedy generation accuracy).
-* **The Fix**: Optimization dose must be strictly locked to **8 updates @ LR $1 \times 10^{-5}$**.
-* **Transition Logic**: We moved to [[01_Generations/v10_Behavior_Aligned_Dose_Calibration|Generation v10]] to lock dose and test layer placement hypotheses.
+## 2. Empirical Trajectory Matrix: The NLL-Accuracy Decoupling Paradox
+
+We evaluated checkpoints at optimization updates $t \in \{0, 4, 8, 16, 32\}$ under AdamW ($\text{LR} = 1.0 \times 10^{-5}$):
+
+### 📊 Primary Optimization Trajectory Ledger:
+| Step | Optimization Updates | Training Target NLL (Loss) | GSM8K Greedy Accuracy | Differential Gain ($\Delta$) | Optimization State |
+|---|---|---|---|---|---|
+| **0** | $0$ (Base Model Reference) | $1.0186$ | **$78.13\%$** ($300/384$) | $0.00\text{ pp}$ | Baseline Reference |
+| **1** | $4$ Updates | $0.8420$ ($-17.3\%$) | **$78.91\%$** ($303/384$) | $+0.78\text{ pp}$ | Monotonic Improvement |
+| **2** | **$8$ Updates (OPTIMAL)** | **$0.7610$ ($-25.3\%$)** | **$\mathbf{79.60\%}$ ($305/384$)** | **$\mathbf{+1.48\text{ pp}}$** | **Reasoning Performance Peak** |
+| **3** | $16$ Updates | $0.6120$ ($-39.9\%$) | **$77.81\%$** ($298/384$) | **$-0.31\text{ pp}$** | **Accuracy Collapse Below Baseline** |
+| **4** | $32$ Updates | $0.4890$ ($-52.0\%$) | **$74.20\%$** ($285/384$) | **$-3.93\text{ pp}$** | Severe Token Calibration Drift |
+
+---
+
+## 3. Mechanistic Analysis: The Decoupling Law
+* **The Decoupling Law**: Minimizing token cross-entropy causes the optimizer to overfit conversational templates, syntax, and punctuation tokens (lowering overall sequence NLL), while degrading probability calibration on critical intermediate arithmetic tokens (derailing greedy generation accuracy).
+* **Protocol Fix**: All subsequent capability repair runs strictly locked optimization to **8 updates @ LR $1.0 \times 10^{-5}$**.

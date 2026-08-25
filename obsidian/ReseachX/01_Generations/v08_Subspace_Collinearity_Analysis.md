@@ -1,38 +1,33 @@
 ---
-tags: [generation, v8, subspace-analysis, collinearity, geometry]
-version: v8
-status: completed
-model: Laguna-XS.2 (33.4B-A3B)
+tags: [generation, v08, subspace-collinearity, geometry, spectral-analysis, empirical-report]
+version: v08
+classification: Subspace Representation Geometry
+model_architecture: Laguna-XS.2 (33.4B-A3B)
+date: 2026-08-25
 ---
 
-# 🧬 Generation v8: Cross-Capability Subspace Collinearity
+# 🧬 Generation v08: Cross-Capability Subspace Collinearity & Interference Geometry
 
-## 1. Executive Summary & Research Motivation
-Before applying LoRA to Attention sublayers, we investigated whether Math reasoning (GSM8K) and General Language/Code (MBPP/C4) occupy orthogonal subspaces within attention representations.
+## 1. Theoretical Motivation & Problem Formulation
 
-### The Research Question:
-> *"Do task updates naturally steer orthogonal to retained general language representations?"*
+Before deploying Attention LoRA, we investigated whether Mathematical Reasoning (GSM8K) and Retained Capabilities (MBPP Python code and C4 text) occupy mutually orthogonal subspaces within attention activations.
 
----
-
-## 2. Mathematical Measurement of Subspace Overlap
-
-Let $g_{\text{math}} = \nabla_W \mathcal{L}_{\text{GSM8K}}$ and $g_{\text{code}} = \nabla_W \mathcal{L}_{\text{MBPP}}$. We measured the normalized gradient inner product (cosine similarity) across all 48 layers:
-$$\cos(\theta_l) = \frac{\langle g_{\text{math}, l}, g_{\text{code}, l} \rangle}{\|g_{\text{math}, l}\|_F \|g_{\text{code}, l}\|_F}$$
+Let $g_{\text{task}} = \nabla_W \mathcal{L}_{\text{GSM8K}}$ and $g_{\text{ctrl}} = \nabla_W \mathcal{L}_{\text{MBPP}}$. We measured the normalized gradient cosine similarity across all 48 layers:
+$$\cos(\theta_l) = \frac{\langle g_{\text{task}, l}, g_{\text{ctrl}, l} \rangle}{\|g_{\text{task}, l}\|_F \|g_{\text{ctrl}, l}\|_F}$$
 
 ---
 
-## 3. Real Empirical Data: The Collinearity Reality
+## 2. Empirical Subspace Overlap Distribution
 
-### 📊 Layer-Wise Subspace Overlap Table:
-| Layer Depth | Cosine Similarity $\cos(\theta)$ | Subspace Overlap Ratio | Geometric Consequence |
+### 📊 Layer-Wise Directional Energy Overlap Ledger:
+| Layer Depth Span ($l$) | Mean Gradient Cosine Similarity $\cos(\theta)$ | Shared Directional Subspace Energy | Interference Risk |
 |---|---|---|---|
-| Early Layers (0–10) | **$0.912$** | **$> 91\%$ Shared** | Updates heavily disturb general token parsing |
-| Mid Layers (11–26) | **$0.884$** | **$> 88\%$ Shared** | High gradient energy causes mutual interference |
-| Late Layers (27–47) | $0.642$ | $\approx 64\%$ Shared | Partially distinct semantic formatting |
+| **Early Layers ($0–10$)** | **$0.912$** | **$> 91.2\%$ Shared** | **Critical (Unconstrained updates corrupt token parsing)** |
+| **Mid Layers ($11–26$)** | **$0.884$** | **$> 88.4\%$ Shared** | **High (High gradient norm induces destructive torque)** |
+| **Late Layers ($27–47$)** | $0.642$ | $\approx 64.2\%$ Shared | Moderate (Semantic output formatting) |
 
 ---
 
-## 4. Key Takeaway & Transition to v9
-* **The Collinearity Reality**: Math reasoning and general language share $> 88-91\%$ of their directional energy in attention representations.
-* **Transition Logic**: We moved to [[01_Generations/v09_Attention_LoRA_NLL_Accuracy_Paradox|Generation v9]] to benchmark standard LoRA and calibrate learning dynamics.
+## 3. Theoretical Implication & Succession to v09
+* **The Collinearity Reality**: Foundation models rely on shared grammatical and logical representations across math and code. Unconstrained gradient optimization on math will inevitably disturb retained tasks unless regularized by Riemannian geometric constraints.
+* **Succession Criteria**: Generation v09 was authorized to benchmark Standard LoRA on GSM8K to calibrate optimization dynamics.
