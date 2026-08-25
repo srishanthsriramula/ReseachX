@@ -7,31 +7,31 @@ aliases: [Stratified Layer Signature 01, Layer Depth Architecture]
 
 ## 1. Global 48-Layer Depth Map & Allocation Topology
 
-In **Signature 01**, LoRA rank capacity ($r=63$) is distributed across **8 stratified early-to-mid depth spans**, rather than congested into consecutive mid-layers:
+In **Signature 01**, LoRA rank capacity ($r=63$) is distributed across **8 stratified early-to-mid depth spans**, separated by unedited contractive shock absorbers:
 
 ```mermaid
 flowchart TD
     L0["Layer 0: Unedited Base Token Embedding"] --> L1["🎯 Layer 1: LoRA Edit (Early Steering 1)"]
     L1 --> L2["🎯 Layer 2: LoRA Edit (Early Steering 2)"]
-    L2 --> U1["Layers 3–7: 5 Unedited Contractive Layers (Shock Absorbers)"]
+    L2 --> U1["Layers 3–7: 5 Unedited Contractive Layers"]
     U1 --> L8["🎯 Layer 8: LoRA Edit (Mid-Span Anchor 1)"]
     L8 --> U2["Layers 9–10: 2 Unedited Contractive Layers"]
     U2 --> L11["🎯 Layer 11: LoRA Edit (Mid-Span Anchor 2)"]
     L11 --> L12["🎯 Layer 12: LoRA Edit (Mid-Span Anchor 3)"]
     L12 --> U3["Layers 13–15: 3 Unedited Contractive Layers"]
-    U3 --> L16["🎯 Layer 16: LoRA Edit (Core Relational Reasoning 1)"]
+    U3 --> L16["🎯 Layer 16: LoRA Edit (Relational Reasoning 1)"]
     L16 --> U4["Layers 17–20: 4 Unedited Contractive Layers"]
-    U4 --> L21["🎯 Layer 21: LoRA Edit (Core Relational Reasoning 2)"]
+    U4 --> L21["🎯 Layer 21: LoRA Edit (Relational Reasoning 2)"]
     L21 --> U5["Layers 22–25: 4 Unedited Contractive Layers"]
     U5 --> L26["🎯 Layer 26: LoRA Edit (Deep Semantic Bridge)"]
-    L26 --> U6["Layers 27–47: 21 Unedited Output & Syntax Decoding Layers"]
+    L26 --> U6["Layers 27–47: 21 Unedited Output Layers"]
 ```
 
 ---
 
 ## 2. Comparative Functional Allocation Ledger
 
-| Layer Index | Layer Receptive Field | Functional Mathematical Role | LoRA Rank ($r$) | Trainable Parameters |
+| Layer Depth Span | Receptive Field | Mathematical Structural Role | LoRA Rank ($r$) | Trainable Parameters |
 |---|---|---|---|---|
 | **Layer 1** | Sliding Window (512 tokens) | Early Input Representation Steering | $r=63$ | $1,580,544$ |
 | **Layer 2** | Sliding Window (512 tokens) | Early Subspace Directional Alignment | $r=63$ | $1,580,544$ |

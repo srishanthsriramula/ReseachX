@@ -10,16 +10,16 @@ aliases: [Attention LoRA vs MoE Surgery, Architectural Comparison]
 ```mermaid
 flowchart TD
     subgraph AttentionSurgery ["Attention Sublayer LoRA (Continuous Subspace Surgery)"]
-        A_IN["Activation x"] --> A_LORA["LoRA Edit: Δy = B · (A · x)"]
-        A_LORA --> A_CONT["Continuous Shift: ||Δy|| ≤ ||B|| ||A|| ||x||"]
-        A_CONT --> A_STABLE["Zero Router Bifurcations (Smooth Adaptation)"]
+        A1["Activation x"] --> A2["LoRA Edit: Δy = B · (A · x)"]
+        A2 --> A3["Continuous Shift: ||Δy|| ≤ ||B|| ||A|| ||x||"]
+        A3 --> A4["Zero Router Bifurcations (Smooth Adaptation)"]
     end
 
     subgraph MoESurgery ["Routed MoE Expert Surgery (Discontinuous Discrete Surgery)"]
-        M_IN["Activation x"] --> M_EDIT["Expert Edit: ΔE_e = ΔW · x"]
-        M_EDIT --> M_GATE["Downstream Router: G_(l+1)(x + Δh)"]
-        M_GATE --> M_BIF["Discrete Softmax Boundary Cross (|z_i - z_j| < ε)"]
-        M_BIF --> M_AVAL["Discrete Permutation Avalanche: ||Δh|| = Ω(1)"]
+        M1["Activation x"] --> M2["Expert Edit: ΔE_e = ΔW · x"]
+        M2 --> M3["Downstream Router: G_(l+1)(x + Δh)"]
+        M3 --> M4["Discrete Boundary Cross (|z_i - z_j| < ε)"]
+        M4 --> M5["Discrete Permutation Avalanche: ||Δh|| = Ω(1)"]
     end
 ```
 
