@@ -47,24 +47,20 @@ $$h_{l+1} = h_l + \text{Attn}(h_l) + \text{SharedMLP}(h_l) + \sum_{i \in \mathca
 where the router gating distribution is parameterized by router weights $W_g \in \mathbb{R}^{256 \times d}$:
 $$g(h) = \text{Softmax}(\text{Top8}(W_g h)), \quad \mathcal{E}_k(h) = \operatorname{arg\,top8}_{i} (W_g h)_i$$
 
-```
-                                  Top-8 MoE Routing Mechanism
-                                                │
-         Input Representation h ──► [Linear Gating Router: W_g · h]
-                                                │
-                                                ▼
-                        Softmax Logits: z_i = w_i^T h,  i ∈ [1, ..., 256]
-                                                │
-                                                ▼
-                        Top-8 Expert Selection: E_k(h) = argtop8(z)
-                                                │
-                 ┌──────────────┬───────────────┴───────────────┬──────────────┐
-                 ▼              ▼                               ▼              ▼
-            Expert #1      Expert #43                      Expert #183    Expert #229
-                 │              │                               │              │
-                 └──────────────┴───────────────┬───────────────┴──────────────┘
-                                                ▼
-                              Weighted Combination: ∑ g_i E_i(h)
+```mermaid
+flowchart TD
+    TOKENS["Input Token Embeddings x"] --> ATTN["Multi-Head GQA Attention (64 Heads)"]
+    ATTN --> NORM["Pre-MoE RMSNorm Layer"]
+    NORM --> ROUTER["Top-8 Softmax Router: G(x) = Top8(Softmax(W_g · x))"]
+    
+    ROUTER --> E1["Routed Expert #1 (SwiGLU)"]
+    ROUTER --> E43["Routed Expert #43 (SwiGLU)"]
+    ROUTER --> E183["Routed Expert #183 (SwiGLU)"]
+    ROUTER --> E229["Routed Expert #229 (L36/E229)"]
+    NORM --> SHARED["Always-Active Shared Expert (MLP)"]
+
+    E1 & E43 & E183 & E229 --> COMBINE["Weighted Combination: ∑ g_i E_i(x)"]
+    COMBINE & SHARED --> OUT["Residual Stream Output to Layer l+1"]
 ```
 
 ### 2.1 The Causal Locality Trap (v1 → v5)
@@ -157,19 +153,27 @@ $$\Delta y = B (\Delta A) \tilde{x} = B \left( -\eta \nabla_A \mathcal{L}_{\text
 $$\Delta y = -\eta B (\nabla_A \mathcal{L}_{\text{uncond}}) \cdot (\Sigma_X + \alpha I)^{-1} x \quad \text{(Exact Closed-Form Natural Gradient!)}$$
 Because the pre-hook is applied during standard matrix multiplication, inference operates with **zero extra FLOPs or latency**. $\blacksquare$
 
-```
-                              The PyTorch Autograd Graph in v12
-                                              │
-               Forward Training Pass                          Backward Autograd Pass
-       ──────────────────────────────────────         ──────────────────────────────────────
-       x ──► [Pre-Hook: D_α] ──► x_damped             x_damped ◄── [Chain Rule]
-                                    │                                      │
-                                    ▼                                      ▼
-                z = x_damped @ A^T                    ∇_A L = (∇_z L)^T @ (x @ D_α)
-                                    │                        = (∇_A L_uncond) @ D_α
-                                    ▼                                      │
-                Δy = z @ B^T                                               ▼
-                                                       AdamW Update: ΔA ∝ (∇_A L) @ D_α
+```mermaid
+flowchart LR
+    subgraph Forward ["Forward Training Pass"]
+        X["Input x"] --> PRE["Pre-Hook: D_α = (Σ_X + α·I)^(-1/2)"]
+        PRE --> XD["Damped Input: x̃ = x · D_α"]
+        XD --> LORA_A["LoRA Matrix A: z = x̃ · A^T"]
+        LORA_A --> LORA_B["LoRA Matrix B: Δy = z · B^T"]
+    end
+
+    subgraph Backward ["Backward Autograd Pass"]
+        LOSS["Loss L"] --> GRAD_Z["∇_z L = ∂L/∂z"]
+        GRAD_Z --> CHAIN["Chain Rule: ∇_A L = (∇_z L)^T · (x · D_α)"]
+        CHAIN --> NAT_GRAD["Riemannian Natural Gradient: (∇_A L_uncond) · D_α"]
+        NAT_GRAD --> OPTIM["AdamW Parameter Step: ΔA ∝ (∇_A L) · D_α"]
+    end
+
+    subgraph Output ["Closed-Form Evaluation Response"]
+        OPTIM -.-> PERTURB["Δy = -η · B · (∇_A L_uncond) · (Σ_X + α·I)^(-1) · x"]
+    end
+
+    Forward --> Backward
 ```
 
 ### 4.3 Empirical Verification on AMD Instinct MI300X (v12 Results)

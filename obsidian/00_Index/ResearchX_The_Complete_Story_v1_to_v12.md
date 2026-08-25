@@ -189,20 +189,13 @@ Trained 4 matched policies ($K=4$, ~12.58M params) across random seeds on MI300X
 * **Every single routed expert policy caused negative generalization!**
 
 ### 6. The Mathematical Proof: Theorem 1 (Discontinuous Router Bifurcation)
-```
-  Perturbation ΔW in Expert 43 (Layer 18)
-                 │
-                 ▼
-  Alters Output Activation: Δh_18 = h_18 + ΔW · x
-                 │
-                 ▼
-  Next Layer Router: G_19(Δh_18) = Top8(Softmax(W_gate · Δh_18))
-                 │
-                 ▼  [Router Decision Boundary Crossed!]
-  Expert #12 Permuted to Expert #89 on ALL downstream tokens
-                 │
-                 ▼
-  DISCRETE ROUTING AVALANCHE ACROSS LAYERS 19 → 47 (Catastrophic Collapse)
+```mermaid
+flowchart TD
+    EDIT["Parameter Perturbation ΔW in Expert 43 (Layer 18)"] --> ACT["Output Activation Shift: Δh_18 = h_18 + ΔW · x"]
+    ACT --> ROUTER["Next Layer Router: G_19(Δh_18) = Top8(Softmax(W_g · Δh_18))"]
+    ROUTER --> CROSS["Router Decision Boundary Crossed! (|z_i - z_j| < ε)"]
+    CROSS --> PERM["Expert #12 Permuted to Expert #89 on Downstream Tokens"]
+    PERM --> AVALANCHE["DISCRETE ROUTING AVALANCHE ACROSS LAYERS 19 → 47 (Catastrophic Collapse)"]
 ```
 Because expert parameter matrices are mutually orthogonal ($\|W_i - W_j\| = \Omega(1)$), changing an expert’s weights shifts downstream activations across softmax routing boundaries, triggering a **discrete routing avalanche** across all remaining 47 layers.
 
@@ -341,19 +334,20 @@ Executed **42 independent runs** across 5 random seeds on MI300X:
 * **The Breakthrough Winner**: **Stratified Signature 01** (`[1, 2, 8, 11, 12, 16, 21, 26]`) won decisively (**$79.60\%$, $+1.48\text{ pp}$ gain, max seed $80.99\%$**).
 
 ### 6. Theorem 2: Why Stratified Placement Won (The Jacobian Proof)
-```
-      CONGESTED BOTTLENECK EDITING (v11 Guided)                 STRATIFIED DEPTH SPAN (v11 Winner / v12 Base)
-      Layers [16, 18, 19, 20, 21, 23, 24, 25]                   Layers [1, 2, 8, 11, 12, 16, 21, 26]
-                     │                                                         │
-                     ▼                                                         ▼
-      ┌──────────────────────────────┐                          ┌──────────────────────────────┐
-      │  Compounding Perturbations   │                          │  Contractive Recovery Steps  │
-      │  • Edits stacked consecutively│                         │  • Early steering (L1, L2)   │
-      │  • Jacobian condition number │                          │  • Unedited LayerNorm steps  │
-      │    explodes exponentially    │                          │    absorb distortion         │
-      │  • Representation collapse   │                          │  • Clean subspace rotation   │
-      │  • Gain: +0.05 pp (STAGNANT) │                          │  • Gain: +1.48 pp (BREAKTHRU)│
-      └──────────────────────────────┘                          └──────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph Bottleneck ["Congested Bottleneck Editing (v11 Guided: Layers 16-25)"]
+        B1["Contiguous Edited Layers [16, 18, 19, 20, 21, 23, 24, 25]"] --> B2["Jacobian Compounds Multiplicatively: J = ∏ (I + ∇f_l + BA)"]
+        B2 --> B3["Condition Number Explodes: κ(J) ~ e^(K · σ_max)"]
+        B3 --> B4["Representation Collapse (Gain: +0.05 pp)"]
+    end
+
+    subgraph Stratified ["Stratified Depth Hierarchy (v11 Winner: Signature 01)"]
+        S1["Stratified Layers [1, 2, 8, 11, 12, 16, 21, 26]"] --> S2["Early Steering at Layers 1 & 2"]
+        S2 --> S3["Unedited Layers Act as Contractive Dampers: ||J_un|| ≤ ρ < 1"]
+        S3 --> S4["Linear Condition Growth: κ(J) ≤ 1 + K · σ · ρ^(Δl)"]
+        S4 --> S5["Clean Subspace Rotation (Gain: +1.48 pp, Best: 80.99%)"]
+    end
 ```
 When you edit 8 contiguous layers in a row, the perturbations multiply through consecutive layers, causing the Jacobian condition number to explode exponentially ($\kappa \sim e^{K \sigma_{\max}}$).
 Stratified placement places edits early (`[1, 2, 8]`) to steer token routing, and spaces mid-layer edits with unedited LayerNorm/attention steps that act as **contractive shock absorbers**, keeping representation stability linear.
@@ -381,19 +375,27 @@ $$\Delta W^* = (F_{\text{ret}} + \alpha I)^{-1/2} \nabla \mathcal{L}_{\text{task
 We implemented this in PyTorch by injecting a **Forward Pre-Hook** on LoRA inputs:
 $$\tilde{x} = x \cdot (\Sigma_X + \alpha I)^{-1/2}$$
 
-```
-                              The PyTorch Autograd Graph in v12
-                                              │
-               Forward Training Pass                          Backward Autograd Pass
-       ──────────────────────────────────────         ──────────────────────────────────────
-       x ──► [Pre-Hook: D_α] ──► x_damped             x_damped ◄── [Chain Rule]
-                                    │                                      │
-                                    ▼                                      ▼
-                z = x_damped @ A^T                    ∇_A L = (∇_z L)^T @ (x @ D_α)
-                                    │                        = (∇_A L_uncond) @ D_α
-                                    ▼                                      │
-                Δy = z @ B^T                                               ▼
-                                                       AdamW Update: ΔA ∝ (∇_A L) @ D_α
+```mermaid
+flowchart LR
+    subgraph Forward ["Forward Training Pass"]
+        X["Input x"] --> PRE["Pre-Hook: D_α = (Σ_X + α·I)^(-1/2)"]
+        PRE --> XD["Damped Input: x̃ = x · D_α"]
+        XD --> LORA_A["LoRA Matrix A: z = x̃ · A^T"]
+        LORA_A --> LORA_B["LoRA Matrix B: Δy = z · B^T"]
+    end
+
+    subgraph Backward ["Backward Autograd Pass"]
+        LOSS["Loss L"] --> GRAD_Z["∇_z L = ∂L/∂z"]
+        GRAD_Z --> CHAIN["Chain Rule: ∇_A L = (∇_z L)^T · (x · D_α)"]
+        CHAIN --> NAT_GRAD["Riemannian Natural Gradient: (∇_A L_uncond) · D_α"]
+        NAT_GRAD --> OPTIM["AdamW Parameter Step: ΔA ∝ (∇_A L) · D_α"]
+    end
+
+    subgraph Output ["Closed-Form Evaluation Response"]
+        OPTIM -.-> PERTURB["Δy = -η · B · (∇_A L_uncond) · (Σ_X + α·I)^(-1) · x"]
+    end
+
+    Forward --> Backward
 ```
 
 On forward generation, the two inverse square roots multiply together:

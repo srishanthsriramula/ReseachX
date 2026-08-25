@@ -44,20 +44,13 @@ In sparse MoE architectures with Top-$k$ softmax gating, expert parameter matric
 For any continuous non-zero parameter perturbation $\Delta W_e$ applied to a routed expert, the output activation shift induces an $\mathcal{O}(1)$ discontinuous jump in downstream router selections:
 $$\lim_{\|\Delta W\| \to 0} \|\Delta \text{MoE}(x)\| = \Omega(1)$$
 
-```
-  Perturbation ΔW in Expert 43 (Layer 18)
-                 │
-                 ▼
-  Alters Output Activation: Δh_18 = h_18 + ΔW · x
-                 │
-                 ▼
-  Next Layer Router: G_19(Δh_18) = Top8(Softmax(W_gate · Δh_18))
-                 │
-                 ▼  [Router Decision Boundary Crossed!]
-  Expert #12 Permuted to Expert #89 on ALL downstream tokens
-                 │
-                 ▼
-  DISCRETE ROUTING AVALANCHE ACROSS LAYERS 19 → 47 (Catastrophic Collapse)
+```mermaid
+flowchart TD
+    EDIT["Parameter Perturbation ΔW in Expert 43 (Layer 18)"] --> ACT["Output Activation Shift: Δh_18 = h_18 + ΔW · x"]
+    ACT --> ROUTER["Next Layer Router: G_19(Δh_18) = Top8(Softmax(W_g · Δh_18))"]
+    ROUTER --> CROSS["Router Decision Boundary Crossed! (|z_i - z_j| < ε)"]
+    CROSS --> PERM["Expert #12 Permuted to Expert #89 on Downstream Tokens"]
+    PERM --> AVALANCHE["DISCRETE ROUTING AVALANCHE ACROSS LAYERS 19 → 47 (Catastrophic Collapse)"]
 ```
 
 ### Transition Logic:

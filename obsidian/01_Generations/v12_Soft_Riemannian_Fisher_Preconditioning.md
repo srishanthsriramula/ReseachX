@@ -24,19 +24,27 @@ $$\Delta W^* = (F_{\text{ret}} + \alpha I)^{-1/2} \nabla \mathcal{L}_{\text{task
 Implemented in PyTorch via a **Forward Pre-Hook** on LoRA inputs:
 $$\tilde{x} = x \cdot (\Sigma_X + \alpha I)^{-1/2}$$
 
-```
-                              The PyTorch Autograd Graph in v12
-                                              │
-               Forward Training Pass                          Backward Autograd Pass
-       ──────────────────────────────────────         ──────────────────────────────────────
-       x ──► [Pre-Hook: D_α] ──► x_damped             x_damped ◄── [Chain Rule]
-                                    │                                      │
-                                    ▼                                      ▼
-                z = x_damped @ A^T                    ∇_A L = (∇_z L)^T @ (x @ D_α)
-                                    │                        = (∇_A L_uncond) @ D_α
-                                    ▼                                      │
-                Δy = z @ B^T                                               ▼
-                                                       AdamW Update: ΔA ∝ (∇_A L) @ D_α
+```mermaid
+flowchart LR
+    subgraph Forward ["Forward Training Pass"]
+        X["Input x"] --> PRE["Pre-Hook: D_α = (Σ_X + α·I)^(-1/2)"]
+        PRE --> XD["Damped Input: x̃ = x · D_α"]
+        XD --> LORA_A["LoRA Matrix A: z = x̃ · A^T"]
+        LORA_A --> LORA_B["LoRA Matrix B: Δy = z · B^T"]
+    end
+
+    subgraph Backward ["Backward Autograd Pass"]
+        LOSS["Loss L"] --> GRAD_Z["∇_z L = ∂L/∂z"]
+        GRAD_Z --> CHAIN["Chain Rule: ∇_A L = (∇_z L)^T · (x · D_α)"]
+        CHAIN --> NAT_GRAD["Riemannian Natural Gradient: (∇_A L_uncond) · D_α"]
+        NAT_GRAD --> OPTIM["AdamW Parameter Step: ΔA ∝ (∇_A L) · D_α"]
+    end
+
+    subgraph Output ["Closed-Form Evaluation Response"]
+        OPTIM -.-> PERTURB["Δy = -η · B · (∇_A L_uncond) · (Σ_X + α·I)^(-1) · x"]
+    end
+
+    Forward --> Backward
 ```
 
 On forward generation, the two inverse square roots multiply together:
