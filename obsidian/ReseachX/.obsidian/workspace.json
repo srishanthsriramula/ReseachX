@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Architectures/Laguna_XS2_Architecture_Profile.md",
+                "file": "00_Index/00_Index_MOC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laguna_XS2_Architecture_Profile"
+              "title": "00_Index_MOC"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9e669c8781777ce1",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03_Architectures/Laguna_XS2_Architecture_Profile.md",
+                "file": "00_Index/00_Index_MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03_Architectures/Laguna_XS2_Architecture_Profile.md",
+                "file": "00_Index/00_Index_MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03_Architectures/Laguna_XS2_Architecture_Profile.md",
+                "file": "00_Index/00_Index_MOC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,13 +191,13 @@
   },
   "active": "079a2e2fc07fb4c4",
   "lastOpenFiles": [
+    "03_Architectures/Laguna_XS2_Architecture_Profile.md",
     "03_Architectures/Attention_LoRA_vs_MoE_Surgery.md",
     "01_Generations/v03_Routing_Logits_Disconnect.md",
     "05_Swarm/Multi_Agent_Swarm_Orchestration.md",
     "04_Protocols/Two_Way_Hierarchical_Bootstrap_CI.md",
     "04_Protocols/Autograd_PreHook_Execution_Graph.md",
     "03_Architectures/Stratified_Layer_Signature_01.md",
-    "03_Architectures/Laguna_XS2_Architecture_Profile.md",
     "02_Theorems/Theorem_4_Soft_Riemannian_Natural_Gradient_Invariance.md",
     "02_Theorems/Theorem_3_Zero_Power_Collinearity_Paradox.md",
     "02_Theorems/Theorem_2_Jacobian_Condition_Number_Explosion.md",
