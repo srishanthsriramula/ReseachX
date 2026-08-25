@@ -19,16 +19,12 @@ Standard model adaptation treats large Mixture-of-Experts (MoE) architectures as
 
 ## 2. Experimental Setup & Mathematical Protocol
 
-```
-                        The Zero-Ablation Scanning Loop
-                                       │
-        For layer l ∈ [0, 47]:
-          For expert e ∈ [0, 255]:
-            1. Set W_{l,e} ← 0 (Zero out expert output projection)
-            2. Compute Target Loss: NLL_{GSM8K}(W_{l,e}=0)
-            3. Compute Control Loss: NLL_{C4}(W_{l,e}=0)
-            4. Compute Causal Sensitivity: ΔNLL = NLL_{ablated} - NLL_{base}
-            5. Restore W_{l,e} ← W_{base}
+```mermaid
+flowchart LR
+    A["Iterate Layer l ∈ [0, 47]"] --> B["Iterate Expert e ∈ [0, 255]"]
+    B --> C["Zero Weight: W_e ← 0"]
+    C --> D["Evaluate ΔNLL on GSM8K vs C4"]
+    D --> E["Restore W_e ← W_base"]
 ```
 
 ### The Causal Sensitivity Metric:
@@ -56,15 +52,15 @@ Across all $48 \times 256 = 12,288$ routed expert banks:
 
 ## 4. Mechanistic Analysis & Why We Moved to v2
 
-```
-                       Single-Expert Ablation vs. Teamwork
-                                       │
-       ┌───────────────────────────────┴───────────────────────────────┐
-       ▼                                                               ▼
-Single Expert Ablation (v1)                               Combinatorial Teams (v2)
-• L36/E229 alone causes +1.2858 loss.                     • Do experts in layers 18, 20, 21, 36
-• What about remaining reasoning capability?                form an interconnected circuit?
-• Is E229 supported by upstream experts?                  • Test K=2, 3, 4 joint ablations.
+```mermaid
+flowchart TD
+    subgraph V1 ["Single Expert Ablation (v1)"]
+        A1["L36/E229 alone causes +1.2858 loss"] --> A2["What about remaining reasoning capacity?"]
+    end
+    subgraph V2 ["Combinatorial Teams (v2)"]
+        B1["Do experts in L18, 20, 21, 36 form a circuit?"] --> B2["Test K=2, 3, 4 joint forward ablations"]
+    end
+    V1 --> V2
 ```
 
 ### Transition Logic:

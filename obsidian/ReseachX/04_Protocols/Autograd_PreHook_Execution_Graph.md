@@ -5,11 +5,25 @@ backlinks: "[[00_Index/00_Index_MOC|Index]], [[02_Theorems/Theorem_4_Soft_Rieman
 
 # ⚙️ PyTorch Autograd Forward Pre-Hook Architecture
 
-```
-Forward Training:  x ──► [Pre-Hook: D_α] ──► x_damped ──► z = x_damped @ A^T ──► Δy = z @ B^T
-Backward Autograd: ∇_A L = (∇_z L)^T @ (x @ D_α) = (∇_A L_uncond) @ D_α
-AdamW Update:      ΔA = -η (∇_A L_uncond) @ D_α
-Forward Output:    Δy = -η B (∇_A L_uncond) @ (Σ_X + α·I)^(-1) x
+```mermaid
+flowchart LR
+    subgraph Forward ["Forward Training Pass"]
+        X["Input x"] --> PRE["Pre-Hook: D_α"]
+        PRE --> XD["x_damped"]
+        XD --> LORA_A["z = x_damped @ A^T"]
+        LORA_A --> LORA_B["Δy = z @ B^T"]
+    end
+
+    subgraph Backward ["Backward Autograd Pass"]
+        CHAIN["∇_A L = (∇_z L)^T @ (x @ D_α)"] --> NAT["= (∇_A L_uncond) @ D_α"]
+        NAT --> STEP["AdamW Update: ΔA ∝ (∇_A L) @ D_α"]
+    end
+
+    subgraph Output ["Forward Evaluation Output"]
+        STEP -.-> OUT["Δy = -η · B · (∇_A L_uncond) · (Σ_X + α·I)^(-1) · x"]
+    end
+
+    Forward --> Backward
 ```
 
 ### Invariants

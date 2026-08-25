@@ -25,16 +25,16 @@ We evaluated model checkpoints across optimization steps $0, 4, 8, 16, 32$:
 |---|---|---|---|---|
 | **Step 0 (Base Model)** | $1.0186$ | **$78.13\%$** ($300/384$) | $0.00\text{ pp}$ | Baseline |
 | **Step 4** | $0.8420$ | **$78.91\%$** ($303/384$) | $+0.78\text{ pp}$ | Steady learning |
-| **Step 8 (OPTIMAL PEAK)** | **$0.7610$** | **$\mathbf{79.60\%}$ ($305/384$)** | **$\mathbf{+1.48\text{ pp}}$** | **Peak Reasoning Accuracy** |
+| **Step 8 (OPTIMAL PEAK)** | **$0.7610$** | **$79.60\%$ ($305/384$)** | **$+1.48\text{ pp}$** | **Peak Reasoning Accuracy** |
 | **Step 16** | $0.6120$ (Loss Dropped!) | **$77.81\%$** ($298/384$) | **$-0.31\text{ pp}$** | **Accuracy Collapsed Below Base!** |
 | **Step 32** | $0.4890$ (Lowest Loss!) | **$74.20\%$** ($285/384$) | **$-3.93\text{ pp}$** | Severe Arithmetic Overfitting |
 
 ```mermaid
-xychart-beta
-    title "The NLL-Accuracy Decoupling Curve"
-    x-axis [0, 4, 8, 16, 32]
-    y-axis "Metric Value" 0 --> 100
-    line [78.13, 78.91, 79.60, 77.81, 74.20]
+flowchart LR
+    S0["Step 0: Base Model (78.13% Acc, 1.018 NLL)"] --> S4["Step 4: Adapting (78.91% Acc, 0.842 NLL)"]
+    S4 --> S8["Step 8: PEAK REASONING (79.60% Acc, 0.761 NLL)"]
+    S8 --> S16["Step 16: PARADOX COLLAPSE (77.81% Acc, 0.612 NLL)"]
+    S16 --> S32["Step 32: OVERFITTING (74.20% Acc, 0.489 NLL)"]
 ```
 
 ---

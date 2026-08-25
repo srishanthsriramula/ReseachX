@@ -30,14 +30,11 @@ Here is the complete, unfiltered story of what happened at every single step.
 
 Before diving into the versions, let us understand the machine we operated on: **Laguna XS.2**.
 
-```
-                           Laguna XS.2 Architecture Overview
-                                          │
-       ┌──────────────────────────────────┼──────────────────────────────────┐
-       ▼                                  ▼                                  ▼
-33.4 Billion Total Parameters      48 Transformer Layers              256 Routed Experts / Layer
-• 3.0 Billion active per token     • 12 Global Attention Layers       • Top-8 Softmax Gating Router
-• High-capacity sparse brain       • 36 Sliding-Window Attention      • 1 Always-Active Shared Expert
+```mermaid
+flowchart TD
+    MODEL["Laguna XS.2 (33.4B-A3B Foundation Model)"] --> P1["33.4B Total Parameters (3.0B Active / Token)"]
+    MODEL --> P2["48 Transformer Layers (12 Global + 36 Sliding Window)"]
+    MODEL --> P3["256 Routed SwiGLU Experts + 1 Shared Expert Per Layer"]
 ```
 
 Instead of running all 33.4B parameters on every word, **Laguna XS.2 is a Mixture-of-Experts (MoE)** model. On every single token (word), a "Traffic Director" (the **Router**) looks at the word and picks only **8 out of the 256 specialized sub-networks (experts)** to process that word.

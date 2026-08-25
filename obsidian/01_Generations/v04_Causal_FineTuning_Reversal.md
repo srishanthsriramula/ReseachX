@@ -35,21 +35,23 @@ Having isolated the causal reasoning bank in v1–v3, we hypothesized: *"If zero
 | **Causal Bank A Fine-Tuned (Seed 11)** | $12.58\text{M}$ params | **$75.78\%$** ($291/384$) | **$-2.35\text{ pp}$** | $1.7410$ ($+0.0824$ Drift) |
 | **Causal Bank A Fine-Tuned (Seed 23)** | $12.58\text{M}$ params | **$75.52\%$** ($290/384$) | **$-2.61\text{ pp}$** | $1.7390$ ($+0.0804$ Drift) |
 | **Causal Bank A Fine-Tuned (Seed 47)** | $12.58\text{M}$ params | **$75.91\%$** ($292/384$) | **$-2.22\text{ pp}$** | $1.7450$ ($+0.0864$ Drift) |
-| **Grand Mean Across Seeds** | **$12.58\text{M}$** | **$75.74\%$** | $\mathbf{-2.39\text{ pp} \quad \text{(FATAL COLLAPSE)}}$ | $\mathbf{1.7417}$ |
+| **Grand Mean Across Seeds** | **$12.58\text{M}$** | **$75.74\%$** | **$-2.39\text{ pp}$ (FATAL COLLAPSE)** | **$1.7417$** |
 
 ---
 
 ## 4. Mechanistic Failure Analysis & Transition to v5
 
-```
-                                The Read-vs-Write Capacity Trap
-                                               │
-       ┌───────────────────────────────────────┴───────────────────────────────────────┐
-       ▼                                                                               ▼
-The Saturated Read Path                                                The Forcible Gradient Step
-• Expert 229 was already operating at 100% capacity                     • AdamW optimization forcibly shifts weights.
-  to read arithmetic primitives.                                       • Corrupts existing arithmetic basis before
-• Zero plastic capacity to absorb new rules.                            new reasoning chains can be formed.
+```mermaid
+flowchart TD
+    subgraph Read ["The Saturated Read Path"]
+        R1["Expert 229 operated at 100% capacity to read arithmetic primitives"]
+        R2["Zero plastic headroom to absorb new reasoning chains"]
+    end
+    subgraph Write ["The Destructive Gradient Update"]
+        W1["AdamW forcibly updates weights in Expert 229"]
+        W2["Corrupts pre-trained arithmetic basis vectors (-2.39 pp collapse)"]
+    end
+    Read --> Write
 ```
 
 ### The Law Discovered:
