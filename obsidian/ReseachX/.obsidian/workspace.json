@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Index/ResearchX_The_Complete_Story_v1_to_v12.md",
+                "file": "03_Architectures/Laguna_XS2_Architecture_Profile.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ResearchX_The_Complete_Story_v1_to_v12"
+              "title": "Laguna_XS2_Architecture_Profile"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Index/ResearchX_The_Complete_Story_v1_to_v12.md",
+                "file": "03_Architectures/Laguna_XS2_Architecture_Profile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_Index/ResearchX_The_Complete_Story_v1_to_v12.md",
+                "file": "03_Architectures/Laguna_XS2_Architecture_Profile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Index/ResearchX_The_Complete_Story_v1_to_v12.md",
+                "file": "03_Architectures/Laguna_XS2_Architecture_Profile.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,9 +188,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "e6d14c1a01787a7a",
+  "active": "079a2e2fc07fb4c4",
   "lastOpenFiles": [
-    "00_Index/01_Master_Handover_Guide.md",
+    "03_Architectures/Attention_LoRA_vs_MoE_Surgery.md",
+    "01_Generations/v03_Routing_Logits_Disconnect.md",
     "05_Swarm/Multi_Agent_Swarm_Orchestration.md",
     "04_Protocols/Two_Way_Hierarchical_Bootstrap_CI.md",
     "04_Protocols/Autograd_PreHook_Execution_Graph.md",
@@ -200,6 +201,10 @@
     "02_Theorems/Theorem_3_Zero_Power_Collinearity_Paradox.md",
     "02_Theorems/Theorem_2_Jacobian_Condition_Number_Explosion.md",
     "02_Theorems/Theorem_1_Discontinuous_MoE_Routing_Bifurcation.md",
+    "01_Generations/v01_Causal_Zero_Ablation_L36_E229.md",
+    "01_Generations/v1_Causal_Ablation_E229.md",
+    "00_Index/ResearchX_The_Complete_Story_v1_to_v12.md",
+    "00_Index/01_Master_Handover_Guide.md",
     "01_Generations/v13_High_Capacity_Scaling_Frontier.md",
     "01_Generations/v12_Soft_Riemannian_Fisher_Preconditioning.md",
     "01_Generations/v12_Soft_Riemannian_Fisher_Damping.md",
@@ -211,11 +216,6 @@
     "01_Generations/v08_Subspace_Collinearity_Analysis.md",
     "01_Generations/v07_Global_48Layer_Writeability_Atlas.md",
     "01_Generations/v06_Cross_Capability_Interference.md",
-    "01_Generations/v05_Matched_MoE_Bakeoff_Router_Avalanche.md",
-    "01_Generations/v5_Matched_Bakeoff_Router_Avalanche.md",
-    "01_Generations/v04_Causal_FineTuning_Reversal.md",
-    "01_Generations/v03_Routing_Logits_Disconnect.md",
-    "01_Generations/v02_Combinatorial_Synergy_BankA.md",
     "Untitled 1",
     "Untitled",
     "00_Index",
