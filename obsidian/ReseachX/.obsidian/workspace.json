@@ -188,8 +188,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "079a2e2fc07fb4c4",
+  "active": "e6d14c1a01787a7a",
   "lastOpenFiles": [
+    "00_Index/01_Master_Handover_Guide.md",
     "05_Swarm/Multi_Agent_Swarm_Orchestration.md",
     "04_Protocols/Two_Way_Hierarchical_Bootstrap_CI.md",
     "04_Protocols/Autograd_PreHook_Execution_Graph.md",
@@ -215,7 +216,6 @@
     "01_Generations/v04_Causal_FineTuning_Reversal.md",
     "01_Generations/v03_Routing_Logits_Disconnect.md",
     "01_Generations/v02_Combinatorial_Synergy_BankA.md",
-    "01_Generations/v01_Causal_Zero_Ablation_L36_E229.md",
     "Untitled 1",
     "Untitled",
     "00_Index",
