@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Index/00_Index_MOC.md",
+                "file": "00_Index/ResearchX_Formal_Academic_Treatise.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Index_MOC"
+              "title": "ResearchX_Formal_Academic_Treatise"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Index/00_Index_MOC.md",
+                "file": "00_Index/ResearchX_Formal_Academic_Treatise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_Index/00_Index_MOC.md",
+                "file": "00_Index/ResearchX_Formal_Academic_Treatise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Index/00_Index_MOC.md",
+                "file": "00_Index/ResearchX_Formal_Academic_Treatise.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,21 +190,22 @@
   },
   "active": "079a2e2fc07fb4c4",
   "lastOpenFiles": [
-    "00_Index/ResearchX_Formal_Academic_Treatise.md",
     "01_Generations/v11_42Run_Confirmation_Stratified_Hierarchy.md",
+    "00_Index/ResearchX_The_Complete_Story_v1_to_v12.md",
+    "01_Generations/v1_Causal_Ablation_E229.md",
+    "02_Theorems/Theorem_1_Discontinuous_MoE_Routing_Bifurcation.md",
+    "00_Index/ResearchX_Master_Monograph.md",
+    "00_Index/00_Index_MOC.md",
+    "00_Index/ResearchX_Formal_Academic_Treatise.md",
     "02_Theorems/Theorem_2_Jacobian_Condition_Number_Explosion.md",
     "02_Theorems/Theorem_3_Zero_Power_Collinearity_Paradox.md",
-    "02_Theorems/Theorem_1_Discontinuous_MoE_Routing_Bifurcation.md",
     "01_Generations/v5_Matched_Bakeoff_Router_Avalanche.md",
     "04_Protocols/Autograd_PreHook_Execution_Graph.md",
     "03_Architectures/Laguna_XS2_Architecture_Profile.md",
     "Untitled.md",
-    "00_Index/ResearchX_Master_Monograph.md",
-    "01_Generations/v1_Causal_Ablation_E229.md",
     "Untitled 1.md",
     "05_Swarm/Multi_Agent_Swarm_Orchestration.md",
     "02_Theorems/Theorem_4_Soft_Riemannian_Natural_Gradient_Invariance.md",
-    "00_Index/00_Index_MOC.md",
     "Welcome.md",
     "Untitled 1",
     "Untitled",
