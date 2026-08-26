@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Index/00_Index_MOC.md",
+                "file": "01_Generations/v13_High_Capacity_Scaling_Frontier.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Index_MOC"
+              "title": "v13_High_Capacity_Scaling_Frontier"
             }
           }
         ]
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9e669c8781777ce1",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Index/00_Index_MOC.md",
+                "file": "01_Generations/v13_High_Capacity_Scaling_Frontier.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_Index/00_Index_MOC.md",
+                "file": "01_Generations/v13_High_Capacity_Scaling_Frontier.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -162,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Index/00_Index_MOC.md",
+                "file": "01_Generations/v13_High_Capacity_Scaling_Frontier.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -191,9 +190,16 @@
   },
   "active": "079a2e2fc07fb4c4",
   "lastOpenFiles": [
+    "01_Generations/v08_Subspace_Collinearity_Analysis.md",
+    "01_Generations/v03_Routing_Logits_Disconnect.md",
+    "01_Generations/v11_42Run_Confirmation_Stratified_Hierarchy.md",
+    "01_Generations/v12_Soft_Riemannian_Fisher_Damping.md",
+    "01_Generations/v12_Soft_Riemannian_Fisher_Preconditioning.md",
+    "01_Generations/v01_Causal_Zero_Ablation_L36_E229.md",
+    "01_Generations/v1_Causal_Ablation_E229.md",
+    "00_Index/00_Index_MOC.md",
     "03_Architectures/Laguna_XS2_Architecture_Profile.md",
     "03_Architectures/Attention_LoRA_vs_MoE_Surgery.md",
-    "01_Generations/v03_Routing_Logits_Disconnect.md",
     "05_Swarm/Multi_Agent_Swarm_Orchestration.md",
     "04_Protocols/Two_Way_Hierarchical_Bootstrap_CI.md",
     "04_Protocols/Autograd_PreHook_Execution_Graph.md",
@@ -202,21 +208,14 @@
     "02_Theorems/Theorem_3_Zero_Power_Collinearity_Paradox.md",
     "02_Theorems/Theorem_2_Jacobian_Condition_Number_Explosion.md",
     "02_Theorems/Theorem_1_Discontinuous_MoE_Routing_Bifurcation.md",
-    "01_Generations/v01_Causal_Zero_Ablation_L36_E229.md",
-    "01_Generations/v1_Causal_Ablation_E229.md",
     "00_Index/ResearchX_The_Complete_Story_v1_to_v12.md",
     "00_Index/01_Master_Handover_Guide.md",
     "01_Generations/v13_High_Capacity_Scaling_Frontier.md",
-    "01_Generations/v12_Soft_Riemannian_Fisher_Preconditioning.md",
-    "01_Generations/v12_Soft_Riemannian_Fisher_Damping.md",
     "01_Generations/v11_42Run_Confirmation_Stratified_Victory.md",
-    "01_Generations/v11_42Run_Confirmation_Stratified_Hierarchy.md",
     "01_Generations/v10_Behavior_Aligned_Dose_Calibration.md",
     "01_Generations/v9_Matched_PEFT_NLL_Accuracy_Paradox.md",
     "01_Generations/v09_Attention_LoRA_NLL_Accuracy_Paradox.md",
-    "01_Generations/v08_Subspace_Collinearity_Analysis.md",
     "01_Generations/v07_Global_48Layer_Writeability_Atlas.md",
-    "01_Generations/v06_Cross_Capability_Interference.md",
     "Untitled 1",
     "Untitled",
     "00_Index",

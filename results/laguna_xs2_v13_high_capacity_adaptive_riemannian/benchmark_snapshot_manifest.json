@@ -1,0 +1,15 @@
+{
+  "snapshot_sha256": "96b439d19505c1c895ed5535cef4653eade325e93091c1629bc4a458babef6e5",
+  "prior_id_manifest_sha256": "b87b4701e6605ef52683e658a9b63b14deb50c022a39534b8806ee77f4727461",
+  "prior_sources": {
+    "v9_source": "exact_local_v9_snapshot",
+    "v10_source": "exact_local_v10_snapshot"
+  },
+  "counts": {
+    "train:target": 256,
+    "final:target": 384,
+    "final:control": 160
+  },
+  "fresh_final_prior_overlap": 0,
+  "training_rows_reused_from_v10": true
+}

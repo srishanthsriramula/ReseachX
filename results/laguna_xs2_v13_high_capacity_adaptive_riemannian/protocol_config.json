@@ -1,0 +1,91 @@
+{
+  "protocol_hash": "7706a60d4ebe9361",
+  "config": {
+    "protocol_version": "v13.0-high-capacity-adaptive-riemannian",
+    "snapshot_sha256": "96b439d19505c1c895ed5535cef4653eade325e93091c1629bc4a458babef6e5",
+    "prior_id_manifest_sha256": "b87b4701e6605ef52683e658a9b63b14deb50c022a39534b8806ee77f4727461",
+    "completed_v10_notebook_sha256": "aaeb689d2a747c47c64b2c3931734f036107c5e8d2e554c8d30e66d9ba33ea92",
+    "v10_collision_correction": "raw-gradient and contrastive expert selectors were identical",
+    "writable_experts": [
+      [
+        18,
+        43
+      ],
+      [
+        20,
+        219
+      ],
+      [
+        21,
+        183
+      ],
+      [
+        30,
+        229
+      ]
+    ],
+    "gradient_specific_experts": [
+      [
+        19,
+        34
+      ],
+      [
+        21,
+        183
+      ],
+      [
+        25,
+        244
+      ],
+      [
+        27,
+        247
+      ]
+    ],
+    "guided_lora_layers": [
+      16,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      25
+    ],
+    "standard_lora_rank": 12,
+    "guided_lora_rank": 63,
+    "expert_lr": 1e-05,
+    "lora_lr": 1e-05,
+    "writable_updates": 8,
+    "gradient_specific_updates": 8,
+    "standard_lora_updates": 16,
+    "guided_lora_policy_updates": 4,
+    "placement_comparison_updates": 8,
+    "core_final_seeds": [
+      107,
+      211,
+      503,
+      887,
+      1597
+    ],
+    "placement_comparison_seeds": [
+      107,
+      211,
+      503
+    ],
+    "random_placement_seeds": [
+      3101,
+      3253,
+      3469,
+      3691,
+      3929,
+      4211
+    ],
+    "final_target_n": 384,
+    "final_control_n": 160,
+    "bootstrap_draws": 20000,
+    "bootstrap_seed": 111071,
+    "primary_a": "writable_experts_v10_set accuracy gain vs base",
+    "primary_b": "guided_lora_fixed8 minus mean matched-random placement accuracy"
+  }
+}
