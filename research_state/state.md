@@ -7,7 +7,7 @@
 critical
 
 ## Confidence
-0.94
+0.96
 
 ## Critical Uncertainties
 1
@@ -22,7 +22,7 @@ critical
 0
 
 ## Research Cycles
-13
+14
 
 ## Required Agents
 - theory
