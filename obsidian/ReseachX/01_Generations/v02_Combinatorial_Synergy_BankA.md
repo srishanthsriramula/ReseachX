@@ -27,7 +27,7 @@ $$\gamma(\mathcal{S}) = \frac{\Delta \text{NLL}_{\text{joint}}(\mathcal{S})}{\su
 
 1. **Root Candidate**: Initialized with $\mathcal{S}_1 = \{ (36, 229) \}$.
 2. **Greedy Expansion**: For cardinality $K \in \{2, 3, 4\}$, evaluated all candidate additions from high-sensitivity layers ($L \in [18, 38]$):
-   $$\mathcal{S}_K = \mathcal{S}_{K-1} \cup \left\{ \operatorname{arg\,max}_{(l, e)} \Delta \text{NLL}_{\text{joint}}(\mathcal{S}_{K-1} \cup \{(l, e)\}) \right\}$$
+   $$\mathcal{S}_K = \mathcal{S}_{K-1} \cup \left\{ \arg\max_{(l, e)} \Delta \text{NLL}_{\text{joint}}(\mathcal{S}_{K-1} \cup \{(l, e)\}) \right\}$$
 3. **Control Evaluation**: Evaluated additive vs. joint degradation on GSM8K ($N=384$) vs. C4 ($N=256$).
 
 ---

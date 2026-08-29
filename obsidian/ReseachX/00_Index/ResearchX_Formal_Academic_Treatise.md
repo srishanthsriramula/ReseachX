@@ -136,7 +136,7 @@ This proves why **Stratified Signature 01** (`[1, 2, 8, 11, 12, 16, 21, 26]`) ac
 *Proof*.
 Let $X_{\text{ret}} = U \\Lambda U^T$ be the eigendecomposition of $F_{\text{ret}}$. The hard null-space projector is $P_{\text{null}} = \sum_{i: \\lambda_i = 0} u_i u_i^T$.
 Empirical singular value decomposition of activations across GSM8K and MBPP reveals:
-$$\operatorname{Tr}(P_{\text{null}} F_{\text{task}}) = \sum_{i: \\lambda_i < \epsilon} u_i^T F_{\text{task}} u_i \le 0.00084 \cdot \operatorname{Tr}(F_{\text{task}})$$
+$$\text{Tr}(P_{\text{null}} F_{\text{task}}) = \sum_{i: \\lambda_i < \epsilon} u_i^T F_{\text{task}} u_i \le 0.00084 \cdot \text{Tr}(F_{\text{task}})$$
 Thus:
 $$\\|P_{\text{null}} \nabla \mathcal{L}_{\text{task}}\\|^2 \le 10^{-3} \\|\nabla \mathcal{L}_{\text{task}}\\|^2 \implies \Delta \mathcal{L}_{\text{task}} \approx 0$$
 Hard null-space projection destroys task learnability. $\blacksquare$

@@ -28,7 +28,7 @@ In our subspace investigation:
 
 **Theorem 3 (Zero-Power Collinearity Paradox)**:
 *Let $F_{\text{task}}$ and $F_{\text{ret}}$ be the activation covariances of mathematical reasoning and retained general language. Because foundation models share $>99.9\%$ of principal activation subspaces ($3003$ out of $3072$ dimensions):*
-$$\operatorname{Tr}(P_{\text{null}} F_{\text{task}}) \le 0.001 \cdot \operatorname{Tr}(F_{\text{task}})$$
+$$\text{Tr}(P_{\text{null}} F_{\text{task}}) \le 0.001 \cdot \text{Tr}(F_{\text{task}})$$
 *The projected task gradient possesses vanishing magnitude:*
 $$\|P_{\text{null}} \nabla \mathcal{L}_{\text{task}}\| \le 0.001 \|\nabla \mathcal{L}_{\text{task}}\| \implies \Delta \mathcal{L}_{\text{task}} \approx 0$$
 *making task adaptation mathematically impossible under hard null-space projection.*
