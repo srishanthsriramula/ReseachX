@@ -1,50 +1,41 @@
 # CURRENT RESEARCH STATE
 
 ## Research Level
-4
+1
 
 ## Mode
-critical
+focused
 
 ## Confidence
-0.96
+None
 
 ## Critical Uncertainties
-1
+0
 
 ## Competing Hypotheses
-2
+0
 
 ## Evidence Gaps
-1
+0
 
 ## Agent Disagreements
 0
 
 ## Research Cycles
-14
+16
 
 ## Required Agents
-- theory
-- literature
-- skeptic
-- experiment
-- reproducer
-- adjudicator
+- one appropriate specialist
 
 ## Required Actions
-- Run independent investigations in parallel.
-- Require adversarial challenge.
-- Independently reproduce important external claims.
-- Use adjudication for disagreement.
-- Do not complete until high-impact uncertainties are resolved.
+- Identify the single highest-impact uncertainty.
+- Run one focused investigation.
+- Reassess before stopping.
 
 ## Highest-Value Next Action
-target the highest-impact unresolved uncertainty
+perform independent verification of the leading conclusion
 
 ## Completion Allowed
-False
+True
 
 ## Completion Blockers
-- critical uncertainties remain
-- evidence gaps remain

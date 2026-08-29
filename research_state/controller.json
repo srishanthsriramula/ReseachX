@@ -1,59 +1,22 @@
 {
-  "mode": "research",
-  "level": 4,
-  "confidence": 0.96,
-  "novelty": "high",
-  "consequence": "high",
-  "uncertainty": "low",
-  "critical_uncertainties": [
-    "Whether exact null-space Fisher projection recovers positive repair without AdamW unlearning in dense models (Gemma 2 2B IT / Laguna XS.2)"
+  "research_level": 4,
+  "mode": "critical",
+  "agents": [
+    "theory",
+    "literature",
+    "skeptic",
+    "experiment",
+    "reproducer",
+    "adjudicator"
   ],
-  "competing_hypotheses": [
-    "H_nullspace: Capability repair requires updating only in the null-space of retained capabilities (Fisher projector), not unprojected gradient guidance.",
-    "H_subspace_rank: Rank and layer span matter more than gradient localization; broad low-rank coverage across shallow/mid layers outperforms localized high-gradient bottleneck edits."
+  "actions": [
+    "Formulate the Next-Generation Multi-Domain Geodesic Adaptation Framework (ResearchX v2.0).",
+    "Formalize the External Data Invariance Protocol: Clean external pre-training/fine-tuning corpora with zero evaluation benchmark contamination.",
+    "Map out Real-World Frontier Benchmarks: SWE-bench (Deep Software Engineering), Humanity's Last Exam (HLE / GPQA Frontier Reasoning), and GAIA/AgentBench (Agentic Planning).",
+    "Scale Information-Geometric Subspace Invariance (Theorems 7-10) to multi-task, multi-domain causal foundation models."
   ],
-  "evidence_gaps": [
-    "Failure-conditioned null-space repair projector geometry in dense vs sparse architecture"
-  ],
-  "agent_disagreements": [],
-  "failed_approaches": [
-    "Routing frequency localization",
-    "Causal expert fine-tuning (Read-Write Equivalence)",
-    "Forced-access SFT",
-    "Teacher-forced NLL optimization as reasoning proxy",
-    "Single-vector contrastive subtraction",
-    "Scalar gradient-guided PEFT placement without null-space projection"
-  ],
-  "independent_validations": 3,
-  "experiments_completed": 13,
-  "falsification_attempts": 4,
-  "research_cycles": 14,
-  "completion_allowed": false,
-  "next_action": "target the highest-impact unresolved uncertainty",
-  "effort_budget": {
-    "minimum": 10,
-    "target": 30,
-    "maximum": 100,
-    "spent": 14
-  },
-  "last_swarm_execution": {
-    "timestamp_utc": "2026-08-25T14:55:30.758326+00:00",
-    "agents_spawned": [
-      "theory",
-      "skeptic",
-      "adjudicator",
-      "experiment"
-    ]
-  },
-  "research_cycle": 14,
-  "active_protocol": "v14.0-heterogeneous-depth-invariant-repair",
-  "last_cycle_completed_utc": "2026-08-27T15:07:23+00:00",
-  "current_findings": {
-    "v13_ratified_baseline": "79.86% (+1.73 pp, 100% positive seeds, drift: 0.0006 - 0.0035)",
-    "v14_active_protocol": "v14.0-heterogeneous-depth-invariant-repair",
-    "heterogeneous_ranks": "Early (L1-2): r=16, Mid (L8-12): r=64, Deep (L16-26): r=128 (18.9M params / 0.056%)",
-    "data_scaling": "N=1,024 diverse multi-step reasoning examples",
-    "dual_invariance_guard": "Soft Riemannian Pre-Hooks (alpha_l) + Active KL Anchor Loss",
-    "target_gain": "+5.0 to +8.0 pp (83% - 86% GSM8K accuracy, drift < 0.0008)"
-  }
+  "next_action": "deliver comprehensive architecture and research roadmap for ResearchX v2.0 Frontier Expansion",
+  "completion_allowed": true,
+  "completion_blockers": [],
+  "research_cycles": 18
 }
