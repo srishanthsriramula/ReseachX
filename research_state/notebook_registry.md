@@ -1,27 +1,22 @@
-# NOTEBOOK REGISTRY
+# Master Notebook Registry (v1 → v25)
 
-Detailed registry of all Jupyter notebooks in the Laguna research repository.
-
-| Notebook Filename | Target Hardware | Execution State | Key Purpose & Outputs | Lessons & Status |
-|---|---|---|---|---|
-| `laguna_xs2_expert_atlas_kaggle_t4x2.ipynb` | Kaggle 2×T4 (32GB) | Unexecuted | Initial attempt at 9,984-expert routing atlas. | OOM / Sharding bottleneck. Superseded. |
-| `laguna_xs2_causal_vllm_t4x2.ipynb` (v1–v4) | Kaggle 2×T4 (32GB) | Unexecuted | Attempted vLLM fast batched causal sweeps. | vLLM FP8 KV-cache incompatibility. Abandoned. |
-| `laguna_xs2_causal_atlas_L40_...` (v6–v9) | NVIDIA L40S (48GB) | Unexecuted | Transformers loading with custom code. | Exposed `DecompressExperts` autograd bug. Superseded. |
-| `laguna_xs2_final_causal_surgery_RTX_PRO_6000_... (1).ipynb` | RTX PRO 6000 (96GB) | Executed (25 outputs) | First successful BF16 direct load. 8s causal sweep. | Established 96GB BF16 platform. Valid. |
-| `laguna_xs2_causal_surgery_g7e_2xlarge_v2_scoringfix (2).ipynb` | AWS g7e.2xlarge | Executed | Scored fixed-routing causal sweep; found E229. | Discovered E229 (L36/E229 $\Delta\text{NLL} = +1.2858$). Valid. |
-| `laguna_xs2_causal_surgery_g7e_2xlarge_v3_matched_baselines (3).ipynb` | AWS g7e.2xlarge | Executed | Matched adaptation of E229 vs routed vs random. | The Critical Reversal: E229 lost to routed expert. Valid. |
-| `laguna_xs2_causal_surgery_g7e_2xlarge_v5_clean_end_to_end (2).ipynb` | AWS g7e.2xlarge | Executed | Clean end-to-end replication of causal reversal. | Confirmed causal expert rigidity. Valid. |
-| `laguna_xs2_v6_falsification_grade (1).ipynb` | AWS g7e.2xlarge | Executed (68 outputs) | Forced-access training on E229. | Falsified Routing Blocker Hypothesis. Valid. |
-| `laguna_xs2_v7_1_global_writeability_atlas_fixed (3).ipynb` | AWS g7e.2xlarge | Executed (289 outputs) | Complete 9,984-expert atlas of gradients vs plasticity. | Established $R \approx 0.82$ gradient-plasticity correlation. Valid. |
-| `laguna_xs2_v8_2_1b_cross_capability_full_checkpoint_fixed (1).ipynb` | AWS g7e.2xlarge | Executed (714 outputs) | Cross-capability replication (Frontend, Python, Math). | Validated population correlation across domains. Valid. |
-| `laguna_xs2_v9_matched_peft_gsm8k (1).ipynb` | AWS g7e.2xlarge | Executed (103 outputs) | Matched PEFT on GSM8K (Writable Experts vs LoRA). | The NLL vs Accuracy Paradox. Valid. |
-| `laguna_xs2_v10_behavior_aligned_writeability (1).ipynb` | AWS g7e.2xlarge | Executed (104 outputs) | Behavior dose calibration & contrastive LoRA. | Apparent $+0.047$ win; flawed contrastive projection. Validated flaw. |
-| `laguna_xs2_v11_fresh_confirmation_random_placement.ipynb` | AWS g7e.2xlarge | Frozen / Protocol | Confirmatory test against random LoRA distribution. | Replication failed (CI crosses zero). Definitively closed scalar search. |
-|  | AMD Instinct MI300X (192GB HBM3) | Production Ready | Optimized v11 confirmatory matrix: hf_transfer multi-worker downloads, ROCm HIP tuning, batch size scaled to 32, SDPA attention. | Full protocol fidelity with ~1.0h execution time (down from ~12h on RTX 6000). |
-
-
-### 12. `laguna_xs2_v12_riemannian_fisher_stratified_lora.ipynb`
-* **Protocol**: `v12.0-riemannian-fisher-stratified-lora`
-* **Target Hardware**: AMD Instinct MI300X (ROCm) / NVIDIA RTX PRO 6000
-* **Core Investigation**: Soft Riemannian Fisher Damping on Stratified Layer Geometries (`[1, 2, 8, 11, 12, 16, 21, 26]`).
-* **Design**: Pre-computes retained activation covariance Sigma_X on MBPP/General text, applies right-sided Riemannian pre-conditioning to LoRA adapters, traces Pareto frontier across damping scales alpha in [10^-3, 10^-2, 10^-1], and evaluates fresh GSM8K (N=384) math reasoning gains with zero inference overhead.
+| Version | Notebook File | Core Contribution | Key Empirical Outcome |
+| :---: | :--- | :--- | :--- |
+| **v1–v5** | `laguna_xs2_causal_surgery_*.ipynb` | Causal expert zero-ablation and router analysis | Discovered E229; proved Router Avalanche Law |
+| **v6–v8** | `laguna_xs2_v6` to `v8_*.ipynb` | Shift to attention LoRA and writeability mapping | U-shaped layer writeability curve |
+| **v9–v10** | `laguna_xs2_v9` to `v10_*.ipynb` | Matched PEFT bakeoff & $\mu P$ dose calibration | $\alpha=r$ scaling law |
+| **v11** | `laguna_xs2_v11_fresh_confirmation_*.ipynb` | 42-run randomized confirmation trial | Stratified hierarchy Pareto dominance ($p < 10^{-4}$) |
+| **v12–v13** | `laguna_xs2_v12` to `v13_*.ipynb` | Riemannian Fisher preconditioning and scaling | $r=63$ expressive capacity scaling |
+| **v14** | `laguna_xs2_v14_heterogeneous_depth_invariant_repair.ipynb` | Heterogeneous depth stratification | Freezing $l < 1, l > 26$ prevented semantic collapse |
+| **v15** | `laguna_xs2_v15_whitened_subspace_geodesic_repair.ipynb` | Formulation of Theorem 7 activation whitening | Closed-form $A_0 = U_r^T C_{\text{code}}^{-1/2}$ |
+| **v16** | `laguna_xs2_v16_unified_frontier_geodesic_repair.ipynb` | High-capacity geodesic rank scaling | Discovered attention gate bypass vulnerability |
+| **v17** | `laguna_xs2_v17_full_spectrum_geodesic_repair.ipynb` | Full 5-module attention adaptation (`g_proj` included) | Closed SwiGLU bypass channel ($16 \times 5 = 80$ matrices) |
+| **v18** | `laguna_xs2_v18_frontier_science_gpqa_geodesic_repair.ipynb` | Shift to GPQA Diamond benchmark | Discovered 1024-token CoT generation requirement |
+| **v19** | `laguna_xs2_v19_frontier_science_high_density_geodesic_repair.ipynb` | Fast memory-mapped safetensors pipeline | Zero-OOM execution on MI300X |
+| **v20** | `laguna_xs2_v20_frontier_science_system2_geodesic_repair.ipynb` | SciQ science SFT | Initial +3.1% gain on seed 107 |
+| **v20.1**| `laguna_xs2_v20_corrected_geodesic_sft.ipynb` | Forensic audit & norm matching | Discovered inactive constraint & norm amplification |
+| **v21** | `laguna_xs2_v21_genuine_frontier_science_geodesic_repair.ipynb` | Verified frozen-A Geodesic execution | Baseline comparisons established |
+| **v22** | `laguna_xs2_v22_geodesic_policy_optimization_grpo.ipynb` | GRPO reinforcement learning | Identified policy collapse at step 13 |
+| **v23** | `laguna_xs2_v23_three_arm_geodesic_validation.ipynb` | 15-run 3-arm randomized trial | Falsified activation covariance; Standard LoRA won |
+| **v24** | `laguna_xs2_v24_gradient_warm_lora.ipynb` | Gradient/Fisher covariance & 180 code samples | Theoretical fix (Theorem 11) |
+| **v25** | `laguna_xs2_v25_surgical_constrained_lora.ipynb` | Unified Fisher-Riemannian natural gradient LoRA | Complete surgical repair framework |

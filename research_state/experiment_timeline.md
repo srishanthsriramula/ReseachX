@@ -128,3 +128,14 @@ This document provides a comprehensive, rigorous autopsy of every experimental i
 - **Model**: `google/gemma-2-2b-it` (Dense 2B instruction-tuned model).
 - **Question**: Does failure-conditioned, preservation-projected subspace repair succeed in a dense model where MoE routing artifacts and AdamW optimizer dynamics are completely eliminated?
 - **Method**: Self-generated failure trajectories ($y^-$) vs gold corrections ($y^+$); preservation gradients on self-generated correct solutions ($y^{\text{corr}}$); null-space Fisher projection; rank-8 low-rank algebraic update; functional KL trust region; rescue vs damage metric.
+- **Experiment 20 (v20 SciQ Science SFT, Aug 29, 2026)**:
+  - 1,000 SciQ questions with `\boxed{}` formatting. Initial +3.1% gain on seed 107.
+- **Experiment 20.1 (v20.1 Forensic Audit & Norm Matching, Aug 30, 2026)**:
+  - Discovered inactive constraint on $A$ and 2× norm amplification. Corrected Kaiming norm matching and regex extraction.
+- **Experiment 22 (v22 GRPO Reinforcement Learning, Aug 30, 2026)**:
+  - Group size $G=4$ policy optimization on single-GPU MI300X. Encountered policy collapse at step 13.
+- **Experiment 23 (v23 Three-Arm 15-Run Randomized Trial, Sep 1, 2026)**:
+  - 3 arms × 5 seeds on GPQA Diamond and Code NLL.
+  - Standard LoRA (+4.9% gain, 0.0142 shift) beat Geodesic (+0.3% gain, 0.0653 shift). Falsified activation covariance.
+- **Experiment 24 (v24 Gradient/Fisher Warm LoRA, Sep 1, 2026)**:
+  - Implemented Theorem 11 Fisher Gradient Covariance with 180 code samples and 200 STEM samples.

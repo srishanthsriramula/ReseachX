@@ -138,3 +138,31 @@ This timeline chronicles the empirical and conceptual trajectory of the Laguna r
   - Partitioned failure modes into: *representation-limited*, *routing-limited*, *expert-content-limited*, *decoding-limited*, and *formatting-limited*.
 - **Dense Model Experiment (Gemma 2 2B IT)**:
   - Formulated a clean non-MoE experiment to isolate the core algebra of repair vs preservation on self-generated failure trajectories without MoE routing artifacts or AdamW optimizer noise.
+---
+
+### Phase 11: Frontier Science (GPQA Diamond), Forensic Audits & GRPO (v18–v22)
+- **GPQA Diamond Transition**:
+  - Shifted from saturated GSM8K grade-school math to PhD-level **GPQA Diamond** (198 questions).
+  - Identified the **1024-Token Horizon Law**: CoT scientific derivations require 600–900 tokens. Setting `max_new_tokens=256` severed derivations, causing an artificial 8.59% accuracy collapse.
+- **Forensic Audits of v20**:
+  - *Inactive Constraint*: Discovered that `apply_whitened_initialization_to_model` omitted `requires_grad=False` on $A$, meaning v20 was actually unconstrained Warm LoRA.
+  - *Norm Amplification*: Discovered that $A_0 = U_r^T C_{\text{code}}^{-1/2}$ had $\|A_0\|_F \approx 72.4$ vs Kaiming $\|A\|_F \approx 36.2$, giving whitened init an artificial 2× learning rate advantage. Fixed via explicit Kaiming norm matching in v20.1.
+- **GRPO Policy Collapse (v22)**:
+  - Attempted Group Relative Policy Optimization on single-GPU MI300X with group size $G=4$.
+  - Suffered catastrophic reward collapse after step 13 due to extreme gradient variance and policy mode collapse on MoE routing. Reverted to SFT.
+
+---
+
+### Phase 12: Three-Arm Empirical Falsification & The Fisher Gradient Paradigm (v23–v25)
+- **v23 Three-Arm Randomized Trial (15 Runs, N=15)**:
+  - Evaluated Geodesic ($A_0$ frozen), Warm LoRA ($A_0$ free), and Standard LoRA (random $A$) across 5 random seeds on 32-step SFT.
+  - **The Falsification**: Standard LoRA achieved **+4.9% mean GPQA gain** with **0.0142 Code NLL shift**, outperforming Geodesic (+0.3% gain, 0.0653 shift) and Warm LoRA (+3.6% gain, 0.0651 shift).
+  - **The Root Cause (Activation Covariance vs. Loss Sensitivity)**:
+    - Activation covariance $C = \mathbb{E}[xx^T]$ measures input variance, which is dominated by invariant syntax / whitespace with zero downstream loss gradient $\partial L/\partial y$.
+    - Estimating $C \in \mathbb{R}^{3072 \times 3072}$ from 16 prompts created a rank-degenerate pseudo-null space.
+    - Freezing $A$ imposed a 2.4× parameter bottleneck (11.6M vs 27.4M).
+- **The v24 / v25 Resolution (Theorem 11 - Fisher Gradient Covariance)**:
+  - Replaced activation covariance with the **Empirical Fisher Gradient Covariance**:
+    $$G = \mathbb{E}\left[\left\|\frac{\partial L}{\partial y}\right\|^2 x x^T\right]$$
+  - Scaled code calibration support to 180 tasks (164 HumanEval + 16 control tasks) and 200 STEM tasks.
+  - Utilized Warm LoRA to preserve full parameter capacity while initializing from the Fisher eigenspace.
